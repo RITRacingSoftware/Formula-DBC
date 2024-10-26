@@ -1,0 +1,209 @@
+FormatVersion=5.0 // Do not edit this line!
+Title="canmatrix-Export"
+{ENUMS}
+
+
+{SENDRECEIVE}
+
+[RL_AMK_Actual_1]
+ID=283h
+Type=Standard
+DLC=8
+Var=RL_Status_SystemReady unsigned 8,1 /min:0 /max:1 /d:0
+Var=RL_Status_Error unsigned 9,1 /min:0 /max:1 /d:0
+Var=RL_Status_Warn unsigned 10,1 /min:0 /max:1 /d:0
+Var=RL_Status_QuitDcOn unsigned 11,1 /min:0 /max:1 /d:0
+Var=RL_Status_DcOn unsigned 12,1 /min:0 /max:1 /d:0
+Var=RL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
+Var=RL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
+Var=RL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
+Var=RL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
+Var=RL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+
+[RL_AMK_Actual_2]
+ID=287h
+Type=Standard
+DLC=8
+Var=RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=RL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=RL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=RL_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[RL_AMK_RITSet1]
+ID=291h
+Type=Standard
+DLC=8
+Var=RL_ErroRList1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RL_ErroRList2 unsigned 32,32 /min:0 /max:1 /d:0
+
+[RL_AMK_RITSet2]
+ID=295h
+Type=Standard
+DLC=8
+Var=RL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+Var=RL_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
+
+[RL_AMK_Setpoints]
+ID=184h
+Type=Standard
+DLC=8
+Var=RL_AMK_bInverterOn unsigned 8,1 /min:0 /max:1 /d:0
+Var=RL_AMK_bDCOn unsigned 9,1 /min:0 /max:1 /d:0
+Var=RL_AMK_bEnable unsigned 10,1 /min:0 /max:1 /d:0
+Var=RL_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
+Var=RL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
+Var=RL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=RL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
+[RR_AMK_Actual_1]
+ID=284h
+Type=Standard
+DLC=8
+Var=RR_Status_SystemReady unsigned 8,1 /min:0 /max:1 /d:0
+Var=RR_Status_Error unsigned 9,1 /min:0 /max:1 /d:0
+Var=RR_Status_Warn unsigned 10,1 /min:0 /max:1 /d:0
+Var=RR_Status_QuitDcOn unsigned 11,1 /min:0 /max:1 /d:0
+Var=RR_Status_DcOn unsigned 12,1 /min:0 /max:1 /d:0
+Var=RR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
+Var=RR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
+Var=RR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
+Var=RR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
+Var=RR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+
+[RR_AMK_Actual_2]
+ID=288h
+Type=Standard
+DLC=8
+Var=RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=RR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=RR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=RR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[RR_AMK_RITSet1]
+ID=292h
+Type=Standard
+DLC=8
+Var=RR_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RR_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+
+[RR_AMK_RITSet2]
+ID=296h
+Type=Standard
+DLC=8
+Var=RR_Errorlist3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+Var=RR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
+
+[RR_AMK_Setpoints]
+ID=185h
+Type=Standard
+DLC=8
+Var=RR_AMK_bInverterOn unsigned 8,1 /min:0 /max:1 /d:0
+Var=RR_AMK_bDCOn unsigned 9,1 /min:0 /max:1 /d:0
+Var=RR_AMK_bEnable unsigned 10,1 /min:0 /max:1 /d:0
+Var=RR_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
+Var=RR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
+Var=RR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=RR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
+[FL_AMK_Actual_1]
+ID=285h
+Type=Standard
+DLC=8
+Var=FL_Status_SystemReady unsigned 8,1 /min:0 /max:1 /d:0
+Var=FL_Status_Error unsigned 9,1 /min:0 /max:1 /d:0
+Var=FL_Status_Warn unsigned 10,1 /min:0 /max:1 /d:0
+Var=FL_Status_QuitDcOn unsigned 11,1 /min:0 /max:1 /d:0
+Var=FL_Status_DcOn unsigned 12,1 /min:0 /max:1 /d:0
+Var=FL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
+Var=FL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
+Var=FL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
+Var=FL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
+Var=FL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+
+[FL_AMK_Actual_2]
+ID=289h
+Type=Standard
+DLC=8
+Var=FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=FL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=FL_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[FL_AMK_RITSet1]
+ID=293h
+Type=Standard
+DLC=8
+Var=FL_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FL_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+
+[FL_AMK_RITSet2]
+ID=297h
+Type=Standard
+DLC=8
+Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+
+[FL_AMK_Setpoints]
+ID=186h
+Type=Standard
+DLC=8
+Var=FL_AMK_bInverterOn unsigned 8,1 /min:0 /max:1 /d:0
+Var=FL_AMK_bDCOn unsigned 9,1 /min:0 /max:1 /d:0
+Var=FL_AMK_bEnable unsigned 10,1 /min:0 /max:1 /d:0
+Var=FL_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
+Var=FL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
+Var=FL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=FL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
+[FR_AMK_Actual_1]
+ID=286h
+Type=Standard
+DLC=8
+Var=FR_Status_SystemReady unsigned 8,1 /min:0 /max:1 /d:0
+Var=FR_Status_Error unsigned 9,1 /min:0 /max:1 /d:0
+Var=FR_Status_Warn unsigned 10,1 /min:0 /max:1 /d:0
+Var=FR_Status_QuitDcOn unsigned 11,1 /min:0 /max:1 /d:0
+Var=FR_Status_DcOn unsigned 12,1 /min:0 /max:1 /d:0
+Var=FR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
+Var=FR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
+Var=FR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
+Var=FR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
+Var=FR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+
+[FR_AMK_Actual_2]
+ID=290h
+Type=Standard
+DLC=8
+Var=FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=FR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=FR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[FR_AMK_RITSet1]
+ID=294h
+Type=Standard
+DLC=8
+Var=FR_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FR_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+
+[FR_AMK_RITSet2]
+ID=298h
+Type=Standard
+DLC=8
+Var=FR_Errorlist3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+
+[FR_AMK_Setpoints]
+ID=187h
+Type=Standard
+DLC=8
+Var=FR_AMK_bInverterOn unsigned 8,1 /min:0 /max:1 /d:0
+Var=FR_AMK_bDCOn unsigned 9,1 /min:0 /max:1 /d:0
+Var=FR_AMK_bEnable unsigned 10,1 /min:0 /max:1 /d:0
+Var=FR_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
+Var=FR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
+Var=FR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=FR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
