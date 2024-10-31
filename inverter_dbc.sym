@@ -56,6 +56,12 @@ Var=RL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:
 Var=RL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=RL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
+[RL_AMK_Setpoints2]
+ID=188h
+Type=Standard
+DLC=2
+Var=RL_ActualSpeed signed 0,16 /u:rpm /min:-1000 /max:1000 /d:0
+
 [RR_AMK_Actual_1]
 ID=284h
 Type=Standard
@@ -107,6 +113,12 @@ Var=RR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:
 Var=RR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=RR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
+[RR_AMK_Setpoints2]
+ID=189h
+Type=Standard
+DLC=2
+Var=RR_ActualSpeed signed 0,16 /u:rpm /min:-1000 /max:1000 /d:0
+
 [FL_AMK_Actual_1]
 ID=285h
 Type=Standard
@@ -157,6 +169,12 @@ Var=FL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:
 Var=FL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=FL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
+[FL_AMK_Setpoints2]
+ID=190h
+Type=Standard
+DLC=2
+Var=FL_ActualSpeed signed 0,16 /u:rpm /min:-1000 /max:1000 /d:0
+
 [FR_AMK_Actual_1]
 ID=286h
 Type=Standard
@@ -206,4 +224,10 @@ Var=FR_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
 Var=FR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
 Var=FR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=FR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
+[FR_AMK_Setpoints2]
+ID=191h
+Type=Standard
+DLC=2
+Var=FR_ActualSpeed signed 0,16 /u:rpm /min:-1000 /max:1000 /d:0
 
