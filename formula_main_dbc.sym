@@ -839,3 +839,15 @@ Var=CHG_Flag_InputVoltage unsigned 34,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_StartingState unsigned 35,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_CommTimeout unsigned 36,1 /min:0 /max:1 /d:0
 
+[SSDB_brake_pressure_M]
+ID=1F8h
+Type=Standard
+DLC=2
+Var=SSDB_brake_pressure unsigned 0,12 /min:0 /max:4095 /d:0
+
+[SSDB_steering_angle_M]
+ID=1F9h
+Type=Standard
+DLC=2
+Var=SSDB_steering_angle unsigned 0,12 /min:0 /max:4095 /d:0
+

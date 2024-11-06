@@ -1,13 +1,14 @@
 #!/usr/bin/bash
 
 VIRTUALENV_DIR=virtualenv
-DBC_FILENAME=$(basename $1 .dbc)
-
-if [ -n "$DBC_FILENAME" ];
+if [ -z "$1" ];
 then
     echo "First argument must be dbc filename"
     exit 1
 fi
+
+DBC_FILENAME=$(basename $1 .dbc)
+
 
 # Create virtualenv if doesn't exist
 if [ ! -d "$VIRTUALENV_DIR" ];
