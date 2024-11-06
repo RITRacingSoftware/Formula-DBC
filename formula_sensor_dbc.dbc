@@ -1,0 +1,370 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IMU C70 PIT IRTEMP
+
+
+BO_ 1791 C70_BrakePressures: 8 C70
+ SG_ C70_BrakePressureFront : 0|16@1- (0.2,1250) [0|2500] "psi" Vector__XXX
+ SG_ C70_BrakePressureRear : 16|16@1- (0.2,1250) [0|2500] "psi" Vector__XXX
+
+BO_ 368 IMU_Sync: 8 Vector__XXX
+
+BO_ 372 IMU_Tx1: 8 IMU
+ SG_ IMU_Yaw_Rate : 0|16@1+ (0.005,-163.84) [-163.84|163.83] "deg/s" Vector__XXX
+ SG_ IMU_Accel_Y : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
+
+BO_ 376 IMU_Tx2: 8 IMU
+ SG_ IMU_Roll_Rate : 0|16@1+ (0.005,-163.84) [-163.84|163.835] "deg/s" Vector__XXX
+ SG_ IMU_Accel_X : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
+
+BO_ 380 IMU_Tx3: 8 IMU
+ SG_ IMU_Accel_Z : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
+
+BO_ 384 PIT_Pressures: 8 PIT
+ SG_ PIT_PressureMux M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PIT_Pressure1 m0 : 15|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Pressure2 m0 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Pressure3 m0 : 47|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_PressureRange m0 : 56|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PIT_Pressure4 m1 : 15|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Pressure5 m1 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Pressure6 m1 : 47|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Temperature m1 : 56|8@1- (1,0) [0|0] "degC" Vector__XXX
+ SG_ PIT_Pressure7 m2 : 15|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_Pressure8 m2 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
+ SG_ PIT_SensorNum m2 : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1220 TireTemp_FL_M1: 8 IRTEMP
+ SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1221 TireTemp_FL_M2: 8 IRTEMP
+ SG_ TireTemp_FL_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1222 TireTemp_FL_M3: 8 IRTEMP
+ SG_ TireTemp_FL_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1223 TireTemp_FL_M4: 8 IRTEMP
+ SG_ TireTemp_FL_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FL_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1224 TireTemp_FL_M5: 8 IRTEMP
+ SG_ TireTemp_FL_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1225 TireTemp_FR_M1: 8 IRTEMP
+ SG_ TireTemp_FR_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1226 TireTemp_FR_M2: 8 IRTEMP
+ SG_ TireTemp_FR_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1227 TireTemp_FR_M3: 8 IRTEMP
+ SG_ TireTemp_FR_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1228 TireTemp_FR_M4: 8 IRTEMP
+ SG_ TireTemp_FR_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_FR_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1229 TireTemp_FR_M5: 8 IRTEMP
+ SG_ TireTemp_FR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1230 TireTemp_RL_M1: 8 IRTEMP
+ SG_ TireTemp_RL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1231 TireTemp_RL_M2: 8 IRTEMP
+ SG_ TireTemp_RL_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1232 TireTemp_RL_M3: 8 IRTEMP
+ SG_ TireTemp_RL_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1233 TireTemp_RL_M4: 8 IRTEMP
+ SG_ TireTemp_RL_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RL_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1234 TireTemp_RL_M5: 8 IRTEMP
+ SG_ TireTemp_RL_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1235 TireTemp_RR_M1: 8 IRTEMP
+ SG_ TireTemp_RR_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1236 TireTemp_RR_M2: 8 IRTEMP
+ SG_ TireTemp_RR_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1237 TireTemp_RR_M3: 8 IRTEMP
+ SG_ TireTemp_RR_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1238 TireTemp_RR_M4: 8 IRTEMP
+ SG_ TireTemp_RR_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ TireTemp_RR_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1239 TireTemp_RR_M5: 8 IRTEMP
+ SG_ TireTemp_RR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1320 RotorTemp_FL_M1: 8 IRTEMP
+ SG_ RotorTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1321 RotorTemp_FL_M2: 8 IRTEMP
+ SG_ RotorTemp_FL_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1322 RotorTemp_FL_M3: 8 IRTEMP
+ SG_ RotorTemp_FL_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1323 RotorTemp_FL_M4: 8 IRTEMP
+ SG_ RotorTemp_FL_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FL_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1324 RotorTemp_FL_M5: 8 IRTEMP
+ SG_ RotorTemp_FL_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1325 RotorTemp_FR_M1: 8 IRTEMP
+ SG_ RotorTemp_FR_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1326 RotorTemp_FR_M2: 8 IRTEMP
+ SG_ RotorTemp_FR_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1327 RotorTemp_FR_M3: 8 IRTEMP
+ SG_ RotorTemp_FR_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1328 RotorTemp_FR_M4: 8 IRTEMP
+ SG_ RotorTemp_FR_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_FR_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1329 RotorTemp_FR_M5: 8 IRTEMP
+ SG_ RotorTemp_FR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1330 RotorTemp_RL_M1: 8 IRTEMP
+ SG_ RotorTemp_RL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1331 RotorTemp_RL_M2: 8 IRTEMP
+ SG_ RotorTemp_RL_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1332 RotorTemp_RL_M3: 8 IRTEMP
+ SG_ RotorTemp_RL_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1333 RotorTemp_RL_M4: 8 IRTEMP
+ SG_ RotorTemp_RL_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RL_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1334 RotorTemp_RL_M5: 8 IRTEMP
+ SG_ RotorTemp_RL_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 1335 RotorTemp_RR_M1: 8 IRTEMP
+ SG_ RotorTemp_RR_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1336 RotorTemp_RR_M2: 8 IRTEMP
+ SG_ RotorTemp_RR_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1337 RotorTemp_RR_M3: 8 IRTEMP
+ SG_ RotorTemp_RR_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1338 RotorTemp_RR_M4: 8 IRTEMP
+ SG_ RotorTemp_RR_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 1339 RotorTemp_RR_M5: 8 IRTEMP
+ SG_ RotorTemp_RR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+BO_ 400 VectorNav0: 8 VectorNav
+ SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+
+BO_ 401 VectorNav1: 8 VectorNav
+ SG_ VectorNav_AccelZ : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AngularRateX : 32|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+
+BO_ 402 VectorNav2: 8 VectorNav
+ SG_ VectorNav_AngularRateY : 0|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateZ : 32|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+
+BO_ 403 VectorNav3: 8 VectorNav
+ SG_ VectorNav_PosLlaL : 0|64@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 404 VectorNav4: 8 VectorNav
+ SG_ VectorNav_PosLlaO : 0|64@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 405 VectorNav5: 8 VectorNav
+ SG_ VectorNav_PosLlaA : 0|64@1+ (1,0) [0|0] "m" Vector__XXX
+
+BO_ 406 VectorNav6: 8 VectorNav
+ SG_ VectorNav_VelNedN : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelNedE : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+
+BO_ 407 VectorNav7: 4 VectorNav
+ SG_ VectorNav_VelNedD : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+
+BO_ 408 VectorNav: 64 VectorNav
+ SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelZ : 64|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AngularRateX : 96|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateY : 128|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateZ : 160|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_PosLlaL : 192|64@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_PosLlaO : 256|64@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_PosLlaA : 320|64@1+ (1,0) [0|0] "m" Vector__XXX
+ SG_ VectorNav_VelNedN : 384|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelNedE : 416|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelNedD : 448|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+
+BO_ 500 SSDB_suspension_FL_M: 2 SSDB
+ SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 501 SSDB_suspension_FR_M: 2 SSDB
+ SG_ SSDB_suspension_FR : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 502 SSDB_suspension_RL_M: 2 SSDB
+ SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 503 SSDB_suspension_RR_M: 2 SSDB
+ SG_ SSDB_suspension_RR : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+CM_ BU_ IMU "Bosch MM5.10 Inertial Measurement Unit";
+CM_ BU_ C70 "Bosch C70 Data Logger";
+CM_ BU_ PIT "EvoScann P8-A Pressure Sensor";
+CM_ BU_ IRTEMP "Izze IRTS-60 v2 IR Temperature Sensors";
+CM_ BU_ VectorNav "VectorNav IMU";
+CM_ BU_ SSDB "SSDB";
+
+SIG_VALTYPE_ 400 VectorNav_AccelX : 1;
+SIG_VALTYPE_ 400 VectorNav_AccelY : 1;
+SIG_VALTYPE_ 401 VectorNav_AccelZ : 1;
+SIG_VALTYPE_ 401 VectorNav_AngularRateX : 1;
+SIG_VALTYPE_ 402 VectorNav_AngularRateY : 1;
+SIG_VALTYPE_ 402 VectorNav_AngularRateZ : 1;
+SIG_VALTYPE_ 403 VectorNav_PosLlaL : 2;
+SIG_VALTYPE_ 404 VectorNav_PosLlaO : 2;
+SIG_VALTYPE_ 405 VectorNav_PosLlaA : 2;
+SIG_VALTYPE_ 406 VectorNav_VelNedN : 1;
+SIG_VALTYPE_ 406 VectorNav_VelNedE : 1;
+SIG_VALTYPE_ 407 VectorNav_VelNedD : 1;
+SIG_VALTYPE_ 408 VectorNav_AccelX : 1;
+SIG_VALTYPE_ 408 VectorNav_AccelY : 1;
+SIG_VALTYPE_ 408 VectorNav_AccelZ : 1;
+SIG_VALTYPE_ 408 VectorNav_AngularRateX : 1;
+SIG_VALTYPE_ 408 VectorNav_AngularRateY : 1;
+SIG_VALTYPE_ 408 VectorNav_AngularRateZ : 1;
+SIG_VALTYPE_ 408 VectorNav_PosLlaL : 2;
+SIG_VALTYPE_ 408 VectorNav_PosLlaO : 2;
+SIG_VALTYPE_ 408 VectorNav_PosLlaA : 2;
+SIG_VALTYPE_ 408 VectorNav_VelNedN : 1;
+SIG_VALTYPE_ 408 VectorNav_VelNedE : 1;
+SIG_VALTYPE_ 408 VectorNav_VelNedD : 1;

@@ -580,6 +580,12 @@ BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_Flag_CommTimeout : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
 
+BO_ 504 SSDB_brake_pressure_M: 2 SSDB
+ SG_ SSDB_brake_pressure : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 505 SSDB_steering_angle_M: 2 SSDB
+ SG_ SSDB_steering_angle : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
 
 CM_ BU_ C70 "Bosch C70 Data Logger";
 CM_ BU_ VC "Vehicle Controller";
@@ -587,6 +593,7 @@ CM_ BU_ MCU "Motor Control Unit";
 CM_ BU_ BMS "Battery Management System";
 CM_ BU_ CHG "Elcon HK-J Charger";
 CM_ BU_ DASH "Dashboard Display";
+CM_ BU_ SSDB "SSDB";
 CM_ SG_ 601 BMS_Overview_Drains "Number of cells currently draining";
 CM_ BO_ 1790 "Wheel speeds, relayed by C70";
 CM_ BO_ 1791 "Brake Pressures, relayed by C70";
