@@ -1,4 +1,4 @@
-VERSION "f32"
+VERSION "f33"
 
 
 NS_ : 
@@ -33,8 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: C70 VC MCU BMS CHG DASH PBX
-
+BU_: C70 VC BMS CHG DASH PBX
 
 BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_Drains : 51|7@1+ (1,0) [0|76] "" Vector__XXX
@@ -114,168 +113,9 @@ BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Current : 11|14@1+ (0.01,0) [0|100] "A" Vector__XXX
  SG_ PBX_PumpsOn : 25|1@1+ (1,0) [0|1] ""  VC
 
-BO_ 173 MCU_Modulation_And_Flux_Info: 8 MCU
- SG_ D4_Iq_Command : 48|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D3_Id_Command : 32|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D2_Flux_Weakening_Output : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D1_Modulation_Index : 0|16@1- (0.0001,0) [-3.2768|3.2767] "" Vector__XXX
-
-BO_ 172 MCU_Torque_And_Timer_Info: 8 MCU
- SG_ D3_Power_On_Timer : 32|32@1+ (0.003,0) [0|12884800] "Sec" Vector__XXX
- SG_ D2_Torque_Feedback : 16|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
- SG_ D1_Commanded_Torque : 0|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
-
-BO_ 194 MCU_Read_Write_Param_Response: 8 MCU
- SG_ D2_Write_Success : 16|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Data_Response : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ D1_Parameter_Address_Response : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 193 MCU_Read_Write_Param_Command: 8 VC
- SG_ D3_Data_Command : 32|16@1- (1,0) [-32768|32767] ""  MCU
- SG_ D2_Read_Write_Command : 16|1@1+ (1,0) [0|1] ""  MCU
- SG_ D1_Parameter_Address_Command : 0|16@1+ (1,0) [0|65535] ""  MCU
-
-BO_ 192 MCU_Command_Message: 8 VC
- SG_ Inverter_Enable : 40|1@1+ (1,0) [0|1] "Bit"  MCU
- SG_ Direction_Command : 32|1@1+ (1,0) [0|1] "Bit"  MCU
- SG_ Speed_Command : 16|16@1- (1,0) [-32768|32767] "rpm"  MCU
- SG_ Torque_Command : 0|16@1- (0.1,0) [-3276.8|3276.7] "Nm"  MCU
- SG_ Inverter_Discharge : 41|1@1+ (1,0) [0|1] "Bit"  MCU
- SG_ Torque_Limit_Command : 48|16@1- (0.1,0) [-3276.8|3276.7] "Nm"  MCU
- SG_ Speed_Mode_Enable : 42|1@1+ (1,0) [0|1] "Bit"  MCU
- SG_ RollingCounter : 44|4@1+ (1,0) [0|15] "Bits"  MCU
-
-BO_ 171 MCU_Fault_Codes: 8 MCU
- SG_ D4_Run_Fault_Hi : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D2_Post_Fault_Hi : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D3_Run_Fault_Lo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D1_Post_Fault_Lo : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 170 MCU_Internal_States: 8 MCU
- SG_ D7_Direction_Command : 56|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D6_Inverter_Enable_State : 48|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Relay_3_Status : 26|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Relay_4_Status : 27|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Relay_2_Status : 25|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D4_Inverter_Run_Mode : 32|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D5_Inverter_Command_Mode : 40|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Relay_1_Status : 24|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D2_Inverter_State : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ D1_VSM_State : 0|8@1+ (1,0) [0|15] "" Vector__XXX
- SG_ D6_Inverter_Enable_Lockout : 55|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D4_Inverter_Discharge_State : 37|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ D3_Relay_5_Status : 28|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_Relay_6_Status : 29|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D7_BMS_Active : 57|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D7_BMS_Torque_Limiting : 58|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D7_Max_Speed_Limiting : 59|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D7_Low_Speed_Limiting : 61|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D5_Rolling_Counter : 44|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ D1_PWM_Frequency : 8|8@1+ (1,0) [0|255] "kHz" Vector__XXX
- SG_ D6_Start_Mode_Active : 54|1@1+ (1,0) [0|1] "" Vector__XXX
-
-BO_ 169 MCU_Internal_Voltages: 8 MCU
- SG_ D4_Reference_Voltage_12_0 : 48|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
- SG_ D3_Reference_Voltage_5_0 : 32|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
- SG_ D2_Reference_Voltage_2_5 : 16|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
- SG_ D1_Reference_Voltage_1_5 : 0|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
-
-BO_ 168 MCU_Flux_ID_IQ_Info: 8 MCU
- SG_ D4_Iq : 48|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D3_Id : 32|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D2_Flux_Feedback : 16|16@1- (0.001,0) [-32.768|32.767] "Wb" Vector__XXX
- SG_ D1_Flux_Command : 0|16@1- (0.001,0) [-32.768|32.767] "Wb" Vector__XXX
-
-BO_ 167 MCU_Voltage_Info: 8 MCU
- SG_ D4_VBC_Vq_Voltage : 48|16@1- (0.1,0) [-3276.8|3276.7] "V" Vector__XXX
- SG_ D3_VAB_Vd_Voltage : 32|16@1- (0.1,0) [-3276.8|3276.7] "V" Vector__XXX
- SG_ D2_Output_Voltage : 16|16@1- (0.1,0) [-3276.8|3276.7] "V" Vector__XXX
- SG_ D1_DC_Bus_Voltage : 0|16@1- (0.1,0) [-3276.8|3276.7] "V" Vector__XXX
-
-BO_ 166 MCU_Current_Info: 8 MCU
- SG_ D4_DC_Bus_Current : 48|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D3_Phase_C_Current : 32|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D2_Phase_B_Current : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
- SG_ D1_Phase_A_Current : 0|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
-
-BO_ 165 MCU_Motor_Position_Info: 8 MCU
- SG_ D4_Delta_Resolver_Filtered : 48|16@1- (0.1,0) [-3276.8|3276.7] "deg" Vector__XXX
- SG_ D3_Electrical_Output_Frequency : 32|16@1- (0.1,0) [-3276.8|3276.7] "hz" Vector__XXX
- SG_ D2_Motor_Speed : 16|16@1- (1,0) [-32768|32767] "rpm"  DASH
- SG_ D1_Motor_Angle_Electrical : 0|16@1+ (0.1,0) [0|6553.5] "deg" Vector__XXX
-
-BO_ 164 MCU_Digital_Input_Status: 8 MCU
- SG_ D5_Digital_Input_5 : 32|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D4_Digital_Input_4 : 24|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D3_Digital_Input_3 : 16|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D2_Digital_Input_2 : 8|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D1_Digital_Input_1 : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D6_Digital_Input_6 : 40|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D7_Digital_Input_7 : 48|1@1+ (1,0) [0|1] "boolean" Vector__XXX
- SG_ D8_Digital_Input_8 : 56|1@1+ (1,0) [0|1] "boolean" Vector__XXX
-
-BO_ 163 MCU_Analog_Input_Voltages: 8 MCU
- SG_ D4_Analog_Input_4 : 32|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
- SG_ D3_Analog_Input_3 : 20|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
- SG_ D2_Analog_Input_2 : 10|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
- SG_ D1_Analog_Input_1 : 0|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
- SG_ D5_Analog_Input_5 : 42|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
- SG_ D6_Analog_Input_6 : 52|10@1+ (0.01,0) [0|10.23] "V" Vector__XXX
-
-BO_ 162 MCU_Temperature_Set_3: 8 MCU
- SG_ D4_Torque_Shudder : 48|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
- SG_ D3_Motor_Temperature : 32|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D2_RTD5_Temperature : 16|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D1_RTD4_Temperature : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
-
-BO_ 161 MCU_Temperature_Set_2: 8 MCU
- SG_ D4_RTD3_Temperature : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D3_RTD2_Temperature : 32|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D2_RTD1_Temperature : 16|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D1_Control_Board_Temperature : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
-
-BO_ 160 MCU_Temperature_Set_1: 8 MCU
- SG_ D4_Gate_Driver_Board : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D3_Module_C : 32|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D2_Module_B : 16|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ D1_Module_A : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
-
-BO_ 174 MCU_Firmware_Info: 8 MCU
- SG_ D1_Project_Code_EEP_Ver : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D2_SW_Version : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D3_DateCode_MMDD : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ D4_DateCode_YYYY : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 175 MCU_Diag_Data: 8 MCU
- SG_ D1_Buffer_Record : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ D2_Buffer_Segment : 8|8@1+ (1,0) [0|5] "" Vector__XXX
- SG_ D3_Diag_Data_1 : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ D4_Diag_Data_2 : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ D5_Diag_Data_3 : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
-
-BO_ 471 MCU_U2C_Command_Txd: 8 MCU
- SG_ D1_ID_Byte : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ D2_Setpoint_Calc : 8|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 469 MCU_U2C_Message_Rxd: 8 MCU
- SG_ D1_HV_Input_Current_Sensor_Valid : 4|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D2_14V_Master_Fault : 7|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D3_HV_Input_Current : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ D4_DTC_Status : 16|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ D5_DTC_Index : 19|5@1+ (1,0) [0|31] "" Vector__XXX
- SG_ D6_14V_Monitor : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ D7_14V_Conditional : 39|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ D8_14V_Current_Monitor : 48|7@1+ (1,0) [0|127] "" Vector__XXX
-
 BO_ 514 BMS_Current_Limit: 8 BMS
  SG_ D1_Max_Discharge_Current : 0|16@1+ (1,0) [0|1000] "A" Vector__XXX
  SG_ D2_Max_Charge_Current : 16|16@1+ (1,0) [0|1000] "A" Vector__XXX
-
-BO_ 176 MCU_Fast_Info: 8 MCU
- SG_ Fast_Torque_Command : 0|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
- SG_ Fast_Torque_Feedback : 16|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
- SG_ Fast_Motor_Speed : 32|16@1- (1,0) [-32768|32767] "rpm" Vector__XXX
- SG_ Fast_DC_Bus_Voltage : 48|16@1- (0.1,0) [-3276.8|3276.7] "V" Vector__XXX
 
 BO_ 600 BMS_Status: 8 BMS
  SG_ BMS_Status_SOC : 0|8@1+ (1,0) [0|100] "%"  DASH
@@ -589,7 +429,6 @@ BO_ 505 SSDB_steering_angle_M: 2 SSDB
 
 CM_ BU_ C70 "Bosch C70 Data Logger";
 CM_ BU_ VC "Vehicle Controller";
-CM_ BU_ MCU "Motor Control Unit";
 CM_ BU_ BMS "Battery Management System";
 CM_ BU_ CHG "Elcon HK-J Charger";
 CM_ BU_ DASH "Dashboard Display";
