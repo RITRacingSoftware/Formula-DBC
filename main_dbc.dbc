@@ -44,12 +44,6 @@ BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_TempMin : 0|8@1- (1,0) [-128|127] "C" Vector__XXX
  SG_ BMS_Overview_TempMax : 8|8@1- (1,0) [-128|127] "C" Vector__XXX
 
-BO_ 1790 C70_WheelSpeeds: 8 C70
- SG_ C70_WheelSpeed_FL : 0|16@1- (1,0) [0|65536] ""  C70
- SG_ C70_WheelSpeed_FR : 16|16@1- (1,0) [0|65536] ""  C70
- SG_ C70_WheelSpeed_RL : 32|16@1- (1,0) [0|65536] ""  C70
- SG_ C70_WheelSpeed_RR : 48|16@1- (1,0) [0|65536] ""  C70
-
 BO_ 1791 C70_BrakePressures: 8 C70
  SG_ C70_BrakePressureFront : 0|16@1- (0.5,2500) [0|5000] "psi" Vector__XXX
  SG_ C70_BrakePressureRear : 16|16@1- (0.2,1250) [0|2500] "psi" Vector__XXX
@@ -420,10 +414,10 @@ BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_Flag_CommTimeout : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
 
-BO_ 504 SSDB_brake_pressure_M: 2 SSDB
- SG_ SSDB_brake_pressure : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+BO_ 504 SSDB_brake_pressure_front: 2 SSDB
+ SG_ SSDB_brake_pressure_front : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
 
-BO_ 505 SSDB_steering_angle_M: 2 SSDB
+BO_ 505 SSDB_steering_angle: 2 SSDB
  SG_ SSDB_steering_angle : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 
