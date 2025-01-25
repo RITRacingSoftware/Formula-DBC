@@ -96,13 +96,13 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_APPS_DISAG : 3|1@1+ (1,0) [0|1] ""  DASH
  SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 4|1@1+ (1,0) [0|1] ""  DASH
  SG_ VC_FaultVector_STEER_ANGLE_LOST : 5|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RL_TIMEOUT : 6|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RR_TIMEOUT : 7|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FL_TIMEOUT : 8|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FR_TIMEOUT : 9|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RL_LOST : 6|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RR_LOST : 7|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FL_LOST : 8|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FR_LOST : 9|1@1+ (1,0) [0|1] ""  DASH
  SG_ VC_FaultVector_VN_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FBPS_TIMOUT : 11|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RBPS_TIMOUT : 12|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_LOST : 11|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RBPS_LOST : 12|1@1+ (1,0) [0|1] ""  DASH
 
 BO_ 315 VC_HardFaultIndicator: 8 VC
  SG_ VC_HardFaultIndicator_task : 0|4@1+ (1,0) [0|15] ""  DASH
