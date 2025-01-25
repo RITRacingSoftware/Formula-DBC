@@ -438,7 +438,7 @@ BO_ 400 VC_RL_AMK_Setpoints: 8 VC
  SG_ VC_RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ VC_RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
 
-BO_ 401 RL_AMK_Actual_1: 8 VC
+BO_ 401 VC_RL_AMK_Actual_1: 8 VC
  SG_ VC_RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -469,7 +469,7 @@ BO_ 410 VC_RR_AMK_Setpoints: 8 VC
  SG_ VC_RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ VC_RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
 
-BO_ 410 VC_RR_AMK_Actual_1: 8 VC
+BO_ 411 VC_RR_AMK_Actual_1: 8 VC
  SG_ VC_RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -500,7 +500,7 @@ BO_ 420 VC_FL_AMK_Setpoints: 8 VC
  SG_ VC_FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ VC_FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
 
-BO_ 421 FL_AMK_Actual_1: 8 VC
+BO_ 421 VC_FL_AMK_Actual_1: 8 VC
  SG_ VC_FL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -513,13 +513,13 @@ BO_ 421 FL_AMK_Actual_1: 8 VC
  SG_ VC_FL_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
 
 BO_ 422 VC_Fl_Info1: 8 VC
- SG_ VC_RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ VC_RL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
 
 BO_ 423 VC_FL_Info2: 8 VC
- SG_ VC_FLL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ VC_FLL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
- SG_ VC_FLL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+ SG_ VC_FL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ VC_FL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 430 VC_FR_AMK_Setpoints: 8 VC
@@ -531,7 +531,7 @@ BO_ 430 VC_FR_AMK_Setpoints: 8 VC
  SG_ VC_FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ VC_FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
 
-BO_ 431 FR_AMK_Actual_1: 8 VC
+BO_ 431 VC_FR_AMK_Actual_1: 8 VC
  SG_ VC_FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
