@@ -62,7 +62,6 @@ BO_ 1875 C70_RotorTemps: 8 C70
 
 BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  DASH
- SG_ VC_Status_MC_State : 4|4@1+ (1,0) [0|15] ""  DASH
 
 BO_ 302 VC_PedalInputs: 8 VC
  SG_ VC_PedalInputs_BrakePressure : 0|16@1+ (0.1,0) [0|3000] "psi" Vector__XXX
@@ -91,10 +90,19 @@ BO_ 305 VC_ShutdownStatus: 8 VC
  SG_ VC_ShutdownStatus_precharge : 4|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 311 VC_FaultVector: 8 VC
- SG_ VC_FaultVector_BRAKE_SENSOR_IRRA : 0|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_ACCELERATOR_SENSO : 1|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_SENSOR_DISAG : 2|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 3|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_BRAKE_IRRA : 0|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_ACCEL_A_IRRA : 1|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_ACCEL_B_IRRA : 2|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DISAG : 3|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 4|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_STEER_ANGLE_LOST : 5|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RL_TIMEOUT : 6|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RR_TIMEOUT : 7|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FL_TIMEOUT : 8|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FR_TIMEOUT : 9|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_VN_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_TIMOUT : 11|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RBPS_TIMOUT : 12|1@1+ (1,0) [0|1] ""  DASH
 
 BO_ 315 VC_HardFaultIndicator: 8 VC
  SG_ VC_HardFaultIndicator_task : 0|4@1+ (1,0) [0|15] ""  DASH
@@ -413,12 +421,136 @@ BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_Flag_StartingState : 35|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CHG_Flag_CommTimeout : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
-
 BO_ 504 SSDB_brake_pressure_front: 2 SSDB
  SG_ SSDB_brake_pressure_front : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 505 SSDB_steering_angle: 2 SSDB
  SG_ SSDB_steering_angle : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+
+
+BO_ 400 VC_RL_AMK_Setpoints: 8 VC
+ SG_ VC_RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
+ SG_ VC_RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ VC_RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+
+BO_ 401 RL_AMK_Actual_1: 8 VC
+ SG_ VC_RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
+ SG_ VC_RL_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+
+BO_ 402 VC_RL_Info1: 8 VC
+ SG_ VC_RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 403 VC_RL_Info2: 8 VC
+ SG_ VC_RL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ VC_RL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+
+BO_ 410 VC_RR_AMK_Setpoints: 8 VC
+ SG_ VC_RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
+ SG_ VC_RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ VC_RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+
+BO_ 410 VC_RR_AMK_Actual_1: 8 VC
+ SG_ VC_RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
+ SG_ VC_RR_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+
+BO_ 412 VC_RR_Info1: 8 VC
+ SG_ VC_RR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 413 VC_RR_Info2: 8 VC
+ SG_ VC_RR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RR_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ VC_RR_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+
+BO_ 420 VC_FL_AMK_Setpoints: 8 VC
+ SG_ VC_FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
+ SG_ VC_FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ VC_FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+
+BO_ 421 FL_AMK_Actual_1: 8 VC
+ SG_ VC_FL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
+ SG_ VC_FL_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+
+BO_ 422 VC_Fl_Info1: 8 VC
+ SG_ VC_RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_RL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 423 VC_FL_Info2: 8 VC
+ SG_ VC_FLL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FLL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ VC_FLL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+
+BO_ 430 VC_FR_AMK_Setpoints: 8 VC
+ SG_ VC_FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
+ SG_ VC_FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ VC_FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+
+BO_ 431 FR_AMK_Actual_1: 8 VC
+ SG_ VC_FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
+ SG_ VC_FR_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+
+BO_ 432 VC_FR_Info1: 8 VC
+ SG_ VC_FR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 433 VC_FR_Info2: 8 VC
+ SG_ VC_FR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ VC_FR_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ VC_FR_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";

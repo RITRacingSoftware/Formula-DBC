@@ -51,8 +51,8 @@ BO_ 647 RL_AMK_Actual_2: 8 RL
  SG_ RL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
  
 BO_ 657 RL_AMK_RITSet1: 8 RL
- SG_ RL_ErroRList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_ErroRList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ RL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
  
 BO_ 661 RL_AMK_RITSet2: 8 RL
  SG_ RL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
