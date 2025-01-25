@@ -170,11 +170,6 @@ Var=BMS_FaultAlert_cell_comm_slave_b unsigned 6,8 /min:0 /max:255 /d:0
 
 [BMS_FaultAlert]
 DLC=8
-Mux=BMS_FaultAlert_code1 0,6 1 
-Var=BMS_FaultAlert_temp_comm_slave_b unsigned 6,8 /min:0 /max:255 /d:0
-
-[BMS_FaultAlert]
-DLC=8
 Mux=BMS_FaultAlert_code2 0,6 2 
 Var=BMS_FaultAlert_drain_comm_slave_ unsigned 6,8 /min:0 /max:255 /d:0
 
@@ -182,6 +177,11 @@ Var=BMS_FaultAlert_drain_comm_slave_ unsigned 6,8 /min:0 /max:255 /d:0
 DLC=8
 Mux=BMS_FaultAlert_code3 0,6 3 
 Var=BMS_FaultAlert_adc_error_code unsigned 6,8 /min:0 /max:255 /d:0
+
+[BMS_FaultAlert]
+DLC=8
+Mux=BMS_FaultAlert_code1 0,6 1 
+Var=BMS_FaultAlert_temp_comm_slave_b unsigned 6,8 /min:0 /max:255 /d:0
 
 [BMS_FaultAlert]
 DLC=8
@@ -232,16 +232,6 @@ Var=BMS_Voltages_A6 unsigned 53,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 
 [BMS_Voltages]
 DLC=8
-Mux=BMS_Voltages_mux1 0,8 1 
-Var=BMS_Voltages_A7 unsigned 8,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_Voltages_A8 unsigned 17,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_Voltages_A9 unsigned 26,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_Voltages_A10 unsigned 35,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_Voltages_A11 unsigned 44,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_Voltages_A12 unsigned 53,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-
-[BMS_Voltages]
-DLC=8
 Mux=BMS_Voltages_mux2 0,8 2 
 Var=BMS_Voltages_A13 unsigned 8,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_Voltages_A14 unsigned 17,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
@@ -259,6 +249,16 @@ Var=BMS_Voltages_B2 unsigned 26,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_Voltages_B3 unsigned 35,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_Voltages_B4 unsigned 44,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_Voltages_B5 unsigned 53,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+
+[BMS_Voltages]
+DLC=8
+Mux=BMS_Voltages_mux1 0,8 1 
+Var=BMS_Voltages_A7 unsigned 8,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_Voltages_A8 unsigned 17,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_Voltages_A9 unsigned 26,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_Voltages_A10 unsigned 35,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_Voltages_A11 unsigned 44,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_Voltages_A12 unsigned 53,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 
 [BMS_Voltages]
 DLC=8
@@ -362,16 +362,6 @@ Var=BMS_ThermistorVoltages_A6 unsigned 48,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.0
 
 [BMS_ThermistorVoltages]
 DLC=8
-Mux=BMS_ThermistorVoltages_mux1 0,3 1 
-Var=BMS_ThermistorVoltages_A7 unsigned 3,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_ThermistorVoltages_A8 unsigned 12,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_ThermistorVoltages_B1 unsigned 21,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_ThermistorVoltages_B2 unsigned 30,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_ThermistorVoltages_B3 unsigned 39,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-Var=BMS_ThermistorVoltages_B4 unsigned 48,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
-
-[BMS_ThermistorVoltages]
-DLC=8
 Mux=BMS_ThermistorVoltages_mux2 0,3 2 
 Var=BMS_ThermistorVoltages_B5 unsigned 3,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_ThermistorVoltages_B6 unsigned 12,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
@@ -389,6 +379,16 @@ Var=BMS_ThermistorVoltages_C5 unsigned 21,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.0
 Var=BMS_ThermistorVoltages_C6 unsigned 30,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_ThermistorVoltages_C7 unsigned 39,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 Var=BMS_ThermistorVoltages_C8 unsigned 48,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+
+[BMS_ThermistorVoltages]
+DLC=8
+Mux=BMS_ThermistorVoltages_mux1 0,3 1 
+Var=BMS_ThermistorVoltages_A7 unsigned 3,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_ThermistorVoltages_A8 unsigned 12,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_ThermistorVoltages_B1 unsigned 21,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_ThermistorVoltages_B2 unsigned 30,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_ThermistorVoltages_B3 unsigned 39,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
+Var=BMS_ThermistorVoltages_B4 unsigned 48,9 /u:V /f:0.01 /min:0 /max:5.12 /d:0.00
 
 [BMS_ThermistorVoltages]
 DLC=8
@@ -421,17 +421,6 @@ Var=BMS_Temperatures_A7 signed 51,8 /u:C /min:-128 /max:127 /d:0
 
 [BMS_Temperatures]
 DLC=8
-Mux=BMS_Temperatures_mux1 0,3 1 
-Var=BMS_Temperatures_A8 signed 3,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B1 signed 11,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B2 signed 19,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B3 signed 27,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B4 signed 35,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B5 signed 43,8 /u:C /min:-128 /max:127 /d:0
-Var=BMS_Temperatures_B6 signed 51,8 /u:C /min:-128 /max:127 /d:0
-
-[BMS_Temperatures]
-DLC=8
 Mux=BMS_Temperatures_mux2 0,3 2 
 Var=BMS_Temperatures_B7 signed 3,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Temperatures_B8 signed 11,8 /u:C /min:-128 /max:127 /d:0
@@ -451,6 +440,17 @@ Var=BMS_Temperatures_D1 signed 27,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Temperatures_D2 signed 35,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Temperatures_D3 signed 43,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Temperatures_D4 signed 51,8 /u:C /min:-128 /max:127 /d:0
+
+[BMS_Temperatures]
+DLC=8
+Mux=BMS_Temperatures_mux1 0,3 1 
+Var=BMS_Temperatures_A8 signed 3,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B1 signed 11,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B2 signed 19,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B3 signed 27,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B4 signed 35,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B5 signed 43,8 /u:C /min:-128 /max:127 /d:0
+Var=BMS_Temperatures_B6 signed 51,8 /u:C /min:-128 /max:127 /d:0
 
 [BMS_Temperatures]
 DLC=8
@@ -633,7 +633,7 @@ Var=VC_RL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 
 Var=VC_RL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=VC_RL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
-[RL_AMK_Actual_1]
+[VC_RL_AMK_Actual_1]
 ID=191h
 Type=Standard
 DLC=8
@@ -676,7 +676,7 @@ Var=VC_RR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:
 Var=VC_RR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [VC_RR_AMK_Actual_1]
-ID=19Ah
+ID=19Bh
 Type=Standard
 DLC=8
 Var=VC_RR_Status_SystemReady unsigned 8,1 /min:0 /max:1 /d:0
@@ -717,7 +717,7 @@ Var=VC_FL_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 
 Var=VC_FL_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=VC_FL_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
-[FL_AMK_Actual_1]
+[VC_FL_AMK_Actual_1]
 ID=1A5h
 Type=Standard
 DLC=8
@@ -736,16 +736,16 @@ Var=VC_FL_TempMotor signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 ID=1A6h
 Type=Standard
 DLC=8
-Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
 [VC_FL_Info2]
 ID=1A7h
 Type=Standard
 DLC=8
-Var=VC_FLL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_FLL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
-Var=VC_FLL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=VC_FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -759,7 +759,7 @@ Var=VC_FR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 
 Var=VC_FR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=VC_FR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
-[FR_AMK_Actual_1]
+[VC_FR_AMK_Actual_1]
 ID=1AFh
 Type=Standard
 DLC=8
