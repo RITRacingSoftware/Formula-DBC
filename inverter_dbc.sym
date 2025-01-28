@@ -84,14 +84,14 @@ Var=RR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 ID=292h
 Type=Standard
 DLC=8
-Var=RR_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=RR_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=RR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
 [RR_AMK_RITSet2]
 ID=296h
 Type=Standard
 DLC=8
-Var=RR_Errorlist3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=RR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=RR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
@@ -135,14 +135,14 @@ Var=FL_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 ID=293h
 Type=Standard
 DLC=8
-Var=FL_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=FL_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=FL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
 [FL_AMK_RITSet2]
 ID=297h
 Type=Standard
 DLC=8
-Var=FL_Errorlist3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 
 [FL_AMK_Setpoints]
@@ -185,14 +185,14 @@ Var=FR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 ID=294h
 Type=Standard
 DLC=8
-Var=FR_Errorlist1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=FR_Errorlist2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=FR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
 [FR_AMK_RITSet2]
 ID=298h
 Type=Standard
 DLC=8
-Var=FR_Errorlist3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 
 [FR_AMK_Setpoints]

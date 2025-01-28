@@ -88,11 +88,11 @@ BO_ 648 RR_AMK_Actual_2: 8 RR
  SG_ RR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
  
 BO_ 658 RR_AMK_RITSet1: 8 RR
- SG_ RR_Errorlist1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Errorlist2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ RR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ RR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
  
 BO_ 662 RR_AMK_RITSet2: 8 RR
- SG_ RR_Errorlist3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ RR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ RR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ RR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
  
@@ -125,11 +125,11 @@ BO_ 649 FL_AMK_Actual_2: 8 FL
  SG_ FL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
  
 BO_ 659 FL_AMK_RITSet1: 8 FL
- SG_ FL_Errorlist1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Errorlist2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
  
 BO_ 663 FL_AMK_RITSet2: 8 FL
- SG_ FL_Errorlist3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096]"V" Vector_XXX
  
@@ -162,11 +162,11 @@ BO_ 656 FR_AMK_Actual_2: 8 FR
  SG_ FR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
  
 BO_ 660 FR_AMK_RITSet1: 8 FR
- SG_ FR_Errorlist1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Errorlist2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
  
 BO_ 664 FR_AMK_RITSet2: 8 FR
- SG_ FR_Errorlist3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ FR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096]"V" Vector_XXX
 
