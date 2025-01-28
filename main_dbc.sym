@@ -646,22 +646,29 @@ Var=VC_RL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_RL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_RL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_RL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=VC_RL_TempMotor signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
 
-[VC_RL_Info1]
+[VC_RL_Info_1]
 ID=192h
 Type=Standard
 DLC=8
 Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
-[VC_RL_Info2]
+[VC_RL_Info_2]
 ID=193h
 Type=Standard
 DLC=8
 Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_RL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
 Var=VC_RL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+
+[VC_RL_Info_3]
+ID=194h
+Type=Standard
+DLC=8
+Var=VC_RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -688,22 +695,29 @@ Var=VC_RR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_RR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_RR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_RR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=VC_RR_TempMotor signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
 
-[VC_RR_Info1]
+[VC_RR_Info_1]
 ID=19Ch
 Type=Standard
 DLC=8
 Var=VC_RR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_RR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
-[VC_RR_Info2]
+[VC_RR_Info_2]
 ID=19Dh
 Type=Standard
 DLC=8
 Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_RR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
 Var=VC_RR_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+
+[VC_RR_Info_3]
+ID=19Eh
+Type=Standard
+DLC=8
+Var=VC_RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -730,22 +744,29 @@ Var=VC_FL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_FL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_FL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_FL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=VC_FL_TempMotor signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
 
-[VC_Fl_Info1]
+[VC_Fl_Info_1]
 ID=1A6h
 Type=Standard
 DLC=8
 Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
-[VC_FL_Info2]
+[VC_FL_Info_2]
 ID=1A7h
 Type=Standard
 DLC=8
 Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
 Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+
+[VC_FR_Info_3]
+ID=1A8h
+Type=Standard
+DLC=8
+Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -772,20 +793,27 @@ Var=VC_FR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_FR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_FR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_FR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=VC_FR_TempMotor signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
 
-[VC_FR_Info1]
+[VC_FR_Info_1]
 ID=1B0h
 Type=Standard
 DLC=8
 Var=VC_FR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_FR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
 
-[VC_FR_Info2]
+[VC_FR_Info_2]
 ID=1B1h
 Type=Standard
 DLC=8
 Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_FR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
 Var=VC_FR_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+
+[VC_FR_Info_3]
+ID=1B2h
+Type=Standard
+DLC=8
+Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 

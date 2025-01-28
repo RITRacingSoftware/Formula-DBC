@@ -448,16 +448,20 @@ BO_ 401 VC_RL_AMK_Actual_1: 8 VC
  SG_ VC_RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_RL_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_RL_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
 
-BO_ 402 VC_RL_Info1: 8 VC
+BO_ 402 VC_RL_Info_1: 8 VC
  SG_ VC_RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
 
-BO_ 403 VC_RL_Info2: 8 VC
+BO_ 403 VC_RL_Info_2: 8 VC
  SG_ VC_RL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
  SG_ VC_RL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+BO_ 404 VC_RL_Info_3: 8 VC
+ SG_ VC_RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_RL_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 410 VC_RR_AMK_Setpoints: 8 VC
@@ -479,16 +483,20 @@ BO_ 411 VC_RR_AMK_Actual_1: 8 VC
  SG_ VC_RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_RR_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_RR_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
 
-BO_ 412 VC_RR_Info1: 8 VC
+BO_ 412 VC_RR_Info_1: 8 VC
  SG_ VC_RR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
 
-BO_ 413 VC_RR_Info2: 8 VC
+BO_ 413 VC_RR_Info_2: 8 VC
  SG_ VC_RR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
  SG_ VC_RR_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+BO_ 414 VC_RR_Info_3: 8 VC
+ SG_ VC_RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_RR_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 420 VC_FL_AMK_Setpoints: 8 VC
@@ -510,16 +518,20 @@ BO_ 421 VC_FL_AMK_Actual_1: 8 VC
  SG_ VC_FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_FL_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_FL_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
 
-BO_ 422 VC_Fl_Info1: 8 VC
+BO_ 422 VC_Fl_Info_1: 8 VC
  SG_ VC_FL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
 
-BO_ 423 VC_FL_Info2: 8 VC
+BO_ 423 VC_FL_Info_2: 8 VC
  SG_ VC_FL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
  SG_ VC_FL_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+BO_ 424 VC_FR_Info_3: 8 VC
+ SG_ VC_FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_FR_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 430 VC_FR_AMK_Setpoints: 8 VC
@@ -541,16 +553,20 @@ BO_ 431 VC_FR_AMK_Actual_1: 8 VC
  SG_ VC_FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_FR_TempMotor : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_FR_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
 
-BO_ 432 VC_FR_Info1: 8 VC
+BO_ 432 VC_FR_Info_1: 8 VC
  SG_ VC_FR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_ErrorList2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
 
-BO_ 433 VC_FR_Info2: 8 VC
+BO_ 433 VC_FR_Info_2: 8 VC
  SG_ VC_FR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_ErrorInfo : 32|16@1+ (1,0) [-3276.8|3276.7] "" Vector_XXX
  SG_ VC_FR_TempInverter : 48|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
+
+BO_ 434 VC_FR_Info_3: 8 VC
+ SG_ VC_FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
+ SG_ VC_FR_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";

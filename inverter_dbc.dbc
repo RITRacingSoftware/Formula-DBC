@@ -68,9 +68,6 @@ BO_ 388 RL_AMK_Setpoints: 8 RL
  SG_ RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
 
-BO_ 392 RL_AMK_Setpoints2: 2 RL
- SG_ RL_ActualSpeed : 0|16@1- (1,0) [-1000|1000] "rpm" Vector_XXX
-
 
 BO_ 644 RR_AMK_Actual_1: 8 RR
  SG_ RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -107,9 +104,6 @@ BO_ 389 RR_AMK_Setpoints: 8 RR
  SG_ RR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
  SG_ RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
-
-BO_ 393 RR_AMK_Setpoints2: 2 RR
- SG_ RR_ActualSpeed : 0|16@1- (1,0) [-1000|1000] "rpm" Vector_XXX
  
  
 BO_ 645 FL_AMK_Actual_1: 8 FL
@@ -147,9 +141,7 @@ BO_ 390 FL_AMK_Setpoints: 8 FL
  SG_ FL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
  SG_ FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
- 
-BO_ 400 FL_AMK_Setpoints2: 2 FL
- SG_ FL_ActualSpeed : 0|16@1- (1,0) [-1000|1000] "rpm" Vector_XXX
+
  
 BO_ 646 FR_AMK_Actual_1: 8 FR
  SG_ FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -186,6 +178,3 @@ BO_ 391 FR_AMK_Setpoints: 8 FR
  SG_ FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
  SG_ FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
  SG_ FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
-
-BO_ 401 FR_AMK_Setpoints2: 2 FR
- SG_ FR_ActualSpeed : 0|16@1- (1,0) [-1000|1000] "rpm" Vector_XXX
