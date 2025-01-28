@@ -1,0 +1,499 @@
+FormatVersion=5.0 // Do not edit this line!
+Title="canmatrix-Export"
+{ENUMS}
+
+
+{SENDRECEIVE}
+
+[C70_BrakePressures]
+ID=6FFh
+Type=Standard
+DLC=8
+Var=C70_BrakePressureFront signed 0,16 /u:psi /f:0.2 /o:1250 /min:0 /max:2500 /d:0.0
+Var=C70_BrakePressureRear signed 16,16 /u:psi /f:0.2 /o:1250 /min:0 /max:2500 /d:0.0
+
+[IMU_Sync]
+ID=170h
+Type=Standard
+DLC=8
+
+[IMU_Tx1]
+ID=174h
+Type=Standard
+DLC=8
+Var=IMU_Yaw_Rate unsigned 0,16 /u:deg/s /f:0.005 /o:-163.84 /min:-163.84 /max:163.83 /d:0.000
+Var=IMU_Accel_Y unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
+
+[IMU_Tx2]
+ID=178h
+Type=Standard
+DLC=8
+Var=IMU_Roll_Rate unsigned 0,16 /u:deg/s /f:0.005 /o:-163.84 /min:-163.84 /max:163.835 /d:0.000
+Var=IMU_Accel_X unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
+
+[IMU_Tx3]
+ID=17Ch
+Type=Standard
+DLC=8
+Var=IMU_Accel_Z unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
+
+[PIT_Pressures]
+ID=180h
+Type=Standard
+DLC=8
+Mux=PIT_PressureMux0 0,8 0 -m 
+Var=PIT_Pressure1 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure2 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure3 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_PressureRange unsigned 56,8 /min:0 /max:3 /d:0
+
+[PIT_Pressures]
+DLC=8
+Mux=PIT_PressureMux1 0,8 1 -m 
+Var=PIT_Pressure4 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure5 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure6 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Temperature signed 56,8 /u:degC /min:0 /max:0 /d:0
+
+[PIT_Pressures]
+DLC=8
+Mux=PIT_PressureMux2 0,8 2 -m 
+Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
+
+[TireTemp_FL_M1]
+ID=4C4h
+Type=Standard
+DLC=8
+Var=TireTemp_FL_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FL_M2]
+ID=4C5h
+Type=Standard
+DLC=8
+Var=TireTemp_FL_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FL_M3]
+ID=4C6h
+Type=Standard
+DLC=8
+Var=TireTemp_FL_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FL_M4]
+ID=4C7h
+Type=Standard
+DLC=8
+Var=TireTemp_FL_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FL_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FL_M5]
+ID=4C8h
+Type=Standard
+DLC=8
+Var=TireTemp_FL_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[TireTemp_FR_M1]
+ID=4C9h
+Type=Standard
+DLC=8
+Var=TireTemp_FR_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FR_M2]
+ID=4CAh
+Type=Standard
+DLC=8
+Var=TireTemp_FR_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FR_M3]
+ID=4CBh
+Type=Standard
+DLC=8
+Var=TireTemp_FR_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FR_M4]
+ID=4CCh
+Type=Standard
+DLC=8
+Var=TireTemp_FR_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_FR_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_FR_M5]
+ID=4CDh
+Type=Standard
+DLC=8
+Var=TireTemp_FR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[TireTemp_RL_M1]
+ID=4CEh
+Type=Standard
+DLC=8
+Var=TireTemp_RL_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RL_M2]
+ID=4CFh
+Type=Standard
+DLC=8
+Var=TireTemp_RL_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RL_M3]
+ID=4D0h
+Type=Standard
+DLC=8
+Var=TireTemp_RL_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RL_M4]
+ID=4D1h
+Type=Standard
+DLC=8
+Var=TireTemp_RL_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RL_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RL_M5]
+ID=4D2h
+Type=Standard
+DLC=8
+Var=TireTemp_RL_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[TireTemp_RR_M1]
+ID=4D3h
+Type=Standard
+DLC=8
+Var=TireTemp_RR_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RR_M2]
+ID=4D4h
+Type=Standard
+DLC=8
+Var=TireTemp_RR_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RR_M3]
+ID=4D5h
+Type=Standard
+DLC=8
+Var=TireTemp_RR_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RR_M4]
+ID=4D6h
+Type=Standard
+DLC=8
+Var=TireTemp_RR_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=TireTemp_RR_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[TireTemp_RR_M5]
+ID=4D7h
+Type=Standard
+DLC=8
+Var=TireTemp_RR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[RotorTemp_FL_M1]
+ID=528h
+Type=Standard
+DLC=8
+Var=RotorTemp_FL_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FL_M2]
+ID=529h
+Type=Standard
+DLC=8
+Var=RotorTemp_FL_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FL_M3]
+ID=52Ah
+Type=Standard
+DLC=8
+Var=RotorTemp_FL_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FL_M4]
+ID=52Bh
+Type=Standard
+DLC=8
+Var=RotorTemp_FL_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FL_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FL_M5]
+ID=52Ch
+Type=Standard
+DLC=8
+Var=RotorTemp_FL_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[RotorTemp_FR_M1]
+ID=52Dh
+Type=Standard
+DLC=8
+Var=RotorTemp_FR_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FR_M2]
+ID=52Eh
+Type=Standard
+DLC=8
+Var=RotorTemp_FR_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FR_M3]
+ID=52Fh
+Type=Standard
+DLC=8
+Var=RotorTemp_FR_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FR_M4]
+ID=530h
+Type=Standard
+DLC=8
+Var=RotorTemp_FR_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_FR_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_FR_M5]
+ID=531h
+Type=Standard
+DLC=8
+Var=RotorTemp_FR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[RotorTemp_RL_M1]
+ID=532h
+Type=Standard
+DLC=8
+Var=RotorTemp_RL_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RL_M2]
+ID=533h
+Type=Standard
+DLC=8
+Var=RotorTemp_RL_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RL_M3]
+ID=534h
+Type=Standard
+DLC=8
+Var=RotorTemp_RL_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RL_M4]
+ID=535h
+Type=Standard
+DLC=8
+Var=RotorTemp_RL_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RL_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RL_M5]
+ID=536h
+Type=Standard
+DLC=8
+Var=RotorTemp_RL_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[RotorTemp_RR_M1]
+ID=537h
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RR_M2]
+ID=538h
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RR_M3]
+ID=539h
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RR_M4]
+ID=53Ah
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_RR_M5]
+ID=53Bh
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
+[VectorNav0]
+ID=190h
+Type=Standard
+DLC=8
+Var=VectorNav_AccelX float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelY float 32,32 /u:m/s^2 /min:0 /max:0 /d:0
+
+[VectorNav1]
+ID=191h
+Type=Standard
+DLC=8
+Var=VectorNav_AccelZ float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateX float 32,32 /u:rad/s /min:0 /max:0 /d:0
+
+[VectorNav2]
+ID=192h
+Type=Standard
+DLC=8
+Var=VectorNav_AngularRateY float 0,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateZ float 32,32 /u:rad/s /min:0 /max:0 /d:0
+
+[VectorNav3]
+ID=193h
+Type=Standard
+DLC=8
+Var=VectorNav_PosLlaL float 0,64 /u:deg /min:0 /max:0 /d:0
+
+[VectorNav4]
+ID=194h
+Type=Standard
+DLC=8
+Var=VectorNav_PosLlaO float 0,64 /u:deg /min:0 /max:0 /d:0
+
+[VectorNav5]
+ID=195h
+Type=Standard
+DLC=8
+Var=VectorNav_PosLlaA float 0,64 /u:m /min:0 /max:0 /d:0
+
+[VectorNav6]
+ID=196h
+Type=Standard
+DLC=8
+Var=VectorNav_VelNedN float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedE float 32,32 /u:m/s /min:0 /max:0 /d:0
+
+[VectorNav7]
+ID=197h
+Type=Standard
+DLC=4
+Var=VectorNav_VelNedD float 0,32 /u:m/s /min:0 /max:0 /d:0
+
+[VectorNav]
+ID=198h
+Type=Standard
+DLC=64
+Var=VectorNav_AccelX float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelY float 32,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelZ float 64,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateX float 96,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateY float 128,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateZ float 160,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaL float 192,64 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaO float 256,64 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaA float 320,64 /u:m /min:0 /max:0 /d:0
+Var=VectorNav_VelNedN float 384,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedE float 416,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedD float 448,32 /u:m/s /min:0 /max:0 /d:0
+
+[SSDB_suspension_FL_M]
+ID=1F4h
+Type=Standard
+DLC=2
+Var=SSDB_suspension_FL unsigned 0,12 /min:0 /max:4095 /d:0
+
+[SSDB_suspension_FR_M]
+ID=1F5h
+Type=Standard
+DLC=2
+Var=SSDB_suspension_FR unsigned 0,12 /min:0 /max:4095 /d:0
+
+[SSDB_suspension_RL_M]
+ID=1F6h
+Type=Standard
+DLC=2
+Var=SSDB_suspension_RL unsigned 0,12 /min:0 /max:4095 /d:0
+
+[SSDB_suspension_RR_M]
+ID=1F7h
+Type=Standard
+DLC=2
+Var=SSDB_suspension_RR unsigned 0,12 /min:0 /max:4095 /d:0
+
+[VC_brake_pressure_rear]
+ID=064h
+Type=Standard
+DLC=2
+Var=VC_brake_pressure_rear unsigned 0,12 /min:0 /max:4095 /d:0
+
