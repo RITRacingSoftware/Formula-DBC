@@ -8,7 +8,7 @@ VIRTUALENV_DIR=virtualenv
 #fi
 
 #DBC_FILENAME=$(basename $1 .dbc)
-DBC_FILENAME=main_dbc
+DBC_FILENAME=inverter_dbc
 
 
 # Create virtualenv if doesn't exist
