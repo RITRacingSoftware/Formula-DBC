@@ -129,7 +129,7 @@ BO_ 659 FL_AMK_RITSet1: 8 FL
  SG_ FL_Errorlist2 : 32|32@1+ (1,0) [0|1] "" Vector_XXX
  
 BO_ 663 FL_AMK_RITSet2: 8 FL
- SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
+ SG_ FL_Errorlist3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096]"V" Vector_XXX
  
