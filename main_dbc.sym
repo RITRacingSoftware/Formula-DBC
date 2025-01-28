@@ -668,7 +668,6 @@ ID=194h
 Type=Standard
 DLC=8
 Var=VC_RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=VC_RL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -717,7 +716,6 @@ ID=19Eh
 Type=Standard
 DLC=8
 Var=VC_RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=VC_RR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -766,7 +764,6 @@ ID=1A8h
 Type=Standard
 DLC=8
 Var=VC_FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=VC_FL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -815,5 +812,4 @@ ID=1B2h
 Type=Standard
 DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=VC_FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
