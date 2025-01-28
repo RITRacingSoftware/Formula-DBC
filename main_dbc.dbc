@@ -461,7 +461,6 @@ BO_ 403 VC_RL_Info_2: 8 VC
 
 BO_ 404 VC_RL_Info_3: 8 VC
  SG_ VC_RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ VC_RL_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 410 VC_RR_AMK_Setpoints: 8 VC
@@ -496,7 +495,6 @@ BO_ 413 VC_RR_Info_2: 8 VC
 
 BO_ 414 VC_RR_Info_3: 8 VC
  SG_ VC_RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ VC_RR_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 420 VC_FL_AMK_Setpoints: 8 VC
@@ -531,7 +529,6 @@ BO_ 423 VC_FL_Info_2: 8 VC
 
 BO_ 424 VC_FL_Info_3: 8 VC
  SG_ VC_FL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ VC_FL_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 BO_ 430 VC_FR_AMK_Setpoints: 8 VC
@@ -566,7 +563,6 @@ BO_ 433 VC_FR_Info_2: 8 VC
 
 BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ VC_FR_TempInverter : 16|16@1- (0.1,0) [-32768|32767] "" Vector_XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";
