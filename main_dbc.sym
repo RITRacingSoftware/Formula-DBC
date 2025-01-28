@@ -761,12 +761,12 @@ Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=VC_FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
 Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
-[VC_FR_Info_3]
+[VC_FL_Info_3]
 ID=1A8h
 Type=Standard
 DLC=8
-Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=VC_FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
