@@ -58,7 +58,12 @@ BO_ 661 RL_AMK_RITSet2: 8 RL
  SG_ RL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ RL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ RL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
- 
+
+BO_ 665 RL_AMK_RITSet3: 8 RL
+ SG_ RL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ RL_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
+ SG_ RL_HoldingTorque : 48|16@1- (0.1, 0) [-32768|32767] "Nm" Vector_XXX
+
 BO_ 388 RL_AMK_Setpoints: 8 RL
  SG_ RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -95,7 +100,12 @@ BO_ 662 RR_AMK_RITSet2: 8 RR
  SG_ RR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ RR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ RR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
- 
+
+BO_ 666 RR_AMK_RITSet3: 8 RR
+ SG_ RR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ RR_ActivePower : 16|48@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
+ SG_ RR_HoldingTorque : 48|16@1- (0.1, 0) [-32768|32767] "Nm" Vector_XXX
+
 BO_ 389 RR_AMK_Setpoints: 8 RR
  SG_ RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -132,7 +142,12 @@ BO_ 663 FL_AMK_RITSet2: 8 FL
  SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096]"V" Vector_XXX
- 
+
+BO_ 667 FL_AMK_RITSet3: 8 FL
+ SG_ FL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ FL_ActivePower : 16|48@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
+ SG_ FL_HoldingTorque : 48|16@1- (0.1, 0) [-32768|32767] "Nm" Vector_XXX
+
 BO_ 390 FL_AMK_Setpoints: 8 FL
  SG_ FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
@@ -169,6 +184,11 @@ BO_ 664 FR_AMK_RITSet2: 8 FR
  SG_ FR_ErrorList3 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
  SG_ FR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
  SG_ FR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096]"V" Vector_XXX
+
+BO_ 668 FR_AMK_RITSet3: 8 FR
+ SG_ FR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ FR_ActivePower : 16|48@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
+ SG_ FR_HoldingTorque : 48|16@1- (0.1, 0) [-32768|32767] "Nm" Vector_XXX
 
 BO_ 391 FR_AMK_Setpoints: 8 FR
  SG_ FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX

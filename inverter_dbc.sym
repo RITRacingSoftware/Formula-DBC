@@ -44,6 +44,14 @@ Var=RL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=RL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=RL_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
+[RL_AMK_RITSet3]
+ID=299h
+Type=Standard
+DLC=8
+Var=RL_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=RL_ActivePower signed 16,32 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=RL_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
+
 [RL_AMK_Setpoints]
 ID=184h
 Type=Standard
@@ -95,6 +103,14 @@ Var=RR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=RR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=RR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
+[RR_AMK_RITSet3]
+ID=29Ah
+Type=Standard
+DLC=8
+Var=RR_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=RR_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=RR_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
+
 [RR_AMK_Setpoints]
 ID=185h
 Type=Standard
@@ -145,6 +161,14 @@ DLC=8
 Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 
+[FL_AMK_RITSet3]
+ID=29Bh
+Type=Standard
+DLC=8
+Var=FL_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=FL_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=FL_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
+
 [FL_AMK_Setpoints]
 ID=186h
 Type=Standard
@@ -194,6 +218,14 @@ Type=Standard
 DLC=8
 Var=FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+
+[FR_AMK_RITSet3]
+ID=29Ch
+Type=Standard
+DLC=8
+Var=FR_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=FR_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=FR_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [FR_AMK_Setpoints]
 ID=187h
