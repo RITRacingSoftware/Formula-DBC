@@ -5,38 +5,6 @@ Title="canmatrix-Export"
 
 {SENDRECEIVE}
 
-[C70_BrakePressures]
-ID=6FFh
-Type=Standard
-DLC=8
-Var=C70_BrakePressureFront signed 0,16 /u:psi /f:0.2 /o:1250 /min:0 /max:2500 /d:0.0
-Var=C70_BrakePressureRear signed 16,16 /u:psi /f:0.2 /o:1250 /min:0 /max:2500 /d:0.0
-
-[IMU_Sync]
-ID=170h
-Type=Standard
-DLC=8
-
-[IMU_Tx1]
-ID=174h
-Type=Standard
-DLC=8
-Var=IMU_Yaw_Rate unsigned 0,16 /u:deg/s /f:0.005 /o:-163.84 /min:-163.84 /max:163.83 /d:0.000
-Var=IMU_Accel_Y unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
-
-[IMU_Tx2]
-ID=178h
-Type=Standard
-DLC=8
-Var=IMU_Roll_Rate unsigned 0,16 /u:deg/s /f:0.005 /o:-163.84 /min:-163.84 /max:163.835 /d:0.000
-Var=IMU_Accel_X unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
-
-[IMU_Tx3]
-ID=17Ch
-Type=Standard
-DLC=8
-Var=IMU_Accel_Z unsigned 32,16 /u:g /f:0.000127465 /o:-4.1768 /min:-4.1768 /max:4.1765 /d:-0.000026880
-
 [PIT_Pressures]
 ID=180h
 Type=Standard
@@ -49,18 +17,18 @@ Var=PIT_PressureRange unsigned 56,8 /min:0 /max:3 /d:0
 
 [PIT_Pressures]
 DLC=8
+Mux=PIT_PressureMux2 0,8 2 -m 
+Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
+
+[PIT_Pressures]
+DLC=8
 Mux=PIT_PressureMux1 0,8 1 -m 
 Var=PIT_Pressure4 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure5 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure6 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Temperature signed 56,8 /u:degC /min:0 /max:0 /d:0
-
-[PIT_Pressures]
-DLC=8
-Mux=PIT_PressureMux2 0,8 2 -m 
-Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
 
 [TireTemp_FL_M1]
 ID=4C4h

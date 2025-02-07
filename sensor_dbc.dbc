@@ -33,25 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: IMU C70 PIT IRTEMP
-
-
-BO_ 1791 C70_BrakePressures: 8 C70
- SG_ C70_BrakePressureFront : 0|16@1- (0.2,1250) [0|2500] "psi" Vector__XXX
- SG_ C70_BrakePressureRear : 16|16@1- (0.2,1250) [0|2500] "psi" Vector__XXX
-
-BO_ 368 IMU_Sync: 8 Vector__XXX
-
-BO_ 372 IMU_Tx1: 8 IMU
- SG_ IMU_Yaw_Rate : 0|16@1+ (0.005,-163.84) [-163.84|163.83] "deg/s" Vector__XXX
- SG_ IMU_Accel_Y : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
-
-BO_ 376 IMU_Tx2: 8 IMU
- SG_ IMU_Roll_Rate : 0|16@1+ (0.005,-163.84) [-163.84|163.835] "deg/s" Vector__XXX
- SG_ IMU_Accel_X : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
-
-BO_ 380 IMU_Tx3: 8 IMU
- SG_ IMU_Accel_Z : 32|16@1+ (0.000127465,-4.1768) [-4.1768|4.1765] "g" Vector__XXX
+BU_: C70 PIT IRTEMP
 
 BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_PressureMux M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -341,7 +323,6 @@ BO_ 100 VC_brake_pressure_rear: 2 VC
  SG_ VC_brake_pressure_rear : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 
-CM_ BU_ IMU "Bosch MM5.10 Inertial Measurement Unit";
 CM_ BU_ C70 "Bosch C70 Data Logger";
 CM_ BU_ PIT "EvoScann P8-A Pressure Sensor";
 CM_ BU_ IRTEMP "Izze IRTS-60 v2 IR Temperature Sensors";
