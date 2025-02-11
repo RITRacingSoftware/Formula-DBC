@@ -320,7 +320,7 @@ BO_ 503 SSDB_suspension_RR_M: 2 SSDB
  SG_ SSDB_suspension_RR : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 100 VC_brake_pressure_rear: 2 VC
- SG_ VC_brake_pressure_rear : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ VC_brake_pressure_rear : 0|16@1+ (1,0) [0|4095] "" Vector__XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";

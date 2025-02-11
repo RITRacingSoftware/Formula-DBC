@@ -17,18 +17,18 @@ Var=PIT_PressureRange unsigned 56,8 /min:0 /max:3 /d:0
 
 [PIT_Pressures]
 DLC=8
-Mux=PIT_PressureMux2 0,8 2 -m 
-Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
-
-[PIT_Pressures]
-DLC=8
 Mux=PIT_PressureMux1 0,8 1 -m 
 Var=PIT_Pressure4 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure5 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure6 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Temperature signed 56,8 /u:degC /min:0 /max:0 /d:0
+
+[PIT_Pressures]
+DLC=8
+Mux=PIT_PressureMux2 0,8 2 -m 
+Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
 
 [TireTemp_FL_M1]
 ID=4C4h
@@ -463,5 +463,5 @@ Var=SSDB_suspension_RR unsigned 0,12 /min:0 /max:4095 /d:0
 ID=064h
 Type=Standard
 DLC=2
-Var=VC_brake_pressure_rear unsigned 0,12 /min:0 /max:4095 /d:0
+Var=VC_brake_pressure_rear unsigned 0,16 /min:0 /max:4095 /d:0
 
