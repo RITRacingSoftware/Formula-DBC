@@ -57,20 +57,19 @@ Var=VC_Status_VehicleState unsigned 0,4 /min:0 /max:15 /e:VC_Status_VehicleState
 ID=12Eh
 Type=Standard
 DLC=8
-Var=VC_PedalInputs_BrakePressure unsigned 0,16 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
-Var=VC_PedalInputs_AccelPositionA unsigned 16,7 /u:% /min:0 /max:100 /d:0
-Var=VC_PedalInputs_AccelPositionB unsigned 23,7 /u:% /min:0 /max:100 /d:0
-Var=VC_PedalInputs_AccelPositionAvg unsigned 30,16 /u:% /f:0.1 /min:0 /max:100 /d:0.0
-Var=VC_PedalInputs_AccelPositionErr unsigned 46,7 /u:% /min:0 /max:100 /d:0
-Var=VC_PedalInputs_TorqueRequested unsigned 53,8 /u:Nm /min:0 /max:254 /d:0
+Var=VC_PedalInputs_BrakePressureFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_PedalInputs_AccelPositionA unsigned 15,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_PedalInputs_AccelPositionB unsigned 25,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_PedalInputs_AccelPositionAvg unsigned 35,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_PedalInputs_BrakePressureRearPsi unsigned 45,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
 
 [VC_PedalInputsRaw]
 ID=12Fh
 Type=Standard
 DLC=8
-Var=VC_PedalInputsRaw_AccelVoltageA unsigned 0,9 /u:V /f:0.01 /min:0 /max:5 /d:0.00
-Var=VC_PedalInputsRaw_AccelVoltageB unsigned 9,9 /u:V /f:0.01 /min:0 /max:5 /d:0.00
-Var=VC_PedalInputsRaw_BrakeVoltage unsigned 18,9 /u:V /f:0.01 /min:0 /max:5 /d:0.00
+Var=VC_PedalInputsRaw_AccelA_ADC unsigned 0,12 /min:0 /max:4095 /d:0
+Var=VC_PedalInputsRaw_AccelB_ADC unsigned 12,12 /min:0 /max:4095 /d:0
+Var=VC_PedalInputsRaw_BrakePressureRear_ADC unsigned 24,12 /u:V /min:0 /max:4095 /d:0
 
 [VC_DashInputs]
 ID=130h
@@ -609,17 +608,19 @@ Var=CHG_Flag_InputVoltage unsigned 34,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_StartingState unsigned 35,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_CommTimeout unsigned 36,1 /min:0 /max:1 /d:0
 
-[SSDB_brake_pressure_front]
+[SSDB_front]
 ID=1F8h
 Type=Standard
-DLC=2
-Var=SSDB_brake_pressure_front unsigned 0,12 /min:0 /max:4095 /d:0
+DLC=3
+Var=SSDB_brake_pressure_front_raw unsigned 0,12 /min:0 /max:4095 /d:0
+Var=SSDB_steering_angle_raw unsigned 12,12 /min:0 /max:4095 /d:0
 
-[SSDB_steering_angle]
+[SSDB_VectorNav6]
 ID=1F9h
 Type=Standard
-DLC=2
-Var=SSDB_steering_angle unsigned 0,12 /min:0 /max:4095 /d:0
+DLC=8
+Var=VectorNav_VelNedN unsigned 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedE unsigned 32,32 /u:m/s /min:0 /max:0 /d:0
 
 [VC_RL_AMK_Setpoints]
 ID=190h

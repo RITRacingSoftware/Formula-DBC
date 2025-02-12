@@ -435,33 +435,17 @@ Var=VectorNav_VelNedN float 384,32 /u:m/s /min:0 /max:0 /d:0
 Var=VectorNav_VelNedE float 416,32 /u:m/s /min:0 /max:0 /d:0
 Var=VectorNav_VelNedD float 448,32 /u:m/s /min:0 /max:0 /d:0
 
-[SSDB_suspension_FL_M]
+[SSDB_suspension_front]
 ID=1F4h
 Type=Standard
 DLC=2
 Var=SSDB_suspension_FL unsigned 0,12 /min:0 /max:4095 /d:0
+Var=SSDB_suspension_FR unsigned 12,24 /min:0 /max:4095 /d:0
 
-[SSDB_suspension_FR_M]
+[SSDB_suspension_rear]
 ID=1F5h
 Type=Standard
 DLC=2
-Var=SSDB_suspension_FR unsigned 0,12 /min:0 /max:4095 /d:0
-
-[SSDB_suspension_RL_M]
-ID=1F6h
-Type=Standard
-DLC=2
 Var=SSDB_suspension_RL unsigned 0,12 /min:0 /max:4095 /d:0
-
-[SSDB_suspension_RR_M]
-ID=1F7h
-Type=Standard
-DLC=2
-Var=SSDB_suspension_RR unsigned 0,12 /min:0 /max:4095 /d:0
-
-[VC_brake_pressure_rear]
-ID=064h
-Type=Standard
-DLC=2
-Var=VC_brake_pressure_rear unsigned 0,16 /min:0 /max:4095 /d:0
+Var=SSDB_suspension_RR unsigned 12,24 /min:0 /max:4095 /d:0
 
