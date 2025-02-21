@@ -592,7 +592,7 @@ BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_drain_comm_slave_ "BMS_Fault
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_voltag "BMS_FaultAlert_irrational_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_lowest_cell_volta "BMS_FaultAlert_lowest_cell_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_temper "BMS_FaultAlert_irrational_temperature";
-VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_STARTUP" 2 "VehicleState_READY_TO_DRIVE" 3 "VehicleState_FAULTED" ;
+VAL_ 301 VC_Status_VehicleState 1 "VehicleState_NOT_READY" 2 "VehicleState_INVERTERS_POWERED" 3 "VehicleState_PRECHARGING" 4 "VehicleState_WAIT" 5 "VehicleState_STANDBY" 6 "VehicleState_RTD" 7 "VehicleState_SHUTDOWN" ;
 VAL_ 315 VC_HardFaultIndicator_task 0 "unknown" 1 "task_100Hz" ;
 VAL_ 600 BMS_Status_ChargeState 0 "ChargeState_DISCONNECTED" 1 "ChargeState_CONNECTED_CHARGING" 2 "ChargeState_CONNECTED_BALANCING" 3 "ChargeState_CONNECTED_BALANCE_SENSING" 4 "ChargeState_CONNECTED_COMPLETE" 5 "ChargeState_CONNECTED_FAULTED";
 VAL_ 701 BMS_FaultAlert_code 0 "FaultCode_SLAVE_COMM_CELLS" 1 "FaultCode_SLAVE_COMM_TEMPS" 2 "FaultCode_SLAVE_COMM_DRAIN_REQUEST" 3 "FaultCode_CURRENT_SENSOR_COMM" 4 "FaultCode_OVER_CURRENT" 5 "FaultCode_CELL_VOLTAGE_IRRATIONAL" 6 "FaultCode_CELL_VOLTAGE_DIFF" 7 "Faultcode_OUT_OF_JUICE" 8 "FaultCode_TEMPERATURE_IRRATIONAL" 9 "FaultCode_OVER_TEMP" 10 "FaultCode_DRAIN_FAILURE" ;

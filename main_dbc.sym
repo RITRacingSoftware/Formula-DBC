@@ -6,7 +6,7 @@ enum BMS_LimpMode_TempLimpLevel(0="LimpModeLevel_NO_LIMP", 1="LimpModeLevel_LEVE
 enum BMS_LimpMode_VoltageLimpLevel(0="LimpModeLevel_NO_LIMP", 1="LimpModeLevel_LEVEL_1", 2="LimpModeLevel_LEVEL_2", 3="LimpModeLevel_LEVEL_3")
 enum BMS_Status_ChargeState(0="ChargeState_DISCONNECTED", 1="ChargeState_CONNECTED_CHARGING", 2="ChargeState_CONNECTED_BALANCING", 3="ChargeState_CONNECTED_BALANCE_SENSING", 4="ChargeState_CONNECTED_COMPLETE", 5="ChargeState_CONNECTED_FAULTED")
 enum VC_HardFaultIndicator_task(0="unknown", 1="task_100Hz")
-enum VC_Status_VehicleState(0="VehicleState_NOT_READY", 1="VehicleState_STARTUP", 2="VehicleState_READY_TO_DRIVE", 3="VehicleState_FAULTED")
+enum VC_Status_VehicleState(1="VehicleState_NOT_READY", 2="VehicleState_INVERTERS_POWERED", 3="VehicleState_PRECHARGING", 4="VehicleState_WAIT", 5="VehicleState_STANDBY", 6="VehicleState_RTD", 7="VehicleState_SHUTDOWN")
 
 {SENDRECEIVE}
 
