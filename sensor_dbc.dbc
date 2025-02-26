@@ -307,13 +307,13 @@ BO_ 408 VectorNav: 64 VectorNav
  SG_ VectorNav_VelNedE : 416|32@1+ (1,0) [0|0] "m/s" Vector__XXX
  SG_ VectorNav_VelNedD : 448|32@1+ (1,0) [0|0] "m/s" Vector__XXX
 
-BO_ 500 SSDB_suspension_front: 2 SSDB
+BO_ 500 SSDB_suspension_front: 3 SSDB
  SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ SSDB_suspension_FR : 12|24@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
-BO_ 501 SSDB_suspension_rear: 2 SSDB
+BO_ 501 SSDB_suspension_rear: 3 SSDB
  SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ SSDB_suspension_RR : 12|24@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";

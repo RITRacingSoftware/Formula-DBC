@@ -619,8 +619,8 @@ Var=SSDB_steering_angle_raw unsigned 12,12 /min:0 /max:4095 /d:0
 ID=1F9h
 Type=Standard
 DLC=8
-Var=VectorNav_VelNedN unsigned 0,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_VelNedE unsigned 32,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedN float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelNedE float 32,32 /u:m/s /min:0 /max:0 /d:0
 
 [VC_RL_AMK_Setpoints]
 ID=190h
