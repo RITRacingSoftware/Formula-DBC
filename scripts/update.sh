@@ -24,8 +24,8 @@ pip3 install -U pip wheel cantools canmatrix > /dev/null
 
 echo "Building $DBC_FILENAME"
 cantools generate_c_source $DBC_FILENAME.dbc
-mv $DBC_FILENAME.c c_files/$DBC_FILENAME.c
-mv $DBC_FILENAME.h c_files/$DBC_FILENAME.h
+mv $DBC_FILENAME.c ../c_files/$DBC_FILENAME.c
+mv $DBC_FILENAME.h ../c_files/$DBC_FILENAME.h
 
 echo "Building sym"
 grep -v "SystemSignalLongSymbol" $DBC_FILENAME.dbc > $DBC_FILENAME.tmp.dbc
