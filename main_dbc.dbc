@@ -393,6 +393,7 @@ BO_ 704 BMS_Temperatures: 8 BMS
  SG_ BMS_Temperatures_H6 m6 : 43|8@1- (1,0) [-128|127] "C" Vector__XXX
 
 BO_ 800 BMS_DrainStatus: 8 BMS
+ SG_ BMS_DrainStatus M : 0|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ BMS_DrainStatus_A1 m0 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_A2 m0 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_A3 m0 : 5|1@1+ (1,0) [0|1] "" Vector__XXX
