@@ -64,16 +64,16 @@ BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  DASH
 
 BO_ 302 VC_PedalInputs: 8 VC
- SG_ VC_PedalInputs_BrakePressureFrontPsi : 0|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
+ SG_ VC_PedalInputs_BrakesFrontPsi : 0|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
  SG_ VC_PedalInputs_AccelPositionA : 15|10@1+ (0.1,0) [0|100] "%" Vector__XXX
  SG_ VC_PedalInputs_AccelPositionB : 25|10@1+ (0.1,0) [0|100] "%" Vector__XXX
  SG_ VC_PedalInputs_AccelPositionAvg : 35|10@1+ (0.1,0) [0|100] "%" Vector__XXX
- SG_ VC_PedalInputs_BrakePressureRearPsi : 45|15@1+ (0.1,0) [0|3000] "psi" Vector_XXX
+ SG_ VC_PedalInputs_BrakesRearPsi : 45|15@1+ (0.1,0) [0|3000] "psi" Vector_XXX
 
 BO_ 303 VC_PedalInputsRaw: 8 VC
  SG_ VC_PedalInputsRaw_AccelA_ADC : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ VC_PedalInputsRaw_AccelB_ADC : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ VC_PedalInputsRaw_BrakePressureRear_ADC : 24|12@1+ (1,0) [0|4095] "V" Vector__XXX
+ SG_ VC_PedalInputsRaw_BrakesRear_ADC : 24|12@1+ (1,0) [0|4095] "V" Vector__XXX
 
 BO_ 304 VC_DashInputs: 8 VC
  SG_ VC_DashInputs_RTDbutton : 1|1@1+ (1,0) [0|1] "" Vector__XXX

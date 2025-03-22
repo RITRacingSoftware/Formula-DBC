@@ -57,11 +57,11 @@ Var=VC_Status_VehicleState unsigned 0,4 /min:0 /max:15 /e:VC_Status_VehicleState
 ID=12Eh
 Type=Standard
 DLC=8
-Var=VC_PedalInputs_BrakePressureFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_PedalInputs_BrakesFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
 Var=VC_PedalInputs_AccelPositionA unsigned 15,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
 Var=VC_PedalInputs_AccelPositionB unsigned 25,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
 Var=VC_PedalInputs_AccelPositionAvg unsigned 35,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
-Var=VC_PedalInputs_BrakePressureRearPsi unsigned 45,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_PedalInputs_BrakesRearPsi unsigned 45,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
 
 [VC_PedalInputsRaw]
 ID=12Fh
@@ -69,7 +69,7 @@ Type=Standard
 DLC=8
 Var=VC_PedalInputsRaw_AccelA_ADC unsigned 0,12 /min:0 /max:4095 /d:0
 Var=VC_PedalInputsRaw_AccelB_ADC unsigned 12,12 /min:0 /max:4095 /d:0
-Var=VC_PedalInputsRaw_BrakePressureRear_ADC unsigned 24,12 /u:V /min:0 /max:4095 /d:0
+Var=VC_PedalInputsRaw_BrakesRear_ADC unsigned 24,12 /u:V /min:0 /max:4095 /d:0
 
 [VC_DashInputs]
 ID=130h
