@@ -83,7 +83,7 @@ f = open("drain_status.txt", "w")
 length = 1
 seg = 0
 mul = 0
-first_start = 2
+first_start = 3
 start = first_start
 
 for i in range(cells * segments):
