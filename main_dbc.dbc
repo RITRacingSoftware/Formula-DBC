@@ -84,20 +84,19 @@ BO_ 304 VC_DashInputs: 8 VC
 BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_ShutdownStatus_BMS_fault : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_ShutdownStatus_IMD_fault : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_ShutdownStatus_VC_fault : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_ACCEL_A_IRRA : 3|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_ACCEL_B_IRRA : 4|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_DISAG : 5|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 6|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FBPS_LOST : 7|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FBPS_IRRA : 8|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RBPS_IRRA : 9|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_STEER_ANGLE_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RL_LOST : 11|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RR_LOST : 12|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FL_LOST : 13|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FR_LOST : 14|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_VN_LOST : 15|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_ACCEL_A_IRRA : 2|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_ACCEL_B_IRRA : 3|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DISAG : 4|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 5|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_LOST : 6|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_IRRA : 7|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RBPS_IRRA : 8|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_STEER_ANGLE_LOST : 9|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RL_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RR_LOST : 11|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FL_LOST : 12|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FR_LOST : 13|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_VN_LOST : 14|1@1+ (1,0) [0|1] ""  DASH
 
 BO_ 315 VC_HardFaultIndicator: 8 VC
  SG_ VC_HardFaultIndicator_task : 0|4@1+ (1,0) [0|15] ""  DASH
