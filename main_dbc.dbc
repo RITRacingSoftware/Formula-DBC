@@ -81,27 +81,23 @@ BO_ 304 VC_DashInputs: 8 VC
  SG_ VC_DashInputs_Switch1 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_DashInputs_Switch2 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 305 VC_ShutdownStatus: 8 VC
+BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_ShutdownStatus_BMS_fault : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_ShutdownStatus_IMD_fault : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_ShutdownStatus_BSPD_fault : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_ShutdownStatus_BSPD_signal_lo : 3|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_ShutdownStatus_precharge : 4|1@1+ (1,0) [0|1] "" Vector__XXX
-
-BO_ 311 VC_FaultVector: 8 VC
- SG_ VC_FaultVector_BRAKE_IRRA : 0|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_ACCEL_A_IRRA : 1|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_ACCEL_B_IRRA : 2|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_DISAG : 3|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 4|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_STEER_ANGLE_LOST : 5|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RL_LOST : 6|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RR_LOST : 7|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FL_LOST : 8|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FR_LOST : 9|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_VN_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_FBPS_LOST : 11|1@1+ (1,0) [0|1] ""  DASH
- SG_ VC_FaultVector_RBPS_LOST : 12|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_ShutdownStatus_VC_fault : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_ACCEL_A_IRRA : 3|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_ACCEL_B_IRRA : 4|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DISAG : 5|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 6|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_LOST : 7|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FBPS_IRRA : 8|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RBPS_IRRA : 9|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_STEER_ANGLE_LOST : 10|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RL_LOST : 11|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_RR_LOST : 12|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FL_LOST : 13|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_FR_LOST : 14|1@1+ (1,0) [0|1] ""  DASH
+ SG_ VC_FaultVector_VN_LOST : 15|1@1+ (1,0) [0|1] ""  DASH
 
 BO_ 315 VC_HardFaultIndicator: 8 VC
  SG_ VC_HardFaultIndicator_task : 0|4@1+ (1,0) [0|15] ""  DASH
@@ -728,10 +724,6 @@ CM_ BO_ 1790 "Wheel speeds, relayed by C70";
 CM_ BO_ 1791 "Brake Pressures, relayed by C70";
 BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
 BA_DEF_DEF_  "SystemSignalLongSymbol" "";
-BA_ "SystemSignalLongSymbol" SG_ 305 VC_ShutdownStatus_BSPD_signal_lo "VC_ShutdownStatus_BSPD_signal_lost";
-BA_ "SystemSignalLongSymbol" SG_ 311 VC_FaultVector_BRAKE_SENSOR_IRRA "VC_FaultVector_BRAKE_SENSOR_IRRATIONAL";
-BA_ "SystemSignalLongSymbol" SG_ 311 VC_FaultVector_ACCELERATOR_SENSO "VC_FaultVector_ACCELERATOR_SENSOR_IRRATIONAL";
-BA_ "SystemSignalLongSymbol" SG_ 311 VC_FaultVector_APPS_SENSOR_DISAG "VC_FaultVector_APPS_SENSOR_DISAGREEMENT";
 BA_ "SystemSignalLongSymbol" SG_ 469 D1_HV_Input_Current_Sensor_Valid "D1_HV_Input_Current_Sensor_Validity";
 BA_ "SystemSignalLongSymbol" SG_ 700 BMS_FaultVector_SLAVE_COMM_DRAIN "BMS_FaultVector_SLAVE_COMM_DRAIN_REQUEST";
 BA_ "SystemSignalLongSymbol" SG_ 700 BMS_FaultVector_CURRENT_SENSOR_C "BMS_FaultVector_CURRENT_SENSOR_COMM";
@@ -744,7 +736,7 @@ BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_drain_comm_slave_ "BMS_Fault
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_voltag "BMS_FaultAlert_irrational_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_lowest_cell_volta "BMS_FaultAlert_lowest_cell_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_temper "BMS_FaultAlert_irrational_temperature";
-VAL_ 301 VC_Status_VehicleState 1 "VehicleState_NOT_READY" 2 "VehicleState_INVERTERS_POWERED" 3 "VehicleState_PRECHARGING" 4 "VehicleState_WAIT" 5 "VehicleState_STANDBY" 6 "VehicleState_RTD" 7 "VehicleState_SHUTDOWN" ;
+VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_INVERTERS_POWERED" 2 "VehicleState_PRECHARGING" 3 "VehicleState_WAIT" 4 "VehicleState_STANDBY" 5 "VehicleState_RTD" 6 "VehicleState_SHUTDOWN" ;
 VAL_ 315 VC_HardFaultIndicator_task 0 "unknown" 1 "task_100Hz" ;
 VAL_ 600 BMS_Status_ChargeState 0 "ChargeState_DISCONNECTED" 1 "ChargeState_CONNECTED_CHARGING" 2 "ChargeState_CONNECTED_BALANCING" 3 "ChargeState_CONNECTED_BALANCE_SENSING" 4 "ChargeState_CONNECTED_COMPLETE" 5 "ChargeState_CONNECTED_FAULTED";
 VAL_ 701 BMS_FaultAlert_code 0 "FaultCode_SLAVE_COMM_CELLS" 1 "FaultCode_SLAVE_COMM_TEMPS" 2 "FaultCode_SLAVE_COMM_DRAIN_REQUEST" 3 "FaultCode_CURRENT_SENSOR_COMM" 4 "FaultCode_OVER_CURRENT" 5 "FaultCode_CELL_VOLTAGE_IRRATIONAL" 6 "FaultCode_CELL_VOLTAGE_DIFF" 7 "Faultcode_OUT_OF_JUICE" 8 "FaultCode_TEMPERATURE_IRRATIONAL" 9 "FaultCode_OVER_TEMP" 10 "FaultCode_DRAIN_FAILURE" ;
