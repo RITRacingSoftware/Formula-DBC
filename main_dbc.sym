@@ -94,11 +94,15 @@ Var=VC_FaultVector_FBPS_LOST unsigned 6,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FBPS_IRRA unsigned 7,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_RBPS_IRRA unsigned 8,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_STEER_ANGLE_LOST unsigned 9,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RL_LOST unsigned 10,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RR_LOST unsigned 11,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FL_LOST unsigned 12,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FR_LOST unsigned 13,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_VN_LOST unsigned 14,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RR_LOST unsigned 10,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RL_LOST unsigned 11,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FR_LOST unsigned 12,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FL_LOST unsigned 13,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RR_ERROR unsigned 14,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RL_ERROR unsigned 15,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FR_ERROR unsigned 16,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FL_ERROR unsigned 17,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_VN_LOST unsigned 18,1 /min:0 /max:1 /d:0
 
 [VC_HardFaultIndicator]
 ID=13Bh
