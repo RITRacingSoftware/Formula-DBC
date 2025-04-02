@@ -18,7 +18,7 @@ Var=RL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=RL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=RL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=RL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=RL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+Var=RL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [RL_AMK_Actual_2]
 ID=287h
@@ -77,7 +77,7 @@ Var=RR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=RR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=RR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=RR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=RR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+Var=RR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [RR_AMK_Actual_2]
 ID=288h
@@ -108,7 +108,7 @@ ID=29Ah
 Type=Standard
 DLC=8
 Var=RR_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
-Var=RR_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=RR_ActivePower signed 16,32 /u:W /min:-2147483648 /max:2147483647 /d:0
 Var=RR_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [RR_AMK_Setpoints]
@@ -136,7 +136,7 @@ Var=FL_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=FL_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=FL_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=FL_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=FL_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+Var=FL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [FL_AMK_Actual_2]
 ID=289h
@@ -160,13 +160,14 @@ Type=Standard
 DLC=8
 Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+Var=FL_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
 [FL_AMK_RITSet3]
 ID=29Bh
 Type=Standard
 DLC=8
 Var=FL_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
-Var=FL_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=FL_ActivePower signed 16,32 /u:W /min:-2147483648 /max:2147483647 /d:0
 Var=FL_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [FL_AMK_Setpoints]
@@ -194,7 +195,7 @@ Var=FR_Status_QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
 Var=FR_Status_InverterOn unsigned 14,1 /min:0 /max:1 /d:0
 Var=FR_Status_Derating unsigned 15,1 /min:0 /max:1 /d:0
 Var=FR_FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
-Var=FR_MagnetizingCurrent signed 48,16 /min:-32768 /max:32767 /d:0
+Var=FR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [FR_AMK_Actual_2]
 ID=290h
@@ -218,13 +219,14 @@ Type=Standard
 DLC=8
 Var=FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
 Var=FR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+Var=FR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
 [FR_AMK_RITSet3]
 ID=29Ch
 Type=Standard
 DLC=8
 Var=FR_TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
-Var=FR_ActivePower signed 16,48 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=FR_ActivePower signed 16,32 /u:W /min:-2147483648 /max:2147483647 /d:0
 Var=FR_HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
 
 [FR_AMK_Setpoints]

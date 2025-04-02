@@ -152,7 +152,7 @@ BO_ 701 BMS_FaultAlert: 8 BMS
  SG_ BMS_FaultAlert_failed_drain_cell m10 : 6|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 702 BMS_Voltages: 8 BMS
- SG_ BMS_Voltages_mux M : 0|8@1+ (1,0) [0|12] "" Vector__XXX
+ SG_ BMS_Voltages_mux M : 0|8@1+ (1,0) [0|22] "" Vector__XXX
  SG_ BMS_Voltages_A1 m0 : 8|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
  SG_ BMS_Voltages_A2 m0 : 17|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
  SG_ BMS_Voltages_A3 m0 : 26|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
