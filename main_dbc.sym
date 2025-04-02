@@ -124,6 +124,12 @@ Var=PBX_LV_Voltage unsigned 0,11 /u:V /f:0.01 /min:0 /max:20 /d:0.00
 Var=PBX_LV_Current unsigned 11,14 /u:A /f:0.01 /min:0 /max:100 /d:0.00
 Var=PBX_PumpsOn unsigned 25,1 /min:0 /max:1 /d:0
 
+[MCAN_C70Control]
+ID=701h
+Type=Standard
+DLC=1
+Var=MCAN_C70Enable unsigned 0,1 /min:0 /max:1 /d:0
+
 [BMS_Current_Limit]
 ID=202h
 Type=Standard

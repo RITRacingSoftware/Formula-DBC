@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: C70 VC BMS CHG DASH PBX
+BU_: C70 VC BMS CHG DASH PBX MCAN
 
 BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_Drains : 51|7@1+ (1,0) [0|76] "" Vector__XXX
@@ -113,6 +113,9 @@ BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
  SG_ PBX_LV_Current : 11|14@1+ (0.01,0) [0|100] "A" Vector__XXX
  SG_ PBX_PumpsOn : 25|1@1+ (1,0) [0|1] ""  VC
+
+BO_ 1793 MCAN_C70Control: 1 MCAN
+ SG_ MCAN_C70Enable : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 514 BMS_Current_Limit: 8 BMS
  SG_ D1_Max_Discharge_Current : 0|16@1+ (1,0) [0|1000] "A" Vector__XXX
@@ -723,6 +726,7 @@ CM_ BU_ BMS "Battery Management System";
 CM_ BU_ CHG "Elcon HK-J Charger";
 CM_ BU_ DASH "Dashboard Display";
 CM_ BU_ SSDB "SSDB";
+CM_ BU_ MCAN "MCAN";
 CM_ SG_ 601 BMS_Overview_Drains "Number of cells currently draining";
 CM_ BO_ 1790 "Wheel speeds, relayed by C70";
 CM_ BO_ 1791 "Brake Pressures, relayed by C70";
