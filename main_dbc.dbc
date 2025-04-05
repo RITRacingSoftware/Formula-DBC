@@ -603,7 +603,7 @@ BO_ 401 VC_RL_AMK_Actual_1: 8 VC
  SG_ VC_RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_RL_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
+ SG_ VC_RL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
 
 BO_ 402 VC_RL_Info_1: 8 VC
  SG_ VC_RL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
@@ -637,7 +637,7 @@ BO_ 411 VC_RR_AMK_Actual_1: 8 VC
  SG_ VC_RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_RR_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
+ SG_ VC_RR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
 
 BO_ 412 VC_RR_Info_1: 8 VC
  SG_ VC_RR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
@@ -671,7 +671,7 @@ BO_ 421 VC_FL_AMK_Actual_1: 8 VC
  SG_ VC_FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_FL_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
+ SG_ VC_FL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
 
 BO_ 422 VC_Fl_Info_1: 8 VC
  SG_ VC_FL_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
@@ -705,7 +705,7 @@ BO_ 431 VC_FR_AMK_Actual_1: 8 VC
  SG_ VC_FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
  SG_ VC_FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ VC_FR_MagnetizingCurrent : 48|16@1- (1,0) [-32768|32767] "" Vector_XXX
+ SG_ VC_FR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
 
 BO_ 432 VC_FR_Info_1: 8 VC
  SG_ VC_FR_ErrorList1 : 0|32@1+ (1,0) [0|1] "" Vector_XXX
