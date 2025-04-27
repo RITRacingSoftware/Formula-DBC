@@ -25,22 +25,22 @@ ID=287h
 Type=Standard
 DLC=8
 Var=RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=RL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
-Var=RL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=RL_TempInverter signed 16,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=RL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=RL_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [RL_AMK_RITSet1]
 ID=291h
 Type=Standard
 DLC=8
-Var=RL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=RL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=RL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=RL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [RL_AMK_RITSet2]
 ID=295h
 Type=Standard
 DLC=8
-Var=RL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=RL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=RL_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
@@ -84,22 +84,22 @@ ID=288h
 Type=Standard
 DLC=8
 Var=RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=RR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
-Var=RR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=RR_TempInverter signed 16,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=RR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=RR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [RR_AMK_RITSet1]
 ID=292h
 Type=Standard
 DLC=8
-Var=RR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=RR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=RR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=RR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [RR_AMK_RITSet2]
 ID=296h
 Type=Standard
 DLC=8
-Var=RR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=RR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=RR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=RR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
@@ -143,22 +143,22 @@ ID=289h
 Type=Standard
 DLC=8
 Var=FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=FL_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
-Var=FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=FL_TempInverter signed 16,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=FL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=FL_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [FL_AMK_RITSet1]
 ID=293h
 Type=Standard
 DLC=8
-Var=FL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=FL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=FL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=FL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [FL_AMK_RITSet2]
 ID=297h
 Type=Standard
 DLC=8
-Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=FL_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=FL_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
@@ -202,22 +202,22 @@ ID=290h
 Type=Standard
 DLC=8
 Var=FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
-Var=FR_TempInverter signed 16,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
-Var=FR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
+Var=FR_TempInverter signed 16,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=FR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=FR_TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [FR_AMK_RITSet1]
 ID=294h
 Type=Standard
 DLC=8
-Var=FR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=FR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=FR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=FR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [FR_AMK_RITSet2]
 ID=298h
 Type=Standard
 DLC=8
-Var=FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
+Var=FR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=FR_DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
 Var=FR_DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
 
