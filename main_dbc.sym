@@ -68,7 +68,7 @@ Type=Standard
 DLC=8
 Var=VC_PedalInputsRaw_AccelA_ADC unsigned 0,12 /min:0 /max:4095 /d:0
 Var=VC_PedalInputsRaw_AccelB_ADC unsigned 12,12 /min:0 /max:4095 /d:0
-Var=VC_PedalInputsRaw_BrakesRear_ADC unsigned 24,12 /u:V /min:0 /max:4095 /d:0
+Var=VC_PedalInputsRaw_BrakesRear_ADC unsigned 24,12 /min:0 /max:4095 /d:0
 
 [VC_DashInputs]
 ID=130h
@@ -867,16 +867,16 @@ Var=VC_RL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=192h
 Type=Standard
 DLC=8
-Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [VC_RL_Info_2]
 ID=193h
 Type=Standard
 DLC=8
-Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_RL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
-Var=VC_RL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_RL_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_RL_Info_3]
 ID=194h
@@ -915,16 +915,16 @@ Var=VC_RR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=19Ch
 Type=Standard
 DLC=8
-Var=VC_RR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_RR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=VC_RR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [VC_RR_Info_2]
 ID=19Dh
 Type=Standard
 DLC=8
-Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_RR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
-Var=VC_RR_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_RR_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_RR_Info_3]
 ID=19Eh
@@ -963,16 +963,16 @@ Var=VC_FL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=1A6h
 Type=Standard
 DLC=8
-Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [VC_FL_Info_2]
 ID=1A7h
 Type=Standard
 DLC=8
-Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_FL_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
-Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_FL_Info_3]
 ID=1A8h
@@ -1011,20 +1011,29 @@ Var=VC_FR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=1B0h
 Type=Standard
 DLC=8
-Var=VC_FR_ErrorList1 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_FR_ErrorList2 unsigned 32,32 /min:0 /max:1 /d:0
+Var=VC_FR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
 
 [VC_FR_Info_2]
 ID=1B1h
 Type=Standard
 DLC=8
-Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:1 /d:0
-Var=VC_FR_ErrorInfo unsigned 32,16 /min:-3276.8 /max:3276.7 /d:0
-Var=VC_FR_TempInverter signed 48,16 /f:0.1 /min:-32768 /max:32767 /d:0.0
+Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_FR_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_FR_Info_3]
 ID=1B2h
 Type=Standard
 DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[VC_InvTimes]
+ID=001h
+Type=Standard
+DLC=8
+Var=VC_RR_Time unsigned 0,16 /min:0 /max:65535 /d:0
+Var=VC_RR_Time unsigned 16,16 /min:0 /max:65535 /d:0
+Var=VC_RR_Time unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_RR_Time unsigned 48,16 /min:0 /max:65535 /d:0
 
