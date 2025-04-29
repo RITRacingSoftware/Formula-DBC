@@ -880,13 +880,14 @@ Type=Standard
 DLC=8
 Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=VC_RL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_RL_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RL_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_RL_Info_3]
 ID=194h
 Type=Standard
 DLC=8
 Var=VC_RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -928,13 +929,14 @@ Type=Standard
 DLC=8
 Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=VC_RR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_RR_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RR_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_RR_Info_3]
 ID=19Eh
 Type=Standard
 DLC=8
 Var=VC_RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_RR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -976,13 +978,14 @@ Type=Standard
 DLC=8
 Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=VC_FL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_FL_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FL_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_FL_Info_3]
 ID=1A8h
 Type=Standard
 DLC=8
 Var=VC_FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -1024,13 +1027,14 @@ Type=Standard
 DLC=8
 Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
 Var=VC_FR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_FR_TempInverter signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FR_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
 [VC_FR_Info_3]
 ID=1B2h
 Type=Standard
 DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=VC_FR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 
 [VC_InvTimes]
 ID=001h
@@ -1040,13 +1044,4 @@ Var=VC_RR_Time unsigned 0,16 /min:0 /max:65535 /d:0
 Var=VC_RL_Time unsigned 16,16 /min:0 /max:65535 /d:0
 Var=VC_FR_Time unsigned 32,16 /min:0 /max:65535 /d:0
 Var=VC_FL_Time unsigned 48,16 /min:0 /max:65535 /d:0
-
-[VC_BusVoltages]
-ID=002h
-Type=Standard
-DLC=8
-Var=VC_RR_Voltage unsigned 0,16 /min:0 /max:65535 /d:0
-Var=VC_RL_Voltage unsigned 16,16 /min:0 /max:65535 /d:0
-Var=VC_FR_Voltage unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_FL_Voltage unsigned 48,16 /min:0 /max:65535 /d:0
 
