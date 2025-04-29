@@ -102,10 +102,10 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_FL_ERROR : 17|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_VN_LOST : 18|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_PBX_SHUTDOWN_CONTROL : 19|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_RR_Overspeed : 20|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_RL_Overspeed : 21|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_FR_Overspeed : 22|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_FL_Overspeed : 23|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_RL_Overspeed : 20|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_RR_Overspeed : 21|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_FL_Overspeed : 22|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_FR_Overspeed : 23|1@1+ (1,0) [0|1] ""  Vector__XXX
 
 
 BO_ 315 VC_HardFaultIndicator: 8 VC
