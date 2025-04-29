@@ -103,10 +103,10 @@ Var=VC_FaultVector_FR_ERROR unsigned 16,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FL_ERROR unsigned 17,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_VN_LOST unsigned 18,1 /min:0 /max:1 /d:0
 Var=VC_PBX_SHUTDOWN_CONTROL unsigned 19,1 /min:0 /max:1 /d:0
-Var=VC_RR_Overspeed unsigned 20,1 /min:0 /max:1 /d:0
-Var=VC_RL_Overspeed unsigned 21,1 /min:0 /max:1 /d:0
-Var=VC_FR_Overspeed unsigned 22,1 /min:0 /max:1 /d:0
-Var=VC_FL_Overspeed unsigned 23,1 /min:0 /max:1 /d:0
+Var=VC_RL_Overspeed unsigned 20,1 /min:0 /max:1 /d:0
+Var=VC_RR_Overspeed unsigned 21,1 /min:0 /max:1 /d:0
+Var=VC_FL_Overspeed unsigned 22,1 /min:0 /max:1 /d:0
+Var=VC_FR_Overspeed unsigned 23,1 /min:0 /max:1 /d:0
 
 [VC_HardFaultIndicator]
 ID=13Bh
