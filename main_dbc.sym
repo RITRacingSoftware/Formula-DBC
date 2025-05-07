@@ -93,20 +93,30 @@ Var=VC_FaultVector_FBPS_LOST unsigned 6,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FBPS_IRRA unsigned 7,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_RBPS_IRRA unsigned 8,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_STEER_ANGLE_LOST unsigned 9,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RR_LOST unsigned 10,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RL_LOST unsigned 11,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FR_LOST unsigned 12,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FL_LOST unsigned 13,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RR_ERROR unsigned 14,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_RL_ERROR unsigned 15,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FR_ERROR unsigned 16,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_FL_ERROR unsigned 17,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_VN_LOST unsigned 18,1 /min:0 /max:1 /d:0
-Var=VC_PBX_SHUTDOWN_CONTROL unsigned 19,1 /min:0 /max:1 /d:0
-Var=VC_RL_Overspeed unsigned 20,1 /min:0 /max:1 /d:0
-Var=VC_RR_Overspeed unsigned 21,1 /min:0 /max:1 /d:0
-Var=VC_FL_Overspeed unsigned 22,1 /min:0 /max:1 /d:0
-Var=VC_FR_Overspeed unsigned 23,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_VN_LOST unsigned 10,1 /min:0 /max:1 /d:0
+Var=VC_PBX_SHUTDOWN_CONTROL unsigned 11,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RR_ERROR unsigned 12,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RL_ERROR unsigned 13,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FR_ERROR unsigned 14,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_FL_ERROR unsigned 15,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_PC_TIMEOUT unsigned 16,1 /min:0 /max:1 /d:0
+
+[VC_InverterStatus]
+ID=138h
+Type=Standard
+DLC=8
+Var=VC_RR_Overspeed unsigned 0,1 /min:0 /max:1 /d:0
+Var=VC_RL_Overspeed unsigned 1,1 /min:0 /max:1 /d:0
+Var=VC_FR_Overspeed unsigned 2,1 /min:0 /max:1 /d:0
+Var=VC_FL_Overspeed unsigned 3,1 /min:0 /max:1 /d:0
+Var=VC_RR_Status unsigned 4,3 /min:0 /max:7 /d:0
+Var=VC_RL_Status unsigned 7,3 /min:0 /max:7 /d:0
+Var=VC_FR_Status unsigned 10,3 /min:0 /max:7 /d:0
+Var=VC_FL_Status unsigned 13,3 /min:0 /max:7 /d:0
+Var=VC_RR_Lost unsigned 16,1 /min:0 /max:1 /d:0
+Var=VC_RL_Lost unsigned 17,1 /min:0 /max:1 /d:0
+Var=VC_FR_Lost unsigned 18,1 /min:0 /max:1 /d:0
+Var=VC_FL_Lost unsigned 19,1 /min:0 /max:1 /d:0
 
 [VC_HardFaultIndicator]
 ID=13Bh
@@ -888,6 +898,7 @@ Type=Standard
 DLC=8
 Var=VC_RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_RL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
+Var=VC_RL_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -937,6 +948,7 @@ Type=Standard
 DLC=8
 Var=VC_RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_RR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
+Var=VC_RR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -986,6 +998,7 @@ Type=Standard
 DLC=8
 Var=VC_FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
+Var=VC_FL_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -1035,6 +1048,7 @@ Type=Standard
 DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
+Var=VC_FR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
 
 [VC_InvTimes]
 ID=001h
