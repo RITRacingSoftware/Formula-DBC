@@ -290,8 +290,10 @@ BO_ 406 VectorNav6: 8 VectorNav
  SG_ VectorNav_VelNedN : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
  SG_ VectorNav_VelNedE : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
 
-BO_ 407 VectorNav7: 4 VectorNav
+BO_ 407 VectorNav7: 6 VectorNav
  SG_ VectorNav_VelNedD : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_GNSS1NumSats : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VectorNav_GNSS2NumSats : 40|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 408 VectorNav: 64 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
