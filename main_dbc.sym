@@ -52,15 +52,15 @@ Type=Standard
 DLC=8
 Var=VC_Status_VehicleState unsigned 0,4 /min:0 /max:15 /e:VC_Status_VehicleState /d:0
 
-[VC_PedalInputs]
+[VC_ProcessedInputs]
 ID=12Eh
 Type=Standard
 DLC=8
-Var=VC_PedalInputs_BrakesFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
-Var=VC_PedalInputs_AccelPositionA unsigned 15,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
-Var=VC_PedalInputs_AccelPositionB unsigned 25,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
-Var=VC_PedalInputs_AccelPositionAvg unsigned 35,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
-Var=VC_PedalInputs_BrakesRearPsi unsigned 45,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_P_Inputs_BrakesFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_P_Inputs_BrakesRearPsi unsigned 15,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
+Var=VC_P_Inputs_BrakesPct unsigned 30,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_P_Inputs_SteerPct signed 40,11 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
+Var=VC_P_Inputs_AccelPosition unsigned 51,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
 
 [VC_PedalInputsRaw]
 ID=12Fh
@@ -69,6 +69,8 @@ DLC=8
 Var=VC_PedalInputsRaw_AccelA_ADC unsigned 0,12 /min:0 /max:4095 /d:0
 Var=VC_PedalInputsRaw_AccelB_ADC unsigned 12,12 /min:0 /max:4095 /d:0
 Var=VC_PedalInputsRaw_BrakesRear_ADC unsigned 24,12 /min:0 /max:4095 /d:0
+Var=VC_PedalInputs_AccelPositionA unsigned 36,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_PedalInputs_AccelPositionB unsigned 48,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
 
 [VC_DashInputs]
 ID=130h
@@ -692,24 +694,6 @@ Var=BMS_DrainStatus_D10 unsigned 63,1 /min:0 /max:1 /d:0
 
 [BMS_DrainStatus]
 DLC=8
-Mux=BMS_DrainStatus2 0,2 2 
-Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
-
-[BMS_DrainStatus]
-DLC=8
 Mux=BMS_DrainStatus1 0,2 1 
 Var=BMS_DrainStatus_D11 unsigned 3,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_D12 unsigned 4,1 /min:0 /max:1 /d:0
@@ -772,6 +756,24 @@ Var=BMS_DrainStatus_G17 unsigned 60,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H1 unsigned 61,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H2 unsigned 62,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H3 unsigned 63,1 /min:0 /max:1 /d:0
+
+[BMS_DrainStatus]
+DLC=8
+Mux=BMS_DrainStatus2 0,2 2 
+Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
 
 [BMS_Current]
 ID=384h
@@ -881,14 +883,14 @@ Var=VC_RL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=192h
 Type=Standard
 DLC=8
-Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
-Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
+Var=VC_RL_ErrorList1 unsigned 0,32 /min:0 /max:0 /d:0
+Var=VC_RL_ErrorList2 unsigned 32,32 /min:0 /max:0 /d:0
 
 [VC_RL_Info_2]
 ID=193h
 Type=Standard
 DLC=8
-Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RL_ErrorList3 unsigned 0,32 /min:0 /max:0 /d:0
 Var=VC_RL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=VC_RL_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
@@ -910,7 +912,6 @@ Var=VC_RR_AMK_bEnable unsigned 10,1 /min:0 /max:1 /d:0
 Var=VC_RR_AMK_bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
 Var=VC_RR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
 Var=VC_RR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
-Var=VC_RR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
 [VC_RR_AMK_Actual_1]
 ID=19Bh
@@ -931,14 +932,14 @@ Var=VC_RR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=19Ch
 Type=Standard
 DLC=8
-Var=VC_RR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
-Var=VC_RR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
+Var=VC_RR_ErrorList1 unsigned 0,32 /min:0 /max:0 /d:0
+Var=VC_RR_ErrorList2 unsigned 32,32 /min:0 /max:0 /d:0
 
 [VC_RR_Info_2]
 ID=19Dh
 Type=Standard
 DLC=8
-Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_RR_ErrorList3 unsigned 0,32 /min:0 /max:0 /d:0
 Var=VC_RR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=VC_RR_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
@@ -981,14 +982,14 @@ Var=VC_FL_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=1A6h
 Type=Standard
 DLC=8
-Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
-Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
+Var=VC_FL_ErrorList1 unsigned 0,32 /min:0 /max:0 /d:0
+Var=VC_FL_ErrorList2 unsigned 32,32 /min:0 /max:0 /d:0
 
 [VC_FL_Info_2]
 ID=1A7h
 Type=Standard
 DLC=8
-Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FL_ErrorList3 unsigned 0,32 /min:0 /max:0 /d:0
 Var=VC_FL_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=VC_FL_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 
@@ -1031,14 +1032,14 @@ Var=VC_FR_FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0
 ID=1B0h
 Type=Standard
 DLC=8
-Var=VC_FR_ErrorList1 unsigned 0,32 /min:0 /max:4294967295 /d:0
-Var=VC_FR_ErrorList2 unsigned 32,32 /min:0 /max:4294967295 /d:0
+Var=VC_FR_ErrorList1 unsigned 0,32 /min:0 /max:0 /d:0
+Var=VC_FR_ErrorList2 unsigned 32,32 /min:0 /max:0 /d:0
 
 [VC_FR_Info_2]
 ID=1B1h
 Type=Standard
 DLC=8
-Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:4294967295 /d:0
+Var=VC_FR_ErrorList3 unsigned 0,32 /min:0 /max:0 /d:0
 Var=VC_FR_ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
 Var=VC_FR_TempInverter signed 48,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 

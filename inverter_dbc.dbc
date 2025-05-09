@@ -33,168 +33,168 @@ BS_:
 BU_: RR RL FL FR
 
 BO_ 643 RL_AMK_Actual_1: 8 RL
- SG_ RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ RL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
+ SG_ RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ RL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
  
 BO_ 647 RL_AMK_Actual_2: 8 RL
- SG_ RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ RL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
- SG_ RL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector_XXX
- SG_ RL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ RL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ RL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
  
 BO_ 657 RL_AMK_RITSet1: 8 RL
- SG_ RL_ErrorList1 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ RL_ErrorList2 : 32|32@1+ (1,0) [0|4294967295] "" Vector_XXX
+ SG_ RL_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RL_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
  
 BO_ 661 RL_AMK_RITSet2: 8 RL
- SG_ RL_ErrorList3 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ RL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
- SG_ RL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
+ SG_ RL_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
+ SG_ RL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
 BO_ 665 RL_AMK_RITSet3: 8 RL
- SG_ RL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector_XXX
- SG_ RL_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
- SG_ RL_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector_XXX
+ SG_ RL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ RL_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ RL_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector__XXX
 
 BO_ 388 RL_AMK_Setpoints: 8 RL
- SG_ RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
- SG_ RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
- SG_ RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
+ SG_ RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
 
 
 BO_ 644 RR_AMK_Actual_1: 8 RR
- SG_ RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ RR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
+ SG_ RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ RR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
 
 BO_ 648 RR_AMK_Actual_2: 8 RR
- SG_ RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ RR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
- SG_ RR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector_XXX
- SG_ RR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ RR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ RR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
  
 BO_ 658 RR_AMK_RITSet1: 8 RR
- SG_ RR_ErrorList1 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ RR_ErrorList2 : 32|32@1+ (1,0) [0|4294967295] "" Vector_XXX
+ SG_ RR_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RR_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
  
 BO_ 662 RR_AMK_RITSet2: 8 RR
- SG_ RR_ErrorList3 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ RR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
- SG_ RR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
+ SG_ RR_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
+ SG_ RR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
 BO_ 666 RR_AMK_RITSet3: 8 RR
- SG_ RR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector_XXX
- SG_ RR_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
- SG_ RR_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector_XXX 
+ SG_ RR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ RR_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ RR_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector__XXX 
 
 BO_ 389 RR_AMK_Setpoints: 8 RR
- SG_ RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ RR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
- SG_ RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
- SG_ RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
+ SG_ RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
 
 
 BO_ 645 FL_AMK_Actual_1: 8 FL
- SG_ FL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ FL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
+ SG_ FL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ FL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
 
 BO_ 649 FL_AMK_Actual_2: 8 FL
- SG_ FL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ FL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
- SG_ FL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector_XXX
- SG_ FL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ FL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ FL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ FL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
  
 BO_ 659 FL_AMK_RITSet1: 8 FL
- SG_ FL_ErrorList1 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ FL_ErrorList2 : 32|32@1+ (1,0) [0|4294967295] "" Vector_XXX
+ SG_ FL_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FL_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
  
 BO_ 663 FL_AMK_RITSet2: 8 FL
- SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
- SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
+ SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
+ SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
 BO_ 667 FL_AMK_RITSet3: 8 FL
- SG_ FL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector_XXX
- SG_ FL_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
- SG_ FL_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector_XXX 
+ SG_ FL_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ FL_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ FL_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector__XXX 
 
 BO_ 390 FL_AMK_Setpoints: 8 FL
- SG_ FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
- SG_ FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
- SG_ FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
+ SG_ FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
 
  
 BO_ 646 FR_AMK_Actual_1: 8 FR
- SG_ FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector_XXX
- SG_ FR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector_XXX
+ SG_ FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ FR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
 
 BO_ 656 FR_AMK_Actual_2: 8 FR
- SG_ FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector_XXX
- SG_ FR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
- SG_ FR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector_XXX
- SG_ FR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector_XXX
+ SG_ FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ FR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ FR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
  
 BO_ 660 FR_AMK_RITSet1: 8 FR
- SG_ FR_ErrorList1 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ FR_ErrorList2 : 32|32@1+ (1,0) [0|4294967295] "" Vector_XXX
+ SG_ FR_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FR_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
  
 BO_ 664 FR_AMK_RITSet2: 8 FR
- SG_ FR_ErrorList3 : 0|32@1+ (1,0) [0|4294967295] "" Vector_XXX
- SG_ FR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector_XXX
- SG_ FR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector_XXX
+ SG_ FR_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
+ SG_ FR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
 BO_ 668 FR_AMK_RITSet3: 8 FR
- SG_ FR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector_XXX
- SG_ FR_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector_XXX
- SG_ FR_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector_XXX 
+ SG_ FR_TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ FR_ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ FR_HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector__XXX 
 
 BO_ 391 FR_AMK_Setpoints: 8 FR
- SG_ FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector_XXX
- SG_ FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector_XXX
- SG_ FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
- SG_ FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector_XXX
+ SG_ FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
+ SG_ FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
