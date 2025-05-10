@@ -84,17 +84,17 @@ BO_ 304 VC_DashInputs: 8 VC
  SG_ VC_DashInputs_Switch2 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 311 VC_FaultVector: 8 VC
- SG_ VC_ShutdownStatus_BMS_fault : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_ACCEL_A_IRRA : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_ACCEL_B_IRRA : 2|1@1+ (1,0) [0|1] "" Vector__XXX 
- SG_ VC_FaultVector_APPS_DISAG : 3|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 4|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_FBPS_LOST : 5|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_FBPS_IRRA : 6|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_RBPS_IRRA : 7|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_STEER_ANGLE_LOST : 8|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_FaultVector_VN_LOST : 9|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ VC_PBX_SHUTDOWN_CONTROL : 10|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_PBX_SHUTDOWN_CONTROL : 0|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_ShutdownStatus_BMS_fault : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_ACCEL_A_IRRA : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_ACCEL_B_IRRA : 3|1@1+ (1,0) [0|1] "" Vector__XXX 
+ SG_ VC_FaultVector_APPS_DISAG : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_APPS_DOUBLE_PEDAL : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_FSSDB_LOST : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_FBPS_IRRA : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_RBPS_IRRA : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_STEER_IRRA : 9|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ VC_FaultVector_RSSDB_LOST : 10|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_RR_ERROR : 11|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_RL_ERROR : 12|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_FR_ERROR : 13|1@1+ (1,0) [0|1] ""  Vector__XXX
