@@ -21,31 +21,6 @@ Var=BMS_Overview_TempAvg signed 16,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Overview_TempMin signed 0,8 /u:C /min:-128 /max:127 /d:0
 Var=BMS_Overview_TempMax signed 8,8 /u:C /min:-128 /max:127 /d:0
 
-[C70_BrakePressures]
-ID=6FFh	// Brake Pressures, relayed by C70
-Type=Standard
-DLC=8
-Var=C70_BrakePressureFront signed 0,16 /u:psi /f:0.5 /o:2500 /min:0 /max:5000 /d:0.0
-Var=C70_BrakePressureRear signed 16,16 /u:psi /f:0.2 /o:1250 /min:0 /max:2500 /d:0.0
-
-[C70_TireTemps]
-ID=752h
-Type=Standard
-DLC=8
-Var=TireTemp_FL_Max unsigned 0,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=TireTemp_FR_Max unsigned 16,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=TireTemp_RL_Max unsigned 32,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=TireTemp_RR_Max unsigned 48,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-
-[C70_RotorTemps]
-ID=753h
-Type=Standard
-DLC=8
-Var=RotorTemp_FL_Max unsigned 0,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=RotorTemp_FR_Max unsigned 16,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=RotorTemp_RL_Max unsigned 32,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-Var=RotorTemp_RR_Max unsigned 48,16 /u:degC /f:0.01 /o:-100 /min:-20 /max:950 /d:0.00
-
 [VC_Status]
 ID=12Dh
 Type=Standard
@@ -130,6 +105,13 @@ ID=13Ch
 Type=Standard
 DLC=8
 Var=VC_RequestRTDS unsigned 0,1 /min:0 /max:1 /d:0
+
+[VC_CAN_Errors]
+ID=13Dh
+Type=Standard
+DLC=8
+Var=VC_CAN_Errors_Arbitration unsigned 0,16 /min:0 /max:0 /d:0
+Var=VC_CAN_Errors_Data unsigned 16,16 /min:0 /max:0 /d:0
 
 [PBX_Status]
 ID=700h
