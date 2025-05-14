@@ -131,6 +131,15 @@ Var=VC_RL_TC_Out unsigned 16,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_FR_TC_Out unsigned 32,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_FL_TC_Out unsigned 48,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
 
+[VC_Der]
+ID=140h
+Type=Standard
+DLC=8
+Var=VC_RR_Der unsigned 0,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_RL_Der unsigned 16,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FR_Der unsigned 32,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FL_Der unsigned 48,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
+
 [PBX_Status]
 ID=700h
 Type=Standard

@@ -121,6 +121,12 @@ BO_ 319 VC_TC_Out: 8 VC
  SG_ VC_FR_TC_Out: 32|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
  SG_ VC_FL_TC_Out: 48|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
 
+BO_ 320 VC_Der: 8 VC
+ SG_ VC_RR_Der: 0|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_RL_Der: 16|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_FR_Der: 32|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_FL_Der: 48|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
  SG_ PBX_LV_Current : 11|14@1+ (0.01,0) [0|100] "A" Vector__XXX
