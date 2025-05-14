@@ -109,6 +109,18 @@ BO_ 317 VC_CAN_Errors: 8 VC
  SG_ VC_CAN_Errors_Arbitration : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_CAN_Errors_Data : 16|16@1+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 318 VC_TV_Out: 8 VC
+ SG_ VC_RR_TV_Out: 0|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_RL_TV_Out: 16|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_FR_TV_Out: 32|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_FL_TV_Out: 48|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+
+BO_ 319 VC_TC_Out: 8 VC
+ SG_ VC_RR_TC_Out: 0|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_RL_TC_Out: 16|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_FR_TC_Out: 32|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+ SG_ VC_FL_TC_Out: 48|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
+
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
  SG_ PBX_LV_Current : 11|14@1+ (0.01,0) [0|100] "A" Vector__XXX
@@ -733,9 +745,6 @@ BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
  SG_ VC_FR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
  
-
-
-
 
 BO_ 1 VC_InvTimes: 8 VC
  SG_ VC_RR_Time : 0|16@1+ (1,0) [0|65535] "" Vector__XXX

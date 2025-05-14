@@ -113,6 +113,24 @@ DLC=8
 Var=VC_CAN_Errors_Arbitration unsigned 0,16 /min:0 /max:0 /d:0
 Var=VC_CAN_Errors_Data unsigned 16,16 /min:0 /max:0 /d:0
 
+[VC_TV_Out]
+ID=13Eh
+Type=Standard
+DLC=8
+Var=VC_RR_TV_Out unsigned 0,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_RL_TV_Out unsigned 16,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FR_TV_Out unsigned 32,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FL_TV_Out unsigned 48,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+
+[VC_TC_Out]
+ID=13Fh
+Type=Standard
+DLC=8
+Var=VC_RR_TC_Out unsigned 0,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_RL_TC_Out unsigned 16,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FR_TC_Out unsigned 32,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_FL_TC_Out unsigned 48,16 /u:"% Mn" /f:0.1 /min:0 /max:0 /d:0.0
+
 [PBX_Status]
 ID=700h
 Type=Standard
