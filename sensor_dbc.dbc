@@ -287,27 +287,27 @@ BO_ 405 VectorNav5: 8 VectorNav
  SG_ VectorNav_PosLlaA : 0|64@1+ (1,0) [0|0] "m" Vector__XXX
 
 BO_ 406 VectorNav6: 8 VectorNav
- SG_ VectorNav_VelNedN : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_VelNedE : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyX : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyY : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
 
-BO_ 407 VectorNav7: 6 VectorNav
- SG_ VectorNav_VelNedD : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_GNSS1NumSats : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VectorNav_GNSS2NumSats : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 407 VectorNav7: 8 VectorNav
+ SG_ VectorNav_VelBodyZ : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_YprY : 32|32@1+ (1,0) [0|0] "deg" Vector__XXX
 
-BO_ 408 VectorNav: 64 VectorNav
- SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
- SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
- SG_ VectorNav_AccelZ : 64|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
- SG_ VectorNav_AngularRateX : 96|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
- SG_ VectorNav_AngularRateY : 128|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
- SG_ VectorNav_AngularRateZ : 160|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
- SG_ VectorNav_PosLlaL : 192|64@1+ (1,0) [0|0] "deg" Vector__XXX
- SG_ VectorNav_PosLlaO : 256|64@1+ (1,0) [0|0] "deg" Vector__XXX
- SG_ VectorNav_PosLlaA : 320|64@1+ (1,0) [0|0] "m" Vector__XXX
- SG_ VectorNav_VelNedN : 384|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_VelNedE : 416|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_VelNedD : 448|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+BO_ 408 VectorNav8: 8 VectorNav
+ SG_ VectorNav_YprP : 0|32@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_YprR : 32|32@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 409 VectorNav9: 4 VectorNav
+ SG_ VectorNav_GNSS1NumSats : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VectorNav_GNSS2NumSats : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VectorNav_InsStatus_Mode : 16|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssFix : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_ImuErr : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_MagPresErr : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssErr : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssHeadingIns : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssCompass : 25|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 500 SSDB_suspension_front: 3 SSDB
  SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
@@ -333,18 +333,9 @@ SIG_VALTYPE_ 402 VectorNav_AngularRateZ : 1;
 SIG_VALTYPE_ 403 VectorNav_PosLlaL : 2;
 SIG_VALTYPE_ 404 VectorNav_PosLlaO : 2;
 SIG_VALTYPE_ 405 VectorNav_PosLlaA : 2;
-SIG_VALTYPE_ 406 VectorNav_VelNedN : 1;
-SIG_VALTYPE_ 406 VectorNav_VelNedE : 1;
-SIG_VALTYPE_ 407 VectorNav_VelNedD : 1;
-SIG_VALTYPE_ 408 VectorNav_AccelX : 1;
-SIG_VALTYPE_ 408 VectorNav_AccelY : 1;
-SIG_VALTYPE_ 408 VectorNav_AccelZ : 1;
-SIG_VALTYPE_ 408 VectorNav_AngularRateX : 1;
-SIG_VALTYPE_ 408 VectorNav_AngularRateY : 1;
-SIG_VALTYPE_ 408 VectorNav_AngularRateZ : 1;
-SIG_VALTYPE_ 408 VectorNav_PosLlaL : 2;
-SIG_VALTYPE_ 408 VectorNav_PosLlaO : 2;
-SIG_VALTYPE_ 408 VectorNav_PosLlaA : 2;
-SIG_VALTYPE_ 408 VectorNav_VelNedN : 1;
-SIG_VALTYPE_ 408 VectorNav_VelNedE : 1;
-SIG_VALTYPE_ 408 VectorNav_VelNedD : 1;
+SIG_VALTYPE_ 406 VectorNav_VelBodyX : 1;
+SIG_VALTYPE_ 406 VectorNav_VelBodyY : 1;
+SIG_VALTYPE_ 407 VectorNav_VelBodyZ : 1;
+SIG_VALTYPE_ 407 VectorNav_YprY : 1;
+SIG_VALTYPE_ 408 VectorNav_YprP : 1;
+SIG_VALTYPE_ 408 VectorNav_YprR : 1;

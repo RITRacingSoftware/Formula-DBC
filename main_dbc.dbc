@@ -598,8 +598,8 @@ BO_ 504 SSDB_front: 3 SSDB
  SG_ SSDB_steering_angle_raw : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 505 SSDB_VectorNav6: 8 VectorNav
- SG_ VectorNav_VelNedN : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_VelNedE : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyX : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyY : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
 
 
 BO_ 400 VC_RL_AMK_Setpoints: 8 VC
@@ -796,5 +796,5 @@ VAL_ 311 VC_RL_Status 5 "InvState_PAIRED_HARD" 4 "InvState_PAIRED_SOFT" 3 "InvSt
 VAL_ 311 VC_FR_Status 5 "InvState_PAIRED_HARD" 4 "InvState_PAIRED_SOFT" 3 "InvState_LOST" 2 "InvState_HARD_FAULT" 1 "InvState_SOFT_FAULT" 0 "InvState_NORMAL" ;
 VAL_ 311 VC_FL_Status 5 "InvState_PAIRED_HARD" 4 "InvState_PAIRED_SOFT" 3 "InvState_LOST" 2 "InvState_HARD_FAULT" 1 "InvState_SOFT_FAULT" 0 "InvState_NORMAL" ;
 
-SIG_VALTYPE_ 505 VectorNav_VelNedN : 1;
-SIG_VALTYPE_ 505 VectorNav_VelNedE : 1;
+SIG_VALTYPE_ 505 VectorNav_VelBodyX : 1;
+SIG_VALTYPE_ 505 VectorNav_VelBodyY : 1;
