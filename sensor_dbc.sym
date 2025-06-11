@@ -17,18 +17,18 @@ Var=PIT_PressureRange unsigned 56,8 /min:0 /max:3 /d:0
 
 [PIT_Pressures]
 DLC=8
-Mux=PIT_PressureMux2 0,8 2 -m 
-Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
-
-[PIT_Pressures]
-DLC=8
 Mux=PIT_PressureMux1 0,8 1 -m 
 Var=PIT_Pressure4 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure5 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure6 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Temperature signed 56,8 /u:degC /min:0 /max:0 /d:0
+
+[PIT_Pressures]
+DLC=8
+Mux=PIT_PressureMux2 0,8 2 -m 
+Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
 
 [TireTemp_FL_M1]
 ID=4C4h
@@ -409,33 +409,36 @@ Var=VectorNav_PosLlaA float 0,64 /u:m /min:0 /max:0 /d:0
 ID=196h
 Type=Standard
 DLC=8
-Var=VectorNav_VelNedN float 0,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_VelNedE float 32,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelBodyX float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelBodyY float 32,32 /u:m/s /min:0 /max:0 /d:0
 
 [VectorNav7]
 ID=197h
 Type=Standard
-DLC=6
-Var=VectorNav_VelNedD float 0,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_GNSS1NumSats unsigned 32,8 /min:0 /max:255 /d:0
-Var=VectorNav_GNSS2NumSats unsigned 40,8 /min:0 /max:255 /d:0
+DLC=8
+Var=VectorNav_VelBodyZ float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_YprY float 32,32 /u:deg /min:0 /max:0 /d:0
 
-[VectorNav]
+[VectorNav8]
 ID=198h
 Type=Standard
-DLC=64
-Var=VectorNav_AccelX float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AccelY float 32,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AccelZ float 64,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AngularRateX float 96,32 /u:rad/s /min:0 /max:0 /d:0
-Var=VectorNav_AngularRateY float 128,32 /u:rad/s /min:0 /max:0 /d:0
-Var=VectorNav_AngularRateZ float 160,32 /u:rad/s /min:0 /max:0 /d:0
-Var=VectorNav_PosLlaL float 192,64 /u:deg /min:0 /max:0 /d:0
-Var=VectorNav_PosLlaO float 256,64 /u:deg /min:0 /max:0 /d:0
-Var=VectorNav_PosLlaA float 320,64 /u:m /min:0 /max:0 /d:0
-Var=VectorNav_VelNedN float 384,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_VelNedE float 416,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_VelNedD float 448,32 /u:m/s /min:0 /max:0 /d:0
+DLC=8
+Var=VectorNav_YprP float 0,32 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_YprR float 32,32 /u:deg /min:0 /max:0 /d:0
+
+[VectorNav9]
+ID=199h
+Type=Standard
+DLC=4
+Var=VectorNav_GNSS1NumSats unsigned 0,8 /min:0 /max:255 /d:0
+Var=VectorNav_GNSS2NumSats unsigned 8,8 /min:0 /max:255 /d:0
+Var=VectorNav_InsStatus_Mode unsigned 16,2 /min:0 /max:2 /d:0
+Var=VectorNav_InsStatus_GnssFix unsigned 18,1 /min:0 /max:1 /d:0
+Var=VectorNav_InsStatus_ImuErr unsigned 20,1 /min:0 /max:1 /d:0
+Var=VectorNav_InsStatus_MagPresErr unsigned 21,1 /min:0 /max:1 /d:0
+Var=VectorNav_InsStatus_GnssErr unsigned 22,1 /min:0 /max:1 /d:0
+Var=VectorNav_InsStatus_GnssHeadingIns unsigned 24,1 /min:0 /max:1 /d:0
+Var=VectorNav_InsStatus_GnssCompass unsigned 25,1 /min:0 /max:1 /d:0
 
 [SSDB_suspension_front]
 ID=1F4h
