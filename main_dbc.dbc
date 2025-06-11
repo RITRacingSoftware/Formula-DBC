@@ -84,6 +84,7 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_FR_ERROR : 13|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_FL_ERROR : 14|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_PC_TIMEOUT : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultManager_SOFT_DP : 16|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 312 VC_InverterStatus: 8 VC
  SG_ VC_RR_Overspeed : 0|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -126,6 +127,12 @@ BO_ 320 VC_Der: 8 VC
  SG_ VC_RL_Der: 16|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FR_Der: 32|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FL_Der: 48|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+
+BO_ 321 VC_InvTimes: 8 VC
+ SG_ VC_RR_Time : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ VC_RL_Time : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ VC_FR_Time : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ VC_FL_Time : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
@@ -752,11 +759,6 @@ BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
  
 
-BO_ 1 VC_InvTimes: 8 VC
- SG_ VC_RR_Time : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ VC_RL_Time : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ VC_FR_Time : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ VC_FL_Time : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";

@@ -76,6 +76,7 @@ Var=VC_FaultVector_RL_ERROR unsigned 12,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FR_ERROR unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FL_ERROR unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_PC_TIMEOUT unsigned 15,1 /min:0 /max:1 /d:0
+Var=VC_FaultManager_SOFT_DP unsigned 16,1 /min:0 /max:1 /d:0
 
 [VC_InverterStatus]
 ID=138h
@@ -139,6 +140,15 @@ Var=VC_RR_Der unsigned 0,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_RL_Der unsigned 16,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_FR_Der unsigned 32,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_FL_Der unsigned 48,16 /u:rpm /f:0.1 /min:0 /max:0 /d:0.0
+
+[VC_InvTimes]
+ID=141h
+Type=Standard
+DLC=8
+Var=VC_RR_Time unsigned 0,16 /min:0 /max:65535 /d:0
+Var=VC_RL_Time unsigned 16,16 /min:0 /max:65535 /d:0
+Var=VC_FR_Time unsigned 32,16 /min:0 /max:65535 /d:0
+Var=VC_FL_Time unsigned 48,16 /min:0 /max:65535 /d:0
 
 [PBX_Status]
 ID=700h
@@ -1058,13 +1068,4 @@ DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 Var=VC_FR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
-
-[VC_InvTimes]
-ID=001h
-Type=Standard
-DLC=8
-Var=VC_RR_Time unsigned 0,16 /min:0 /max:65535 /d:0
-Var=VC_RL_Time unsigned 16,16 /min:0 /max:65535 /d:0
-Var=VC_FR_Time unsigned 32,16 /min:0 /max:65535 /d:0
-Var=VC_FL_Time unsigned 48,16 /min:0 /max:65535 /d:0
 
