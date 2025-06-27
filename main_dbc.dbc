@@ -150,6 +150,9 @@ BO_ 1792 PBX_Status: 8 PBX
 BO_ 1793 MCAN_C70Control: 1 MCAN
  SG_ MCAN_C70Enable : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 1794 MCAN_DashControl: 1 MCAN
+ SG_ DASH_ActiveScreen : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
 BO_ 514 BMS_Current_Limit: 8 BMS
  SG_ D1_Max_Discharge_Current : 0|16@1+ (1,0) [0|1000] "A" Vector__XXX
  SG_ D2_Max_Charge_Current : 16|16@1+ (1,0) [0|1000] "A" Vector__XXX

@@ -173,6 +173,12 @@ Type=Standard
 DLC=1
 Var=MCAN_C70Enable unsigned 0,1 /min:0 /max:1 /d:0
 
+[MCAN_DashControl]
+ID=702h
+Type=Standard
+DLC=1
+Var=DASH_ActiveScreen unsigned 0,1 /min:0 /max:1 /d:0
+
 [BMS_Current_Limit]
 ID=202h
 Type=Standard
