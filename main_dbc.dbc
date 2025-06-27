@@ -52,7 +52,7 @@ BO_ 302 VC_ProcessedInputs: 8 VC
  SG_ VC_P_Inputs_BrakesRearPsi : 15|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
  SG_ VC_P_Inputs_BrakesPct : 30|10@1+ (0.1,0) [0|100] "%" Vector__XXX
  SG_ VC_P_Inputs_SteerPct : 40|11@1- (0.1,0) [-100|100] "%" Vector__XXX
- SG_ VC_P_Inputs_AccelPosition : 51|10@1+ (0.1,0) [0|100] "%" Vector__XXX
+ SG_ VC_P_Inputs_AccelPosition : 51|11@1- (0.1,0) [-100|100] "%" Vector__XXX
 
 BO_ 303 VC_PedalInputsRaw: 8 VC
  SG_ VC_PedalInputsRaw_AccelA_ADC : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
@@ -85,7 +85,6 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_FL_ERROR : 14|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_PC_TIMEOUT : 15|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_FaultVector_SOFT_DP : 16|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VC_FaultVector_INV : 17|1@1+ (1,0) [0|1] "" Vector__XXX
 
 
 
@@ -141,6 +140,13 @@ BO_ 322 VC_PowerLimit: 8 VC
  SG_ VC_CurrP : 0|32@1+ (0.01,0) [0|0] "W" Vector__XXX
  SG_ VC_MaxTorqueOut : 32|16@1+ (0.1,0) [0|0] "%Mn" Vector__XXX
  SG_ VC_PowerLimitActive : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 323 VC_Config1: 8 VC
+ SG_ VC_LatFactorAccel : 0|10@1+ (0.01, 0) [0|0] "" Vector__XXX
+ SG_ VC_LongFactorAccel : 10|10@1+ (0.01, 0) [0|0] "" Vector__XXX
+ SG_ VC_LongSplitAccel : 20|10@1+ (0.01, 0) [0|0] "" Vector__XXX
+ SG_ VC_Gain : 30|13@1+ (0.01, 0) [0|0] "" Vector__XXX 
+
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX

@@ -35,7 +35,7 @@ Var=VC_P_Inputs_BrakesFrontPsi unsigned 0,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0
 Var=VC_P_Inputs_BrakesRearPsi unsigned 15,15 /u:psi /f:0.1 /min:0 /max:3000 /d:0.0
 Var=VC_P_Inputs_BrakesPct unsigned 30,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
 Var=VC_P_Inputs_SteerPct signed 40,11 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
-Var=VC_P_Inputs_AccelPosition unsigned 51,10 /u:% /f:0.1 /min:0 /max:100 /d:0.0
+Var=VC_P_Inputs_AccelPosition signed 51,11 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 
 [VC_PedalInputsRaw]
 ID=12Fh
@@ -77,7 +77,6 @@ Var=VC_FaultVector_FR_ERROR unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FL_ERROR unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_PC_TIMEOUT unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_SOFT_DP unsigned 16,1 /min:0 /max:1 /d:0
-Var=VC_FaultVector_INV unsigned 17,1 /min:0 /max:1 /d:0
 
 [VC_InverterStatus]
 ID=138h
@@ -158,6 +157,15 @@ DLC=8
 Var=VC_CurrP unsigned 0,32 /u:W /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_MaxTorqueOut unsigned 32,16 /u:%Mn /f:0.1 /min:0 /max:0 /d:0.0
 Var=VC_PowerLimitActive unsigned 48,1 /min:0 /max:1 /d:0
+
+[VC_Config1]
+ID=143h
+Type=Standard
+DLC=8
+Var=VC_LatFactorAccel unsigned 0,10 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_LongFactorAccel unsigned 10,10 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_LongSplitAccel unsigned 20,10 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_Gain unsigned 30,13 /f:0.01 /min:0 /max:0 /d:0.00
 
 [PBX_Status]
 ID=700h
