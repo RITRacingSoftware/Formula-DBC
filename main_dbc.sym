@@ -1096,3 +1096,17 @@ Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
 Var=VC_FR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
 
+[SSDB_suspension_front]
+ID=1F4h
+Type=Standard
+DLC=3
+Var=SSDB_suspension_FL unsigned 0,12 /min:0 /max:4095 /d:0
+Var=SSDB_suspension_FR unsigned 12,12 /min:0 /max:4095 /d:0
+
+[SSDB_suspension_rear]
+ID=1F5h
+Type=Standard
+DLC=3
+Var=SSDB_suspension_RL unsigned 0,12 /min:0 /max:4095 /d:0
+Var=SSDB_suspension_RR unsigned 12,12 /min:0 /max:4095 /d:0
+

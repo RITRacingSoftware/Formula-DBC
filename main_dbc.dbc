@@ -775,7 +775,13 @@ BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
  SG_ VC_FR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
  
+BO_ 500 SSDB_suspension_front: 3 SSDB
+ SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
+BO_ 501 SSDB_suspension_rear: 3 SSDB
+ SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 
 CM_ BU_ C70 "Bosch C70 Data Logger";
