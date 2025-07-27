@@ -625,6 +625,9 @@ BO_ 505 SSDB_VectorNav6: 8 VectorNav
  SG_ VectorNav_VelBodyX : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
  SG_ VectorNav_VelBodyY : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
 
+BO_ 506 VectorNav0: 8 VectorNav
+ SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
 
 BO_ 400 VC_RL_AMK_Setpoints: 8 VC
  SG_ VC_RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
