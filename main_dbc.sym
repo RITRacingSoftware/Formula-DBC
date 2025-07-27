@@ -739,24 +739,6 @@ Var=BMS_DrainStatus_D10 unsigned 63,1 /min:0 /max:1 /d:0
 
 [BMS_DrainStatus]
 DLC=8
-Mux=BMS_DrainStatus2 0,2 2 
-Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
-
-[BMS_DrainStatus]
-DLC=8
 Mux=BMS_DrainStatus1 0,2 1 
 Var=BMS_DrainStatus_D11 unsigned 3,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_D12 unsigned 4,1 /min:0 /max:1 /d:0
@@ -819,6 +801,24 @@ Var=BMS_DrainStatus_G17 unsigned 60,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H1 unsigned 61,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H2 unsigned 62,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H3 unsigned 63,1 /min:0 /max:1 /d:0
+
+[BMS_DrainStatus]
+DLC=8
+Mux=BMS_DrainStatus2 0,2 2 
+Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
 
 [BMS_Current]
 ID=384h
@@ -901,8 +901,8 @@ Var=VectorNav_VelBodyY float 32,32 /u:m/s /min:0 /max:0 /d:0
 ID=1FAh
 Type=Standard
 DLC=8
-Var=VectorNav_AccelX unsigned 0,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AccelY unsigned 32,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelX float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelY float 32,32 /u:m/s^2 /min:0 /max:0 /d:0
 
 [VC_RL_AMK_Setpoints]
 ID=190h

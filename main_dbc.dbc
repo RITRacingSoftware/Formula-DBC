@@ -826,3 +826,6 @@ VAL_ 311 VC_FL_Status 5 "InvState_PAIRED_HARD" 4 "InvState_PAIRED_SOFT" 3 "InvSt
 
 SIG_VALTYPE_ 505 VectorNav_VelBodyX : 1;
 SIG_VALTYPE_ 505 VectorNav_VelBodyY : 1;
+SIG_VALTYPE_ 506 VectorNav_AccelX : 1;
+SIG_VALTYPE_ 506 VectorNav_AccelY : 1;
+
