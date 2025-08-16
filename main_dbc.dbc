@@ -142,11 +142,30 @@ BO_ 322 VC_PowerLimit: 8 VC
  SG_ VC_PowerLimitActive : 48|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 323 VC_Config1: 8 VC
- SG_ VC_LatFactorAccel : 0|10@1+ (0.01, 0) [0|0] "" Vector__XXX
- SG_ VC_LongFactorAccel : 10|10@1+ (0.01, 0) [0|0] "" Vector__XXX
- SG_ VC_LongSplitAccel : 20|10@1+ (0.01, 0) [0|0] "" Vector__XXX
- SG_ VC_Gain : 30|13@1+ (0.01, 0) [0|0] "" Vector__XXX 
+ SG_ VC_LatFactorAccel : 0|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_LongFactorAccel : 10|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_LongSplitAccel : 20|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_Gain : 30|13@1+ (0.01,0) [0|0] "" Vector__XXX
 
+BO_ 324 VC_ControlsOut: 8 VC
+ SG_ VC_RR_SlipRatio : 0|10@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_RL_SlipRatio : 10|10@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_FR_SlipRatio : 20|10@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_FL_SlipRatio : 30|10@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_DesiredYawRate : 40|16@1+ (0.001,0) [0|0] "rad/s" Vector__XXX
+
+BO_ 325 VC_ControlsConstants1 : 8 VC
+ SG_ VC_LongFactor : 0|7@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_TargetSlipRatio : 7|7@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_kP_SlipRatio : 14|10@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_kI_SlipRatio : 24|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ VC_TC_ActivationThreshold : 34|7@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_kP_YawRate : 41|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_kI_YawRate : 51|10@1+ (0.01,0) [0|0] "" Vector__XXX
+
+BO_ 326 VC_ControlsConstants2 : 4 VC
+ SG_ VC_MaxDesiredYawRate : 0|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_UndersteerGradient : 10|14@1+ (0.01,0) [0|0] "" Vector__XXX
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
@@ -621,11 +640,6 @@ BO_ 504 SSDB_front: 3 SSDB
  SG_ SSDB_brake_pressure_front_raw : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_steering_angle_raw : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
-BO_ 505 SSDB_VectorNav6: 8 VectorNav
- SG_ VectorNav_VelBodyX : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
- SG_ VectorNav_VelBodyY : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
-
-
 BO_ 400 VC_RL_AMK_Setpoints: 8 VC
  SG_ VC_RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -775,6 +789,47 @@ BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
  SG_ VC_FR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
  
+BO_ 520 SSDB_suspension_front: 3 SSDB
+ SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 521 SSDB_suspension_rear: 3 SSDB
+ SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+
+BO_ 530 VectorNav0: 8 VectorNav
+ SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+
+BO_ 531 VectorNav1: 8 VectorNav
+ SG_ VectorNav_AccelZ : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AngularRateX : 32|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+
+BO_ 532 VectorNav2: 8 VectorNav
+ SG_ VectorNav_AngularRateY : 0|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateZ : 32|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+
+BO_ 533 VectorNav3: 8 VectorNav
+ SG_ VectorNav_PosLlaL : 0|64@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 534 VectorNav4: 8 VectorNav
+ SG_ VectorNav_PosLlaO : 0|64@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 535 VectorNav5: 8 VectorNav
+ SG_ VectorNav_PosLlaA : 0|64@1+ (1,0) [0|0] "m" Vector__XXX
+
+BO_ 536 VectorNav6: 8 VectorNav
+ SG_ VectorNav_VelBodyX : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyY : 32|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+
+BO_ 537 VectorNav7: 8 VectorNav
+ SG_ VectorNav_VelBodyZ : 0|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_YprY : 32|32@1+ (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 538 VectorNav8: 8 VectorNav
+ SG_ VectorNav_YprP : 0|32@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_YprR : 32|32@1+ (1,0) [0|0] "deg" Vector__XXX
 
 
 
