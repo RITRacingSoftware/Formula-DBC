@@ -33,7 +33,47 @@ NS_ :
 
 BS_:
 
-BU_: C70 PIT IRTEMP
+BU_: C70 PIT IRTEMP PDU
+
+BO_ 1920 PDU_Currents: 64 PDU
+ SG_ PDU_Channel0_Current : 0|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel1_Current : 16|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel2_Current : 32|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel3_Current : 48|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel4_Current : 64|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel5_Current : 80|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel6_Current : 96|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel7_Current : 112|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel8_Current : 128|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel9_Current : 144|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel10_Current : 160|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel11_Current : 176|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel12_Current : 192|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel13_Current : 208|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel14_Current : 224|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel15_Current : 240|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel16_Current : 256|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel17_Current : 272|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel18_Current : 288|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel19_Current : 304|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel20_Current : 320|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel21_Current : 336|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel22_Current : 352|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel23_Current : 368|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel24_Current : 384|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel25_Current : 400|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel26_Current : 416|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel27_Current : 432|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel28_Current : 448|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel29_Current : 464|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel30_Current : 480|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+ SG_ PDU_Channel31_Current : 496|16@1+ (0.001,0) [0|65.535] "A" Vector__XXX
+
+BO_ 1921 PDU_Voltages: 8 PDU
+ SG_ PDU_Bank0_Voltage : 0|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ PDU_Bank1_Voltage : 16|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ PDU_Bank2_Voltage : 32|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ PDU_Bank3_Voltage : 48|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
 
 BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_PressureMux M : 0|8@1+ (1,0) [0|255] "" Vector__XXX

@@ -5,6 +5,52 @@ Title="canmatrix-Export"
 
 {SENDRECEIVE}
 
+[PDU_Currents]
+ID=780h
+Type=Standard
+DLC=64
+Var=PDU_Channel0_Current unsigned 0,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel1_Current unsigned 16,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel2_Current unsigned 32,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel3_Current unsigned 48,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel4_Current unsigned 64,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel5_Current unsigned 80,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel6_Current unsigned 96,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel7_Current unsigned 112,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel8_Current unsigned 128,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel9_Current unsigned 144,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel10_Current unsigned 160,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel11_Current unsigned 176,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel12_Current unsigned 192,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel13_Current unsigned 208,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel14_Current unsigned 224,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel15_Current unsigned 240,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel16_Current unsigned 256,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel17_Current unsigned 272,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel18_Current unsigned 288,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel19_Current unsigned 304,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel20_Current unsigned 320,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel21_Current unsigned 336,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel22_Current unsigned 352,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel23_Current unsigned 368,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel24_Current unsigned 384,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel25_Current unsigned 400,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel26_Current unsigned 416,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel27_Current unsigned 432,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel28_Current unsigned 448,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel29_Current unsigned 464,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel30_Current unsigned 480,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Channel31_Current unsigned 496,16 /u:A /f:0.001 /min:0 /max:65.535 /d:0.000
+
+[PDU_Voltages]
+ID=781h
+Type=Standard
+DLC=8
+Var=PDU_Bank0_Voltage unsigned 0,16 /u:V /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Bank1_Voltage unsigned 16,16 /u:V /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Bank2_Voltage unsigned 32,16 /u:V /f:0.001 /min:0 /max:65.535 /d:0.000
+Var=PDU_Bank3_Voltage unsigned 48,16 /u:V /f:0.001 /min:0 /max:65.535 /d:0.000
+
 [PIT_Pressures]
 ID=180h
 Type=Standard
