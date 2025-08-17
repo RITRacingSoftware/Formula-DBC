@@ -35,6 +35,9 @@ BS_:
 
 BU_: C70 VC BMS CHG DASH PBX MCAN
 
+BO_ 14 LongTest: 16 BMS
+ SG_ LongTestV : 0|128@1+ (1,0) [0|1000] "" Vector__XXX
+
 BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_Drains : 51|7@1+ (1,0) [0|76] "" Vector__XXX
  SG_ BMS_Overview_VoltMin : 24|9@1+ (0.01,0) [0|5.12] "V"  DASH
@@ -872,3 +875,19 @@ VAL_ 311 VC_FL_Status 5 "InvState_PAIRED_HARD" 4 "InvState_PAIRED_SOFT" 3 "InvSt
 
 SIG_VALTYPE_ 505 VectorNav_VelBodyX : 1;
 SIG_VALTYPE_ 505 VectorNav_VelBodyY : 1;
+
+SIG_VALTYPE_ 530 VectorNav_AccelX : 1;
+SIG_VALTYPE_ 530 VectorNav_AccelY : 1;
+SIG_VALTYPE_ 531 VectorNav_AccelZ : 1;
+SIG_VALTYPE_ 531 VectorNav_AngularRateX : 1;
+SIG_VALTYPE_ 532 VectorNav_AngularRateY : 1;
+SIG_VALTYPE_ 532 VectorNav_AngularRateZ : 1;
+SIG_VALTYPE_ 533 VectorNav_PosLlaL : 2;
+SIG_VALTYPE_ 534 VectorNav_PosLlaO : 2;
+SIG_VALTYPE_ 535 VectorNav_PosLlaA : 2;
+SIG_VALTYPE_ 536 VectorNav_VelBodyX : 1;
+SIG_VALTYPE_ 536 VectorNav_VelBodyY : 1;
+SIG_VALTYPE_ 537 VectorNav_VelBodyZ : 1;
+SIG_VALTYPE_ 537 VectorNav_YprY : 1;
+SIG_VALTYPE_ 538 VectorNav_YprP : 1;
+SIG_VALTYPE_ 538 VectorNav_YprR : 1;
