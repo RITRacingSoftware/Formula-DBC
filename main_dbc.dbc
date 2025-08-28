@@ -147,7 +147,7 @@ BO_ 323 VC_Config1: 8 VC
  SG_ VC_LongSplitAccel : 20|10@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_Gain : 30|13@1+ (0.01,0) [0|0] "" Vector__XXX
 
-BO_ 324 VC_ControlsOut: 8 VC
+BO_ 324 VC_ControlsOut1: 8 VC
  SG_ VC_RR_SlipRatio : 0|10@1+ (0.001,0) [0|0] "" Vector__XXX
  SG_ VC_RL_SlipRatio : 10|10@1+ (0.001,0) [0|0] "" Vector__XXX
  SG_ VC_FR_SlipRatio : 20|10@1+ (0.001,0) [0|0] "" Vector__XXX
@@ -166,6 +166,11 @@ BO_ 325 VC_ControlsConstants1 : 8 VC
 BO_ 326 VC_ControlsConstants2 : 4 VC
  SG_ VC_MaxDesiredYawRate : 0|10@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_UndersteerGradient : 10|14@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_StaticLongSplit : 24|7@1+ (0.01,0) [0|0] "" Vector__XXX
+
+BO_ 327 VC_ControlsOut2: 8 VC
+ SG_ VC_e_yaw_rate : 0|10@1+ (0.01,0) [0|0] "rad/s" Vector__XXX
+ SG_ VC_LateralTorqueBias : 10|16@1+ (0.01,0) [0|0] "Nm" Vector__XXX
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
