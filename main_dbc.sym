@@ -9,6 +9,12 @@ enum VC_Status_VehicleState(0="VehicleState_NOT_READY", 1="VehicleState_INVERTER
 
 {SENDRECEIVE}
 
+[LongTest]
+ID=00Eh
+Type=Standard
+DLC=16
+Var=LongTestV unsigned 0,128 /min:0 /max:1000 /d:0
+
 [BMS_CellOverview]
 ID=259h
 Type=Standard
@@ -1144,59 +1150,59 @@ Var=SSDB_suspension_RR unsigned 12,12 /min:0 /max:4095 /d:0
 ID=212h
 Type=Standard
 DLC=8
-Var=VectorNav_AccelX unsigned 0,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AccelY unsigned 32,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelX float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AccelY float 32,32 /u:m/s^2 /min:0 /max:0 /d:0
 
 [VectorNav1]
 ID=213h
 Type=Standard
 DLC=8
-Var=VectorNav_AccelZ unsigned 0,32 /u:m/s^2 /min:0 /max:0 /d:0
-Var=VectorNav_AngularRateX unsigned 32,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AccelZ float 0,32 /u:m/s^2 /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateX float 32,32 /u:rad/s /min:0 /max:0 /d:0
 
 [VectorNav2]
 ID=214h
 Type=Standard
 DLC=8
-Var=VectorNav_AngularRateY unsigned 0,32 /u:rad/s /min:0 /max:0 /d:0
-Var=VectorNav_AngularRateZ unsigned 32,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateY float 0,32 /u:rad/s /min:0 /max:0 /d:0
+Var=VectorNav_AngularRateZ float 32,32 /u:rad/s /min:0 /max:0 /d:0
 
 [VectorNav3]
 ID=215h
 Type=Standard
 DLC=8
-Var=VectorNav_PosLlaL unsigned 0,64 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaL float 0,64 /u:deg /min:0 /max:0 /d:0
 
 [VectorNav4]
 ID=216h
 Type=Standard
 DLC=8
-Var=VectorNav_PosLlaO unsigned 0,64 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaO float 0,64 /u:deg /min:0 /max:0 /d:0
 
 [VectorNav5]
 ID=217h
 Type=Standard
 DLC=8
-Var=VectorNav_PosLlaA unsigned 0,64 /u:m /min:0 /max:0 /d:0
+Var=VectorNav_PosLlaA float 0,64 /u:m /min:0 /max:0 /d:0
 
 [VectorNav6]
 ID=218h
 Type=Standard
 DLC=8
-Var=VectorNav_VelBodyX unsigned 0,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_VelBodyY unsigned 32,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelBodyX float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_VelBodyY float 32,32 /u:m/s /min:0 /max:0 /d:0
 
 [VectorNav7]
 ID=219h
 Type=Standard
 DLC=8
-Var=VectorNav_VelBodyZ unsigned 0,32 /u:m/s /min:0 /max:0 /d:0
-Var=VectorNav_YprY unsigned 32,32 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_VelBodyZ float 0,32 /u:m/s /min:0 /max:0 /d:0
+Var=VectorNav_YprY float 32,32 /u:deg /min:0 /max:0 /d:0
 
 [VectorNav8]
 ID=21Ah
 Type=Standard
 DLC=8
-Var=VectorNav_YprP unsigned 0,32 /u:deg /min:0 /max:0 /d:0
-Var=VectorNav_YprR unsigned 32,32 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_YprP float 0,32 /u:deg /min:0 /max:0 /d:0
+Var=VectorNav_YprR float 32,32 /u:deg /min:0 /max:0 /d:0
 
