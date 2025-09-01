@@ -17,21 +17,21 @@ Var=PIT_PressureRange unsigned 56,8 /min:0 /max:3 /d:0
 
 [PIT_Pressures]
 DLC=8
+Mux=PIT_PressureMux2 0,8 2 -m 
+Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
+Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
+
+[PIT_Pressures]
+DLC=8
 Mux=PIT_PressureMux1 0,8 1 -m 
 Var=PIT_Pressure4 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure5 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Pressure6 unsigned 40,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
 Var=PIT_Temperature signed 56,8 /u:degC /min:0 /max:0 /d:0
 
-[PIT_Pressures]
-DLC=8
-Mux=PIT_PressureMux2 0,8 2 -m 
-Var=PIT_Pressure7 unsigned 8,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_Pressure8 unsigned 24,16 -m /u:mbar /f:0.01 /o:600 /min:600 /max:1200 /d:600.00
-Var=PIT_SensorNum unsigned 40,16 -m /min:0 /max:0 /d:0
-
 [TireTemp_FL_M1]
-ID=4C4h
+ID=130h
 Type=Standard
 DLC=8
 Var=TireTemp_FL_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
@@ -40,7 +40,7 @@ Var=TireTemp_FL_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:
 Var=TireTemp_FL_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
 
 [TireTemp_FL_M2]
-ID=4C5h
+ID=131h
 Type=Standard
 DLC=8
 Var=TireTemp_FL_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
@@ -49,7 +49,7 @@ Var=TireTemp_FL_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:
 Var=TireTemp_FL_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
 
 [TireTemp_FL_M3]
-ID=4C6h
+ID=132h
 Type=Standard
 DLC=8
 Var=TireTemp_FL_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
@@ -58,7 +58,7 @@ Var=TireTemp_FL_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d
 Var=TireTemp_FL_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
 
 [TireTemp_FL_M4]
-ID=4C7h
+ID=133h
 Type=Standard
 DLC=8
 Var=TireTemp_FL_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
@@ -67,7 +67,7 @@ Var=TireTemp_FL_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d
 Var=TireTemp_FL_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
 
 [TireTemp_FL_M5]
-ID=4C8h
+ID=134h
 Type=Standard
 DLC=8
 Var=TireTemp_FL_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0

@@ -49,31 +49,31 @@ BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_Pressure8 m2 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
  SG_ PIT_SensorNum m2 : 47|16@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1220 TireTemp_FL_M1: 8 IRTEMP
+BO_ 304 TireTemp_FL_M1: 8 IRTEMP
  SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
 
-BO_ 1221 TireTemp_FL_M2: 8 IRTEMP
+BO_ 305 TireTemp_FL_M2: 8 IRTEMP
  SG_ TireTemp_FL_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
 
-BO_ 1222 TireTemp_FL_M3: 8 IRTEMP
+BO_ 306 TireTemp_FL_M3: 8 IRTEMP
  SG_ TireTemp_FL_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
 
-BO_ 1223 TireTemp_FL_M4: 8 IRTEMP
+BO_ 307 TireTemp_FL_M4: 8 IRTEMP
  SG_ TireTemp_FL_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
 
-BO_ 1224 TireTemp_FL_M5: 8 IRTEMP
+BO_ 308 TireTemp_FL_M5: 8 IRTEMP
  SG_ TireTemp_FL_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
 
 BO_ 1225 TireTemp_FR_M1: 8 IRTEMP
