@@ -9,12 +9,6 @@ enum VC_Status_VehicleState(0="VehicleState_NOT_READY", 1="VehicleState_INVERTER
 
 {SENDRECEIVE}
 
-[LongTest]
-ID=00Eh
-Type=Standard
-DLC=16
-Var=LongTestV unsigned 0,128 /min:0 /max:1000 /d:0
-
 [BMS_CellOverview]
 ID=259h
 Type=Standard

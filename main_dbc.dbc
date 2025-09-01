@@ -35,9 +35,6 @@ BS_:
 
 BU_: C70 VC BMS CHG DASH PBX MCAN
 
-BO_ 14 LongTest: 16 BMS
- SG_ LongTestV : 0|128@1+ (1,0) [0|1000] "" Vector__XXX
-
 BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_Drains : 51|7@1+ (1,0) [0|76] "" Vector__XXX
  SG_ BMS_Overview_VoltMin : 24|9@1+ (0.01,0) [0|5.12] "V"  DASH
