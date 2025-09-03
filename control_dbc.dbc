@@ -1,0 +1,47 @@
+VERSION "f33"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: LOG
+
+BO_ 2 DataloggerStatus: 8 LOG
+ SG_ STM_PowerState : 0|4@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ STM_BatteryState : 4|4@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ STM_LastBatteryVoltage : 8|14@1+ (0.001,0) [0|16.383] "V" Vector__XXX
+ SG_ PI_CPUTemp : 32|20@1+ (0.001,0) [0|1048.575] "degC" Vector__XXX
+ SG_ PI_CPULoad : 52|12@1+ (1,0) [0|4095] "%" Vector__XXX
+
+CM_ BU_ LOG "Datalogger";
+VAL_ 2 STM_PowerState 0 "OFF" 1 "SELFTEST" 2 "BOOTING" 3 "RUNNING" 4 "BACKUP" 5 "SHUTDOWN" 6 "POWEROFF";
+VAL_ 2 STM_BatteryState 0 "UNKNOWN" 1 "FAILED" 2 "PASSED";
