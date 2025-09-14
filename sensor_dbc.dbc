@@ -265,6 +265,38 @@ BO_ 1338 RotorTemp_RR_M4: 8 IRTEMP
 BO_ 1339 RotorTemp_RR_M5: 8 IRTEMP
  SG_ RotorTemp_RR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
 
+
+
+BO_ 316 RotorTemp_TEST_M1: 8 IRTEMP
+ SG_ RotorTemp_RR_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_3 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_4 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 317 RotorTemp_TEST_M2: 8 IRTEMP
+ SG_ RotorTemp_RR_5 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_6 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_7 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_8 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 318 RotorTemp_TEST_M3: 8 IRTEMP
+ SG_ RotorTemp_RR_9 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_10 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_11 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_12 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 319 RotorTemp_TEST_M4: 8 IRTEMP
+ SG_ RotorTemp_RR_13 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_14 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_15 : 39|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+ SG_ RotorTemp_RR_16 : 55|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
+
+BO_ 320 RotorTemp_TEST_M5: 8 IRTEMP
+ SG_ RotorTemp_RR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
+
+
+
+
 BO_ 400 VectorNav0: 8 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
  SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX

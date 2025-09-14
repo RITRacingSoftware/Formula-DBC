@@ -366,6 +366,48 @@ Type=Standard
 DLC=8
 Var=RotorTemp_RR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
 
+[RotorTemp_TEST_M1]
+ID=13Ch
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_1 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_2 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_3 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_4 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_TEST_M2]
+ID=13Dh
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_5 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_6 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_7 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_8 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_TEST_M3]
+ID=13Eh
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_9 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_10 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_11 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_12 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_TEST_M4]
+ID=13Fh
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_13 unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_14 unsigned 16,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_15 unsigned 32,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+Var=RotorTemp_RR_16 unsigned 48,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:950 /d:0.0
+
+[RotorTemp_TEST_M5]
+ID=140h
+Type=Standard
+DLC=8
+Var=RotorTemp_RR_Sensor unsigned 0,16 -m /u:degC /f:0.1 /o:-100 /min:-20 /max:85 /d:0.0
+
 [VectorNav0]
 ID=190h
 Type=Standard
