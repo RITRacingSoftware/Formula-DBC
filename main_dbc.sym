@@ -113,6 +113,8 @@ Type=Standard
 DLC=8
 Var=VC_CAN_Errors_Arbitration unsigned 0,16 /min:0 /max:0 /d:0
 Var=VC_CAN_Errors_Data unsigned 16,16 /min:0 /max:0 /d:0
+Var=VC_CAN_Errors_Bus_Off unsigned 32,16 /min:0 /max:0 /d:0
+Var=VC_CAN_Errors_TX_Lost unsigned 48,16 /min:0 /max:0 /d:0
 
 [VC_TV_Out]
 ID=13Eh

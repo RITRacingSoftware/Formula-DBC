@@ -111,6 +111,8 @@ BO_ 316 VC_RTDSRequest: 8 VC
 BO_ 317 VC_CAN_Errors: 8 VC
  SG_ VC_CAN_Errors_Arbitration : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_CAN_Errors_Data : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_CAN_Errors_Bus_Off : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_CAN_Errors_TX_Lost : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 318 VC_TV_Out: 8 VC
  SG_ VC_RR_TV_Out: 0|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
