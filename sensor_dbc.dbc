@@ -317,7 +317,38 @@ BO_ 501 SSDB_suspension_rear: 3 SSDB
  SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
+BO_ 600 FDL_Status: 8 FDL
+ SG_ FDL_ASMS : 0|1@1+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 2566845491 TPMS_TirePressure: 8 TPMS
+ SG_ TPMS_TireNum M : 7|8@0+ (1,0) [1|4] "" Vector__XXX
+ SG_ TPMS_T1_TirePressure m1 : 15|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+ SG_ TPMS_T1_TireTemp m1 : 31|8@0+ (1,0) [0|0] "degC" Vector__XXX
+ SG_ TPMS_T1_Voltage m1 : 39|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ TPMS_T1_Leak m1 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T1_MinusTemp m1 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T1_Error m1 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T2_TirePressure m2 : 15|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+ SG_ TPMS_T2_TireTemp m2 : 31|8@0+ (1,0) [0|0] "degC" Vector__XXX
+ SG_ TPMS_T2_Voltage m2 : 39|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ TPMS_T2_Leak m2 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T2_MinusTemp m2 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T2_Error m2 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T3_TirePressure m3 : 15|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+ SG_ TPMS_T3_TireTemp m3 : 31|8@0+ (1,0) [0|0] "degC" Vector__XXX
+ SG_ TPMS_T3_Voltage m3 : 39|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ TPMS_T3_Leak m3 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T3_MinusTemp m3 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T3_Error m3 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T4_TirePressure m4 : 15|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+ SG_ TPMS_T4_TireTemp m4 : 31|8@0+ (1,0) [0|0] "degC" Vector__XXX
+ SG_ TPMS_T4_Voltage m4 : 39|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ TPMS_T4_Leak m4 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T4_MinusTemp m4 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPMS_T4_Error m4 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+
+
+CM_ BU_ FDL "Front driverless actuation";
 CM_ BU_ C70 "Bosch C70 Data Logger";
 CM_ BU_ PIT "EvoScann P8-A Pressure Sensor";
 CM_ BU_ IRTEMP "Izze IRTS-60 v2 IR Temperature Sensors";
