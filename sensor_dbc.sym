@@ -440,6 +440,12 @@ Var=VectorNav_InsStatus_GnssErr unsigned 22,1 /min:0 /max:1 /d:0
 Var=VectorNav_InsStatus_GnssHeadingIns unsigned 24,1 /min:0 /max:1 /d:0
 Var=VectorNav_InsStatus_GnssCompass unsigned 25,1 /min:0 /max:1 /d:0
 
+[VectorNav10]
+ID=19Ah
+Type=Standard
+DLC=8
+Var=VectorNav_BodySlip float 0,32 /min:0 /max:0 /d:0
+
 [SSDB_suspension_front]
 ID=1F4h
 Type=Standard

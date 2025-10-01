@@ -309,6 +309,9 @@ BO_ 409 VectorNav9: 4 VectorNav
  SG_ VectorNav_InsStatus_GnssHeadingIns : 24|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VectorNav_InsStatus_GnssCompass : 25|1@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 410 VectorNav10: 8 VectorNav
+ SG_ VectorNav_BodySlip : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 500 SSDB_suspension_front: 3 SSDB
  SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
@@ -370,3 +373,4 @@ SIG_VALTYPE_ 407 VectorNav_VelBodyZ : 1;
 SIG_VALTYPE_ 407 VectorNav_YprY : 1;
 SIG_VALTYPE_ 408 VectorNav_YprP : 1;
 SIG_VALTYPE_ 408 VectorNav_YprR : 1;
+SIG_VALTYPE_ 410 VectorNav_BodySlip : 1;
