@@ -169,7 +169,7 @@ BO_ 325 VC_ControlsConstants1 : 8 VC
 
 BO_ 326 VC_ControlsConstants2 : 8 VC
  SG_ VC_MaxDesiredYawRate : 0|10@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ VC_UndersteerGradient : 10|14@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_UndersteerGradient : 10|14@1+ (0.00001,0) [0|0] "" Vector__XXX
  SG_ VC_StaticLongSplit : 24|7@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_kF_YawRate : 31|12@1+ (0.01, 0) [0|0] "" Vector__XXX
 

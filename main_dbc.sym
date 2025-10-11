@@ -198,7 +198,7 @@ ID=146h
 Type=Standard
 DLC=8
 Var=VC_MaxDesiredYawRate unsigned 0,10 /f:0.01 /min:0 /max:0 /d:0.00
-Var=VC_UndersteerGradient unsigned 10,14 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_UndersteerGradient unsigned 10,14 /f:0.00001 /min:0 /max:0 /d:0.00000
 Var=VC_StaticLongSplit unsigned 24,7 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_kF_YawRate unsigned 31,12 /f:0.01 /min:0 /max:0 /d:0.00
 
