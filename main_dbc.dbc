@@ -86,6 +86,10 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_FL_ERROR : 14|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ VC_FaultVector_PC_TIMEOUT : 15|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_FaultVector_SOFT_DP : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_VN_NO_LOCK : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_VN_IRR : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_RUNAWAY : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+
 
 
 

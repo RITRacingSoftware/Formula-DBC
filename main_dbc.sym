@@ -78,6 +78,9 @@ Var=VC_FaultVector_FR_ERROR unsigned 13,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_FL_ERROR unsigned 14,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_PC_TIMEOUT unsigned 15,1 /min:0 /max:1 /d:0
 Var=VC_FaultVector_SOFT_DP unsigned 16,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_VN_NO_LOCK unsigned 17,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_VN_IRR unsigned 18,1 /min:0 /max:1 /d:0
+Var=VC_FaultVector_RUNAWAY unsigned 19,1 /min:0 /max:1 /d:0
 
 [VC_InverterStatus]
 ID=138h
