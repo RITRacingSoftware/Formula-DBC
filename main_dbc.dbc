@@ -46,6 +46,7 @@ BO_ 601 BMS_CellOverview: 8 BMS
 
 BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  Vector__XXX
+ SG_ VC_ControlsLevel : 4|2@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 302 VC_ProcessedInputs: 8 VC
  SG_ VC_P_Inputs_BrakesFrontPsi : 0|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
@@ -160,16 +161,17 @@ BO_ 324 VC_ControlsOut1: 8 VC
 BO_ 325 VC_ControlsConstants1 : 8 VC
  SG_ VC_LongFactor : 0|7@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_TargetSlipRatio : 7|7@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ VC_kP_SlipRatio : 14|10@1+ (1,0) [0|0] "" Vector__XXX
- SG_ VC_kI_SlipRatio : 24|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ VC_kP_SlipRatio : 14|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_kI_SlipRatio : 24|10@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_TC_ActivationThreshold : 34|7@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_kP_YawRate : 41|10@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_kI_YawRate : 51|10@1+ (0.01,0) [0|0] "" Vector__XXX
 
-BO_ 326 VC_ControlsConstants2 : 4 VC
+BO_ 326 VC_ControlsConstants2 : 8 VC
  SG_ VC_MaxDesiredYawRate : 0|10@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_UndersteerGradient : 10|14@1+ (0.01,0) [0|0] "" Vector__XXX
  SG_ VC_StaticLongSplit : 24|7@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ VC_kF_YawRate : 31|12@1+ (0.01, 0) [0|0] "" Vector__XXX
 
 BO_ 327 VC_ControlsOut2: 8 VC
  SG_ VC_e_yaw_rate : 0|10@1- (0.01,0) [0|0] "rad/s" Vector__XXX
@@ -178,6 +180,21 @@ BO_ 327 VC_ControlsOut2: 8 VC
 BO_ 328 VC_ControlsDebug: 8 VC
  SG_ VC_debug1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_debug2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 329 VC_ControlsOut3: 8 VC
+ SG_ VC_YawRateProportional : 0|32@1+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ VC_YawRateIntegral : 32|32@1+ (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 330 VC_ControlsOut4: 8 VC
+ SG_ VC_YawRateFeedForward : 0|32@1+ (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 331 VC_CodegenOutRear: 8 VC
+ SG_ VC_CodegenRR : 0|32@1- (1,0) [0|0] "Nm" Vector__XXX
+ SG_ VC_CodegenRL : 32|32@1- (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 332 VC_CodegenOutFront: 8 VC
+ SG_ VC_CodegenFR : 0|32@1- (1,0) [0|0] "Nm" Vector__XXX
+ SG_ VC_CodegenFL : 32|32@1- (1,0) [0|0] "Nm" Vector__XXX
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
@@ -635,9 +652,9 @@ BO_ 901 BMS_LimpMode: 8 BMS
  SG_ BMS_LimpMode_TempCurrentLimit : 13|9@1- (1,0) [-100|500] "A" Vector__XXX
 
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
- SG_ CHG_ChargeRequest_MaxVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V"  CHG
- SG_ CHG_ChargeRequest_MaxCurrent : 16|16@1+ (0.1,0) [0|6553.5] "A"  CHG
- SG_ CHG_ChargeRequest_Control : 32|8@1+ (1,0) [0|1] ""  CHG
+ SG_ CHG_ChargeRequest_MaxVoltage : 0|16@0+ (0.1,0) [0|6553.5] "V"  CHG
+ SG_ CHG_ChargeRequest_MaxCurrent : 16|16@0+ (0.1,0) [0|6553.5] "A"  CHG
+ SG_ CHG_ChargeRequest_Control : 32|8@0+ (1,0) [0|1] ""  CHG
 
 BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_OutputVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
@@ -903,3 +920,10 @@ SIG_VALTYPE_ 538 VectorNav_YprR : 1;
 
 SIG_VALTYPE_ 328 VC_debug1 : 1;
 SIG_VALTYPE_ 328 VC_debug2 : 1;
+SIG_VALTYPE_ 329 VC_YawRateProportional : 1;
+SIG_VALTYPE_ 329 VC_YawRateIntegral : 1;
+SIG_VALTYPE_ 330 VC_YawRateFeedForward : 1;
+SIG_VALTYPE_ 331 VC_CodegenRR : 1;
+SIG_VALTYPE_ 331 VC_CodegenRL : 1;
+SIG_VALTYPE_ 332 VC_CodegenFR : 1;
+SIG_VALTYPE_ 332 VC_CodegenFL : 1;

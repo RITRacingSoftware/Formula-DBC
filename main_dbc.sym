@@ -26,6 +26,7 @@ ID=12Dh
 Type=Standard
 DLC=8
 Var=VC_Status_VehicleState unsigned 0,4 /min:0 /max:15 /e:VC_Status_VehicleState /d:0
+Var=VC_ControlsLevel unsigned 4,2 /min:0 /max:0 /d:0
 
 [VC_ProcessedInputs]
 ID=12Eh
@@ -186,8 +187,8 @@ Type=Standard
 DLC=8
 Var=VC_LongFactor unsigned 0,7 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_TargetSlipRatio unsigned 7,7 /f:0.01 /min:0 /max:0 /d:0.00
-Var=VC_kP_SlipRatio unsigned 14,10 /min:0 /max:0 /d:0
-Var=VC_kI_SlipRatio unsigned 24,10 /f:0.1 /min:0 /max:0 /d:0.0
+Var=VC_kP_SlipRatio unsigned 14,10 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_kI_SlipRatio unsigned 24,10 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_TC_ActivationThreshold unsigned 34,7 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_kP_YawRate unsigned 41,10 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_kI_YawRate unsigned 51,10 /f:0.01 /min:0 /max:0 /d:0.00
@@ -195,10 +196,11 @@ Var=VC_kI_YawRate unsigned 51,10 /f:0.01 /min:0 /max:0 /d:0.00
 [VC_ControlsConstants2]
 ID=146h
 Type=Standard
-DLC=4
+DLC=8
 Var=VC_MaxDesiredYawRate unsigned 0,10 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_UndersteerGradient unsigned 10,14 /f:0.01 /min:0 /max:0 /d:0.00
 Var=VC_StaticLongSplit unsigned 24,7 /f:0.01 /min:0 /max:0 /d:0.00
+Var=VC_kF_YawRate unsigned 31,12 /f:0.01 /min:0 /max:0 /d:0.00
 
 [VC_ControlsOut2]
 ID=147h
@@ -213,6 +215,33 @@ Type=Standard
 DLC=8
 Var=VC_debug1 float 0,32 /min:0 /max:0 /d:0
 Var=VC_debug2 float 32,32 /min:0 /max:0 /d:0
+
+[VC_ControlsOut3]
+ID=149h
+Type=Standard
+DLC=8
+Var=VC_YawRateProportional float 0,32 /u:Nm /min:0 /max:0 /d:0
+Var=VC_YawRateIntegral float 32,32 /u:Nm /min:0 /max:0 /d:0
+
+[VC_ControlsOut4]
+ID=14Ah
+Type=Standard
+DLC=8
+Var=VC_YawRateFeedForward float 0,32 /u:Nm /min:0 /max:0 /d:0
+
+[VC_CodegenOutRear]
+ID=14Bh
+Type=Standard
+DLC=8
+Var=VC_CodegenRR signed 0,32 /u:Nm /min:0 /max:0 /d:0
+Var=VC_CodegenRL signed 32,32 /u:Nm /min:0 /max:0 /d:0
+
+[VC_CodegenOutFront]
+ID=14Ch
+Type=Standard
+DLC=8
+Var=VC_CodegenFR signed 0,32 /u:Nm /min:0 /max:0 /d:0
+Var=VC_CodegenFL signed 32,32 /u:Nm /min:0 /max:0 /d:0
 
 [PBX_Status]
 ID=700h
@@ -914,9 +943,9 @@ Var=BMS_LimpMode_TempCurrentLimit signed 13,9 /u:A /min:-100 /max:500 /d:0
 ID=1806E5F4h
 Type=Extended
 DLC=8
-Var=CHG_ChargeRequest_MaxVoltage unsigned 0,16 /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
-Var=CHG_ChargeRequest_MaxCurrent unsigned 16,16 /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
-Var=CHG_ChargeRequest_Control unsigned 32,8 /min:0 /max:1 /d:0
+Var=CHG_ChargeRequest_MaxVoltage unsigned 7,16 -m /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_ChargeRequest_MaxCurrent unsigned 23,16 -m /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_ChargeRequest_Control unsigned 39,8 -m /min:0 /max:1 /d:0
 
 [CHG_ChargeStats]
 ID=18FF50E5h
