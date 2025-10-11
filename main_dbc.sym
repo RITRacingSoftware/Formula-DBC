@@ -943,16 +943,16 @@ Var=BMS_LimpMode_TempCurrentLimit signed 13,9 /u:A /min:-100 /max:500 /d:0
 ID=1806E5F4h
 Type=Extended
 DLC=8
-Var=CHG_ChargeRequest_MaxVoltage unsigned 7,16 -m /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
-Var=CHG_ChargeRequest_MaxCurrent unsigned 23,16 -m /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_ChargeRequest_MaxVoltage unsigned 0,16 -m /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_ChargeRequest_MaxCurrent unsigned 16,16 -m /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
 Var=CHG_ChargeRequest_Control unsigned 39,8 -m /min:0 /max:1 /d:0
 
 [CHG_ChargeStats]
 ID=18FF50E5h
 Type=Extended
 DLC=8
-Var=CHG_OutputVoltage unsigned 0,16 /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
-Var=CHG_OutputCurrent unsigned 16,16 /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_OutputVoltage unsigned 0,16 -m /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
+Var=CHG_OutputCurrent unsigned 16,16 -m /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
 Var=CHG_Flag_HardwareFailure unsigned 32,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_OverTemperature unsigned 33,1 /min:0 /max:1 /d:0
 Var=CHG_Flag_InputVoltage unsigned 34,1 /min:0 /max:1 /d:0
