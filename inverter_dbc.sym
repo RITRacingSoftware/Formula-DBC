@@ -241,3 +241,62 @@ Var=FR_AMK_TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:
 Var=FR_AMK_TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 Var=FR_AMK_TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
 
+[Actual_1]
+ID=000h
+Type=Standard
+DLC=8
+Var=SystemReady unsigned 8,1 /min:0 /max:1 /d:0
+Var=Error unsigned 9,1 /min:0 /max:1 /d:0
+Var=Warn unsigned 10,1 /min:0 /max:1 /d:0
+Var=QuitDcOn unsigned 11,1 /min:0 /max:1 /d:0
+Var=DcOn unsigned 12,1 /min:0 /max:1 /d:0
+Var=QuitInverterOn unsigned 13,1 /min:0 /max:1 /d:0
+Var=InverterOn unsigned 14,1 /min:0 /max:1 /d:0
+Var=Derating unsigned 15,1 /min:0 /max:1 /d:0
+Var=FeedbackVelocity signed 16,32 /u:rpm /f:0.0001 /min:-100000 /max:100000 /d:0.0000
+Var=FeedbackTorque signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+
+[Actual_2]
+ID=001h
+Type=Standard
+DLC=8
+Var=TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=TempInverter signed 16,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+Var=ErrorInfo unsigned 32,16 /min:0 /max:65535 /d:0
+Var=TempIGBT signed 48,16 /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
+
+[RITSet1]
+ID=002h
+Type=Standard
+DLC=8
+Var=ErrorList1 unsigned 0,32 /min:0 /max:0 /d:0
+Var=ErrorList2 unsigned 32,32 /min:0 /max:0 /d:0
+
+[RITSet2]
+ID=003h
+Type=Standard
+DLC=8
+Var=ErrorList3 unsigned 0,32 /min:0 /max:0 /d:0
+Var=DCBusVoltage unsigned 32,16 /u:V /min:0 /max:4096 /d:0
+Var=DCBusVoltageMonitoring unsigned 48,16 /u:V /f:0.1 /min:0 /max:4096 /d:0.0
+
+[RITSet3]
+ID=004h
+Type=Standard
+DLC=8
+Var=TorqueFeedback signed 0,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=ActivePower signed 16,32 /u:W /min:-2147483648 /max:2147483647 /d:0
+Var=HoldingTorque signed 48,16 /u:Nm /f:0.1 /min:-32768 /max:32767 /d:0.0
+
+[Setpoints]
+ID=005h
+Type=Standard
+DLC=8
+Var=bInverterOn unsigned 8,1 /min:0 /max:1 /d:0
+Var=bDCOn unsigned 9,1 /min:0 /max:1 /d:0
+Var=bEnable unsigned 10,1 /min:0 /max:1 /d:0
+Var=bErrorReset unsigned 11,1 /min:0 /max:1 /d:0
+Var=TorqueSetpoint signed 16,16 /u:"% Mn" /f:0.1 /min:-1000 /max:1000 /d:0.0
+Var=TorqueLimitPositive signed 32,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+Var=TorqueLimitNegative signed 48,16 /u:"% Mn" /f:0.1 /min:-3000 /max:3000 /d:0.0
+

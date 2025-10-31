@@ -30,7 +30,7 @@ NS_ :
     SG_MUL_VAL_
 	
 BS_:
-BU_: RR RL FL FR
+BU_: RR RL FL FR GEN
 
 BO_ 643 RL_AMK_Actual_1: 8 RL
  SG_ RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -198,3 +198,50 @@ BO_ 391 FR_AMK_Setpoints: 8 FR
  SG_ FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
  SG_ FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
  SG_ FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+
+
+
+CM_ "Dummy messages for use in the C files. These will never be sent over CAN,
+    it is only to make the C code more generic";
+
+BO_ 000 Actual_1: 8 GEN
+ SG_ SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+
+BO_ 001 Actual_2: 8 GEN
+ SG_ TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ 
+BO_ 002 RITSet1: 8 GEN
+ SG_ ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 003 RITSet2: 8 GEN
+ SG_ ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
+ SG_ DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
+
+BO_ 004 RITSet3: 8 GEN
+ SG_ TorqueFeedback : 0|16@1- (0.1, 0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ ActivePower : 16|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ HoldingTorque : 48|16@1- (0.1, 0) [-32768.0|32767.0] "Nm" Vector__XXX 
+
+BO_ 005 Setpoints: 8 GEN
+ SG_ bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
+ SG_ TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+
