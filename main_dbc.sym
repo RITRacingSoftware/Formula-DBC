@@ -1182,6 +1182,30 @@ DLC=3
 Var=SSDB_suspension_RL unsigned 0,12 /min:0 /max:4095 /d:0
 Var=SSDB_suspension_RR unsigned 12,12 /min:0 /max:4095 /d:0
 
+[OutboardAccelAvg]
+ID=1FAh
+Type=Standard
+DLC=6
+Var=OAAvg_AccelX signed 0,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAAvg_AccelY signed 16,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAAvg_AccelZ signed 32,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+
+[OutboardAccelMin]
+ID=1FBh
+Type=Standard
+DLC=6
+Var=OAMin_AccelX signed 0,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAMin_AccelY signed 16,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAMin_AccelZ signed 32,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+
+[OutboardAccelMax]
+ID=1FCh
+Type=Standard
+DLC=6
+Var=OAMax_AccelX signed 0,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAMax_AccelY signed 16,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+Var=OAMax_AccelZ signed 32,16 /u:g /f:0.001 /min:-32.768 /max:32.767 /d:0.000
+
 [VectorNav0]
 ID=212h
 Type=Standard

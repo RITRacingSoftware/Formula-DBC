@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: C70 VC BMS CHG DASH PBX MCAN
+BU_: C70 VC BMS CHG DASH PBX MCAN OA
 
 BO_ 601 BMS_CellOverview: 8 BMS
  SG_ BMS_Overview_Drains : 51|7@1+ (1,0) [0|76] "" Vector__XXX
@@ -830,6 +830,20 @@ BO_ 521 SSDB_suspension_rear: 3 SSDB
  SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
+BO_ 506 OutboardAccelAvg: 6 OA
+ SG_ OAAvg_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAAvg_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAAvg_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+
+BO_ 507 OutboardAccelMin: 6 OA
+ SG_ OAMin_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMin_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMin_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+
+BO_ 508 OutboardAccelMax: 6 OA
+ SG_ OAMax_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMax_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMax_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
 
 BO_ 530 VectorNav0: 8 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
@@ -873,6 +887,7 @@ CM_ BU_ CHG "Elcon HK-J Charger";
 CM_ BU_ DASH "Dashboard Display";
 CM_ BU_ SSDB "SSDB";
 CM_ BU_ MCAN "MCAN";
+CM_ BU_ OA "Outboard accelerometer";
 CM_ SG_ 601 BMS_Overview_Drains "Number of cells currently draining";
 CM_ BO_ 1790 "Wheel speeds, relayed by C70";
 CM_ BO_ 1791 "Brake Pressures, relayed by C70";
