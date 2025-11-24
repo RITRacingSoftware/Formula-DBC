@@ -60,7 +60,16 @@ BO_ 661 RL_AMK_RITSet2: 8 RL
  SG_ RL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
 BO_ 665 RL_AMK_RITSet3: 4 RL
- SG_ RL_ActivePower : 0|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ RL_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
+
+BO_ 669 RL_AMK_RITSet4: 4 RL
+ SG_ RL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 673 RL_AMK_RIT_Set5: 4 RL
+ SG_ RL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 677 RL_AMK_RIT_Set6: 4 RL
+ SG_ RL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
 
 BO_ 388 RL_AMK_Setpoints: 8 RL
  SG_ RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -102,6 +111,15 @@ BO_ 662 RR_AMK_RITSet2: 8 RR
 BO_ 666 RR_AMK_RITSet3: 4 RR
  SG_ RR_ActivePower : 0|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
 
+BO_ 670 RR_AMK_RITSet4: 4 RR
+ SG_ RR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 674 RR_AMK_RIT_Set5: 4 RR
+ SG_ RR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 678 RR_AMK_RIT_Set6: 4 RR
+ SG_ RR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+
 BO_ 389 RR_AMK_Setpoints: 8 RR
  SG_ RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -142,6 +160,15 @@ BO_ 663 FL_AMK_RITSet2: 8 FL
 BO_ 667 FL_AMK_RITSet3: 4 FL
  SG_ FL_ActivePower : 0|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
 
+BO_ 671 FL_AMK_RITSet4: 4 FL
+ SG_ FL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 675 FL_AMK_RIT_Set5: 4 FL
+ SG_ FL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 679 FL_AMK_RIT_Set6: 4 FL
+ SG_ FL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+
 BO_ 390 FL_AMK_Setpoints: 8 FL
  SG_ FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -181,6 +208,15 @@ BO_ 664 FR_AMK_RITSet2: 8 FR
 
 BO_ 668 FR_AMK_RITSet3: 4 FR
  SG_ FR_ActivePower : 0|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+
+BO_ 672 FR_AMK_RITSet4: 4 FR
+ SG_ FR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 676 FR_AMK_RIT_Set5: 4 FR
+ SG_ FR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 680 FR_AMK_RIT_Set6: 4 FR
+ SG_ FR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
 
 BO_ 391 FR_AMK_Setpoints: 8 FR
  SG_ FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX

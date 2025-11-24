@@ -1017,7 +1017,25 @@ Type=Standard
 DLC=8
 Var=VC_RL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_RL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
-Var=VC_RL_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
+Var=VC_RL_ActivePower signed 32,32 /u:W /min:-32768 /max:32767 /d:0
+
+[VC_RL_AMK_RITSet4]
+ID=195h
+Type=Standard
+DLC=4
+Var=RL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
+
+[VC_RL_AMK_RIT_Set5]
+ID=196h
+Type=Standard
+DLC=4
+Var=RL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+
+[VC_RL_AMK_RIT_Set6]
+ID=197h
+Type=Standard
+DLC=4
+Var=RL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -1066,7 +1084,25 @@ Type=Standard
 DLC=8
 Var=VC_RR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_RR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
-Var=VC_RR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
+Var=VC_RR_ActivePower signed 32,32 /u:W /min:-32768 /max:32767 /d:0
+
+[VC_RR_AMK_RITSet4]
+ID=19Fh
+Type=Standard
+DLC=4
+Var=RR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
+
+[VC_RR_AMK_RIT_Set5]
+ID=1A0h
+Type=Standard
+DLC=4
+Var=RR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+
+[VC_RR_AMK_RIT_Set6]
+ID=1A1h
+Type=Standard
+DLC=4
+Var=RR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -1116,7 +1152,25 @@ Type=Standard
 DLC=8
 Var=VC_FL_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FL_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
-Var=VC_FL_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
+Var=VC_FL_ActivePower signed 32,32 /u:W /min:-32768 /max:32767 /d:0
+
+[VC_FL_AMK_RITSet4]
+ID=1A9h
+Type=Standard
+DLC=4
+Var=FL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
+
+[VC_FL_AMK_RIT_Set5]
+ID=1AAh
+Type=Standard
+DLC=4
+Var=FL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+
+[VC_FL_AMK_RIT_Set6]
+ID=1ABh
+Type=Standard
+DLC=4
+Var=FL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -1166,7 +1220,25 @@ Type=Standard
 DLC=8
 Var=VC_FR_TempMotor signed 0,16 /u:degC /f:0.1 /min:-3276.8 /max:3276.7 /d:0.0
 Var=VC_FR_DCBusVoltage unsigned 16,16 /u:V /min:0 /max:4096 /d:0
-Var=VC_FR_ActivePower signed 32,16 /u:W /min:-32768 /max:32767 /d:0
+Var=VC_FR_ActivePower signed 32,32 /u:W /min:-32768 /max:32767 /d:0
+
+[VC_FR_AMK_RITSet4]
+ID=1B3h
+Type=Standard
+DLC=4
+Var=FR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
+
+[VC_FR_AMK_RIT_Set5]
+ID=1B4h
+Type=Standard
+DLC=4
+Var=FR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+
+[VC_FR_AMK_RIT_Set6]
+ID=1B5h
+Type=Standard
+DLC=4
+Var=FR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
 
 [SSDB_suspension_front]
 ID=208h

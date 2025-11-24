@@ -706,8 +706,16 @@ BO_ 403 VC_RL_Info_2: 8 VC
 BO_ 404 VC_RL_Info_3: 8 VC
  SG_ VC_RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
  SG_ VC_RL_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ VC_RL_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
+ SG_ VC_RL_ActivePower : 32|32@1- (1,0) [-32768|32767] "W" Vector__XXX
 
+BO_ 405 VC_RL_AMK_RITSet4: 4 VC
+ SG_ RL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 406 VC_RL_AMK_RIT_Set5: 4 VC
+ SG_ RL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 407 VC_RL_AMK_RIT_Set6: 4 VC
+ SG_ RL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
 
 
 BO_ 410 VC_RR_AMK_Setpoints: 8 VC
@@ -742,9 +750,16 @@ BO_ 413 VC_RR_Info_2: 8 VC
 BO_ 414 VC_RR_Info_3: 8 VC
  SG_ VC_RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
  SG_ VC_RR_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ VC_RR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
+ SG_ VC_RR_ActivePower : 32|32@1- (1,0) [-32768|32767] "W" Vector__XXX
 
+BO_ 415 VC_RR_AMK_RITSet4: 4 VC
+ SG_ RR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
 
+BO_ 416 VC_RR_AMK_RIT_Set5: 4 VC
+ SG_ RR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 417 VC_RR_AMK_RIT_Set6: 4 VC
+ SG_ RR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
 
 
 
@@ -781,7 +796,16 @@ BO_ 423 VC_FL_Info_2: 8 VC
 BO_ 424 VC_FL_Info_3: 8 VC
  SG_ VC_FL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
  SG_ VC_FL_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ VC_FL_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
+ SG_ VC_FL_ActivePower : 32|32@1- (1,0) [-32768|32767] "W" Vector__XXX
+
+BO_ 425 VC_FL_AMK_RITSet4: 4 VC
+ SG_ FL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 426 VC_FL_AMK_RIT_Set5: 4 VC
+ SG_ FL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 427 VC_FL_AMK_RIT_Set6: 4 VC
+ SG_ FL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
 
 
 
@@ -820,8 +844,18 @@ BO_ 433 VC_FR_Info_2: 8 VC
 BO_ 434 VC_FR_Info_3: 8 VC
  SG_ VC_FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
  SG_ VC_FR_DCBusVoltage : 16|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ VC_FR_ActivePower : 32|16@1- (1, 0) [-32768|32767] "W" Vector__XXX
- 
+ SG_ VC_FR_ActivePower : 32|32@1- (1,0) [-32768|32767] "W" Vector__XXX
+
+BO_ 435 VC_FR_AMK_RITSet4: 4 VC
+ SG_ FR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
+
+BO_ 436 VC_FR_AMK_RIT_Set5: 4 VC
+ SG_ FR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 437 VC_FR_AMK_RIT_Set6: 4 VC
+ SG_ FR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+
+
 BO_ 520 SSDB_suspension_front: 3 SSDB
  SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
