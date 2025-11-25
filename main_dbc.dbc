@@ -712,10 +712,10 @@ BO_ 405 VC_RL_AMK_RITSet4: 4 VC
  SG_ RL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
 
 BO_ 406 VC_RL_AMK_RIT_Set5: 4 VC
- SG_ RL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ RL_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
 
 BO_ 407 VC_RL_AMK_RIT_Set6: 4 VC
- SG_ RL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+ SG_ RL_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
 
 
 BO_ 410 VC_RR_AMK_Setpoints: 8 VC
@@ -756,10 +756,10 @@ BO_ 415 VC_RR_AMK_RITSet4: 4 VC
  SG_ RR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
 
 BO_ 416 VC_RR_AMK_RIT_Set5: 4 VC
- SG_ RR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ RR_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
 
 BO_ 417 VC_RR_AMK_RIT_Set6: 4 VC
- SG_ RR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+ SG_ RR_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
 
 
 
@@ -802,12 +802,10 @@ BO_ 425 VC_FL_AMK_RITSet4: 4 VC
  SG_ FL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
 
 BO_ 426 VC_FL_AMK_RIT_Set5: 4 VC
- SG_ FL_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ FL_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
 
 BO_ 427 VC_FL_AMK_RIT_Set6: 4 VC
- SG_ FL_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
-
-
+ SG_ FL_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
 
 
 
@@ -850,10 +848,10 @@ BO_ 435 VC_FR_AMK_RITSet4: 4 VC
  SG_ FR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
 
 BO_ 436 VC_FR_AMK_RIT_Set5: 4 VC
- SG_ FR_MagnetizingCurrent: 0|32@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ FR_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
 
 BO_ 437 VC_FR_AMK_RIT_Set6: 4 VC
- SG_ FR_TorqueCurrentFeedback: 0|32@1- (1,0) [0|0] "A" Vector__XXX 
+ SG_ FR_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
 
 
 BO_ 520 SSDB_suspension_front: 3 SSDB

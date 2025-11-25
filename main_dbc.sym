@@ -818,6 +818,24 @@ Var=BMS_DrainStatus_D10 unsigned 63,1 /min:0 /max:1 /d:0
 
 [BMS_DrainStatus]
 DLC=8
+Mux=BMS_DrainStatus2 0,2 2 
+Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
+Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
+
+[BMS_DrainStatus]
+DLC=8
 Mux=BMS_DrainStatus1 0,2 1 
 Var=BMS_DrainStatus_D11 unsigned 3,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_D12 unsigned 4,1 /min:0 /max:1 /d:0
@@ -880,24 +898,6 @@ Var=BMS_DrainStatus_G17 unsigned 60,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H1 unsigned 61,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H2 unsigned 62,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H3 unsigned 63,1 /min:0 /max:1 /d:0
-
-[BMS_DrainStatus]
-DLC=8
-Mux=BMS_DrainStatus2 0,2 2 
-Var=BMS_DrainStatus_H4 unsigned 3,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H5 unsigned 4,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H6 unsigned 5,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H7 unsigned 6,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H8 unsigned 7,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H9 unsigned 8,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H10 unsigned 9,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H11 unsigned 10,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H12 unsigned 11,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H13 unsigned 12,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H14 unsigned 13,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
-Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
 
 [BMS_Current]
 ID=384h
@@ -1029,13 +1029,13 @@ Var=RL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=196h
 Type=Standard
 DLC=4
-Var=RL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RL_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_RL_AMK_RIT_Set6]
 ID=197h
 Type=Standard
 DLC=4
-Var=RL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RL_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_RR_AMK_Setpoints]
 ID=19Ah
@@ -1096,13 +1096,13 @@ Var=RR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=1A0h
 Type=Standard
 DLC=4
-Var=RR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RR_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_RR_AMK_RIT_Set6]
 ID=1A1h
 Type=Standard
 DLC=4
-Var=RR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RR_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_FL_AMK_Setpoints]
 ID=1A4h
@@ -1164,13 +1164,13 @@ Var=FL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=1AAh
 Type=Standard
 DLC=4
-Var=FL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FL_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_FL_AMK_RIT_Set6]
 ID=1ABh
 Type=Standard
 DLC=4
-Var=FL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FL_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_FR_AMK_Setpoints]
 ID=1AEh
@@ -1232,13 +1232,13 @@ Var=FR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=1B4h
 Type=Standard
 DLC=4
-Var=FR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FR_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [VC_FR_AMK_RIT_Set6]
 ID=1B5h
 Type=Standard
 DLC=4
-Var=FR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FR_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [SSDB_suspension_front]
 ID=208h

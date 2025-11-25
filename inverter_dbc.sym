@@ -60,13 +60,13 @@ Var=RL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=2A1h
 Type=Standard
 DLC=4
-Var=RL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RL_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [RL_AMK_RIT_Set6]
 ID=2A5h
 Type=Standard
 DLC=4
-Var=RL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RL_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [RL_AMK_Setpoints]
 ID=184h
@@ -135,13 +135,13 @@ Var=RR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=2A2h
 Type=Standard
 DLC=4
-Var=RR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RR_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [RR_AMK_RIT_Set6]
 ID=2A6h
 Type=Standard
 DLC=4
-Var=RR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=RR_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [RR_AMK_Setpoints]
 ID=185h
@@ -210,13 +210,13 @@ Var=FL_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=2A3h
 Type=Standard
 DLC=4
-Var=FL_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FL_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [FL_AMK_RIT_Set6]
 ID=2A7h
 Type=Standard
 DLC=4
-Var=FL_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FL_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [FL_AMK_Setpoints]
 ID=186h
@@ -285,13 +285,13 @@ Var=FR_ActualPowerBipolar signed 0,32 /u:W /min:0 /max:0 /d:0
 ID=2A4h
 Type=Standard
 DLC=4
-Var=FR_MagnetizingCurrent signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FR_MagnetizingCurrent signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [FR_AMK_RIT_Set6]
 ID=2A8h
 Type=Standard
 DLC=4
-Var=FR_TorqueCurrentFeedback signed 0,32 /u:A /min:0 /max:0 /d:0
+Var=FR_TorqueCurrentFeedback signed 0,32 /u:A /f:0.001 /min:0 /max:0 /d:0.000
 
 [FR_AMK_Setpoints]
 ID=187h
