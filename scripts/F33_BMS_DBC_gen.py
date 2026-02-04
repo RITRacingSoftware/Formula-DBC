@@ -1,5 +1,5 @@
-cells = 17
-segments = 8
+cells = 27
+segments = 5
 
 #Voltages
 f = open("voltages.txt", "w").close()
@@ -8,12 +8,12 @@ f = open("voltages.txt", "w")
 length = 9
 seg = 0
 mul = 0
-first_start = 8
+first_start = 5
 start = first_start
 
 for i in range(cells * segments):
     letter = chr(65 + seg) 
-    seg_num = letter + str(1 + (i % cells))
+    seg_num = letter + str((i % cells))
    
     if (start + length > 63):
         start = first_start
@@ -38,7 +38,7 @@ first_start = 3
 start = first_start
 for i in range(therms * segments):
     letter = chr(65 + seg)
-    seg_num = letter + str(1 + (i % therms ))
+    seg_num = letter + str((i % therms ))
 
     if (start + length > 63):
         start = first_start
@@ -65,7 +65,7 @@ f.write(' SG_ BMS_Temperatures_mux M : 0|{}@1+ (1,0) [0|{}] "" Vector__XXX\n'.fo
 
 for i in range(therms * segments):
     letter = chr(65 + seg) 
-    seg_num = letter + str(1 + (i % therms))
+    seg_num = letter + str((i % therms))
    
     if (start + length > 63):
         start = first_start
@@ -90,7 +90,7 @@ start = first_start
 
 for i in range(cells * segments):
     letter = chr(65 + seg) 
-    seg_num = letter + str(1 + (i % cells))
+    seg_num = letter + str((i % cells))
    
     if (start + length > 64):
         start = first_start
