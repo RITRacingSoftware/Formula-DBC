@@ -47,6 +47,8 @@ BO_ 601 BMS_CellOverview: 8 BMS
 BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  Vector__XXX
  SG_ VC_ControlsLevel : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DS_RearEnable : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DS_FrontEnable : 7|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 302 VC_ProcessedInputs: 8 VC
  SG_ VC_P_Inputs_BrakesFrontPsi : 0|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
@@ -155,12 +157,10 @@ BO_ 323 VC_Config1: 8 VC
  SG_ VC_Gain : 30|13@1+ (0.01,0) [0|0] "" Vector__XXX
 
 BO_ 324 VC_ControlsOut1: 8 VC
- SG_ VC_RR_SlipRatio : 0|10@1+ (0.001,0) [0|0] "" Vector__XXX
- SG_ VC_RL_SlipRatio : 10|10@1+ (0.001,0) [0|0] "" Vector__XXX
- SG_ VC_FR_SlipRatio : 20|10@1+ (0.001,0) [0|0] "" Vector__XXX
- SG_ VC_FL_SlipRatio : 30|10@1+ (0.001,0) [0|0] "" Vector__XXX
- SG_ VC_DesiredYawRate : 40|16@1- (0.001,0) [0|0] "rad/s" Vector__XXX
- SG_ VC_SteerAngle : 56|8@1- (1,0) [0|0] "deg" Vector__XXX
+ SG_ VC_RR_SlipRatio : 0|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_RL_SlipRatio : 16|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_FR_SlipRatio : 32|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ VC_FL_SlipRatio : 48|16@1+ (0.001,0) [0|0] "" Vector__XXX
 
 BO_ 325 VC_ControlsConstants1 : 8 VC
  SG_ VC_LongFactor : 0|7@1+ (0.01,0) [0|0] "" Vector__XXX
@@ -180,6 +180,8 @@ BO_ 326 VC_ControlsConstants2 : 8 VC
 BO_ 327 VC_ControlsOut2: 8 VC
  SG_ VC_e_yaw_rate : 0|10@1- (0.01,0) [0|0] "rad/s" Vector__XXX
  SG_ VC_LateralTorqueBias : 10|16@1- (0.01,0) [0|0] "Nm" Vector__XXX
+ SG_ VC_DesiredYawRate : 26|16@1- (0.001,0) [0|0] "rad/s" Vector__XXX
+ SG_ VC_SteerAngle : 42|8@1- (1,0) [0|0] "deg" Vector__XXX
 
 BO_ 328 VC_ControlsDebug: 8 VC
  SG_ VC_debug1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
@@ -191,6 +193,11 @@ BO_ 329 VC_ControlsOut3: 8 VC
 
 BO_ 330 VC_ControlsOut4: 8 VC
  SG_ VC_YawRateFeedForward : 0|32@1+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ VC_LCState: 32|7@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_LCButton: 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_LCRamp: 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_LCBlend: 48|8@1+ (1,0) [0|0] "" Vector__XXX
+
 
 BO_ 331 VC_CodegenOutRear: 8 VC
  SG_ VC_CodegenRR : 0|32@1- (1,0) [0|0] "Nm" Vector__XXX
@@ -199,6 +206,11 @@ BO_ 331 VC_CodegenOutRear: 8 VC
 BO_ 332 VC_CodegenOutFront: 8 VC
  SG_ VC_CodegenFR : 0|32@1- (1,0) [0|0] "Nm" Vector__XXX
  SG_ VC_CodegenFL : 32|32@1- (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 350 DS_Status: 8 LOG
+ SG_ DS_State : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_RearActive : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_FrontActive : 5|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1792 PBX_Status: 8 PBX
  SG_ PBX_LV_Voltage : 0|11@1+ (0.01,0) [0|20] "V" Vector__XXX
