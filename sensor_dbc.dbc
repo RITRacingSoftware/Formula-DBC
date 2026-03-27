@@ -33,7 +33,13 @@ NS_ :
 
 BS_:
 
-BU_: C70 PIT IRTEMP
+BU_: C70 PIT IRTEMP DS
+
+BO_ 1282 DS_Status: 8 DS
+ SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_Mission : 5|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_LapCount : 11|4@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_PressureMux M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -265,6 +271,30 @@ BO_ 1338 RotorTemp_RR_M4: 8 IRTEMP
 BO_ 1339 RotorTemp_RR_M5: 8 IRTEMP
  SG_ RotorTemp_RR_Sensor : 7|16@0+ (0.1,-100) [-20|85] "degC" Vector__XXX
 
+BO_ 428 LoadCell_RR : 8 LCRR
+ SG_ LoadCell_RR_Raw : 7|16@0- (1,0) [0|0] "uV" Vector__XXX
+ SG_ LoadCell_RR_Force : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ LoadCell_RR_IntTemp : 39|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ LoadCell_RR_ExtTemp : 55|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 424 LoadCell_RL : 8 LCRL
+ SG_ LoadCell_RL_Raw : 7|16@0- (1,0) [0|0] "uV" Vector__XXX
+ SG_ LoadCell_RL_Force : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ LoadCell_RL_IntTemp : 39|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ LoadCell_RL_ExtTemp : 55|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 420 LoadCell_FR : 8 LCFL
+ SG_ LoadCell_FR_Raw : 7|16@0- (1,0) [0|0] "uV" Vector__XXX
+ SG_ LoadCell_FR_Force : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ LoadCell_FR_IntTemp : 39|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ LoadCell_FR_ExtTemp : 55|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 432 LoadCell_FL : 8 LCFL
+ SG_ LoadCell_FL_Raw : 7|16@0- (1,0) [0|0] "uV" Vector__XXX
+ SG_ LoadCell_FL_Force : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ LoadCell_FL_IntTemp : 39|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ LoadCell_FL_ExtTemp : 55|16@0+ (0.1,0) [0|0] "degC" Vector__XXX
+
 BO_ 400 VectorNav0: 8 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
  SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
@@ -312,13 +342,31 @@ BO_ 409 VectorNav9: 4 VectorNav
 BO_ 410 VectorNav10: 8 VectorNav
  SG_ VectorNav_BodySlip : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 500 SSDB_suspension_front: 3 SSDB
- SG_ SSDB_suspension_FL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ SSDB_suspension_FR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+BO_ 500 SSDB_suspension_front: 6 SSDB
+ SG_ SSDB_suspension_FL_raw : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_FR_raw : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_FL : 24|12@1+ (0.005,0) [0|0] "in" Vector__XXX
+ SG_ SSDB_suspension_FR : 36|12@1+ (0.005,0) [0|0] "in" Vector__XXX
 
-BO_ 501 SSDB_suspension_rear: 3 SSDB
- SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+BO_ 501 SSDB_suspension_rear: 6 SSDB
+ SG_ SSDB_suspension_RL_raw : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_RR_raw : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SSDB_suspension_RL : 24|12@1+ (0.005,0) [0|0] "in" Vector__XXX
+ SG_ SSDB_suspension_RR : 36|12@1+ (0.005,0) [0|0] "in" Vector__XXX
+
+BO_ 502 SSDB_temps_rear_raw: 8 SSDB
+ SG_ SSDB_temp_D_raw : 0|12@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SSDB_temp_E_raw : 12|12@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SSDB_temp_F_raw : 24|12@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SSDB_temp_G_raw : 36|12@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SSDB_temp_H_raw : 48|12@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 503 SSDB_temps_rear: 8 SSDB
+ SG_ SSDB_temp_D : 0|12@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ SSDB_temp_E : 12|12@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ SSDB_temp_F : 24|12@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ SSDB_temp_G : 36|12@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ SSDB_temp_H : 48|12@1- (0.1,0) [0|0] "degC" Vector__XXX
 
 BO_ 620 BMS_Voltages: 8 BMS
  SG_ BMS_Voltages_mux M : 0|5@1+ (1,0) [0|22] "" Vector__XXX
@@ -690,6 +738,9 @@ BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_Flag_StartingState : 35|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CHG_Flag_CommTimeout : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 600 FDL_Status: 8 FDL
+ SG_ FDL_ASMS : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 2566845491 TPMS_TirePressure: 8 TPMS
  SG_ TPMS_TireNum M : 7|8@0+ (1,0) [1|4] "" Vector__XXX
  SG_ TPMS_T1_TirePressure m1 : 15|16@0+ (1,0) [0|0] "kPa" Vector__XXX
@@ -723,6 +774,7 @@ CM_ BU_ C70 "Bosch C70 Data Logger";
 CM_ BU_ PIT "EvoScann P8-A Pressure Sensor";
 CM_ BU_ IRTEMP "Izze IRTS-60 v2 IR Temperature Sensors";
 CM_ BU_ VectorNav "VectorNav IMU";
+CM_ BU_ DS "Driverless system";
 CM_ BU_ SSDB "SSDB";
 
 SIG_VALTYPE_ 400 VectorNav_AccelX : 1;
