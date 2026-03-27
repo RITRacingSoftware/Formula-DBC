@@ -1,0 +1,11 @@
+ SG_ BMS_Chip_Voltages_mux M : 0|2@1+ (1,0) [0|2] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_A0 m0 : 2|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_A1 m0 : 15|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_B0 m0 : 28|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_B1 m0 : 41|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_C0 m1 : 2|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_C1 m1 : 15|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_D0 m1 : 28|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_D1 m1 : 41|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_E0 m2 : 2|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX
+ SG_ BMS_Chip_Voltages_E1 m2 : 15|13@1+ (0.01,0) [0|81.92] "V" Vector__XXX

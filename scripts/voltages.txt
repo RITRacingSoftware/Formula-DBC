@@ -1,3 +1,4 @@
+ SG_ BMS_Voltages_mux M : 0|5@1+ (1,0) [0|22] "V" Vector__XXX
  SG_ BMS_Voltages_A0 m0 : 5|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
  SG_ BMS_Voltages_A1 m0 : 14|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
  SG_ BMS_Voltages_A2 m0 : 23|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX

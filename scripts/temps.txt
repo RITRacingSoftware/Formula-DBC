@@ -1,4 +1,4 @@
- SG_ BMS_Temperatures_mux M : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ BMS_Temperatures_mux M : 0|3@1+ (1,0) [0|4] "V" Vector__XXX
  SG_ BMS_Temperatures_A0 m0 : 3|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
  SG_ BMS_Temperatures_A1 m0 : 13|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
  SG_ BMS_Temperatures_A2 m0 : 23|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX

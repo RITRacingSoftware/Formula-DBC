@@ -1,3 +1,4 @@
+ SG_ BMS_Temperatures_mux M : 0|3@1+ (1,0) [0|2] "V" Vector__XXX
  SG_ BMS_DrainStatus_A0 m0 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_A1 m0 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_A2 m0 : 5|1@1+ (1,0) [0|1] "" Vector__XXX
