@@ -42,6 +42,49 @@ BO_ 2 DataloggerStatus: 8 LOG
  SG_ PI_CPUTemp : 32|20@1+ (0.001,0) [0|1048.575] "degC" Vector__XXX
  SG_ PI_CPULoad : 52|12@1+ (1,0) [0|4095] "%" Vector__XXX
 
+BO_ 8 VectorNav0: 81 VectorNav
+ SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AccelZ : 64|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
+ SG_ VectorNav_AngularRateX : 96|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateY : 128|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_AngularRateZ : 160|32@1+ (1,0) [0|0] "rad/s" Vector__XXX
+ SG_ VectorNav_PosLlaL : 192|64@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_PosLlaO : 256|64@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_PosLlaA : 320|64@1+ (1,0) [0|0] "m" Vector__XXX
+ SG_ VectorNav_VelBodyX : 384|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyY : 416|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_VelBodyZ : 448|32@1+ (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VectorNav_YprY : 480|32@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_YprP : 512|32@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_YprR : 544|32@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ VectorNav_GNSS1NumSats : 576|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VectorNav_GNSS2NumSats : 584|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VectorNav_InsStatus_Mode : 592|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssFix : 594|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_ImuErr : 595|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_MagPresErr : 596|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssErr : 597|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssHeadingIns : 598|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_InsStatus_GnssCompass : 599|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VectorNav_PPS_Timestamp : 600|48@1+ (1,0) [0|0] "us" Vector__XXX
+
 CM_ BU_ LOG "Datalogger";
 VAL_ 2 STM_PowerState 0 "OFF" 1 "SELFTEST" 2 "BOOTING" 3 "RUNNING" 4 "BACKUP" 5 "SHUTDOWN" 6 "POWEROFF";
 VAL_ 2 STM_BatteryState 0 "UNKNOWN" 1 "FAILED" 2 "PASSED";
+
+SIG_VALTYPE_ 8 VectorNav_AccelX : 1;
+SIG_VALTYPE_ 8 VectorNav_AccelY : 1;
+SIG_VALTYPE_ 8 VectorNav_AccelZ : 1;
+SIG_VALTYPE_ 8 VectorNav_AngularRateX : 1;
+SIG_VALTYPE_ 8 VectorNav_AngularRateY : 1;
+SIG_VALTYPE_ 8 VectorNav_AngularRateZ : 1;
+SIG_VALTYPE_ 8 VectorNav_PosLlaL : 2;
+SIG_VALTYPE_ 8 VectorNav_PosLlaO : 2;
+SIG_VALTYPE_ 8 VectorNav_PosLlaA : 2;
+SIG_VALTYPE_ 8 VectorNav_VelBodyX : 1;
+SIG_VALTYPE_ 8 VectorNav_VelBodyY : 1;
+SIG_VALTYPE_ 8 VectorNav_VelBodyZ : 1;
+SIG_VALTYPE_ 8 VectorNav_YprY : 1;
+SIG_VALTYPE_ 8 VectorNav_YprP : 1;
+SIG_VALTYPE_ 8 VectorNav_YprR : 1;
