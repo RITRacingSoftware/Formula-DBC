@@ -35,6 +35,9 @@ BS_:
 
 BU_: C70 VC BMS CHG DASH PBX MCAN OA
 
+BO_ 1286 DS_RC_Outputs: 8 DS
+ SG_ DS_Steer : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_Throttle : 16|16@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  Vector__XXX
@@ -83,6 +86,8 @@ BO_ 311 VC_FaultVector: 8 VC
  SG_ VC_FaultVector_VN_NO_LOCK : 17|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_FaultVector_VN_IRR : 18|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VC_FaultVector_RUNAWAY : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_CURRENT_IRR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VC_FaultVector_VN_LOST : 21|1@1+ (1,0) [0|1] "" Vector__XXX
 
 
 
@@ -198,6 +203,10 @@ BO_ 331 VC_CodegenOutRear: 8 VC
 BO_ 332 VC_CodegenOutFront: 8 VC
  SG_ VC_CodegenFR : 0|32@1- (1,0) [0|0] "Nm" Vector__XXX
  SG_ VC_CodegenFL : 32|32@1- (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 333 VC_VectorNAV_Status: 8 VC
+ SG_ VC_VectorNAV_Packets : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_VectorNAV_Errors : 16|16@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 350 DS_Status: 8 LOG
  SG_ DS_State : 0|4@1+ (1,0) [0|0] "" Vector__XXX
@@ -506,6 +515,7 @@ BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_voltag "BMS_Fault
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_lowest_cell_volta "BMS_FaultAlert_lowest_cell_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 701 BMS_FaultAlert_irrational_temper "BMS_FaultAlert_irrational_temperature";
 VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_INVERTERS_POWERED" 2 "VehicleState_PRECHARGING" 3 "VehicleState_WAIT" 4 "VehicleState_STANDBY" 5 "VehicleState_RTD" 6 "VehicleState_SHUTDOWN";
+VAL_ 301 VC_Status_ControlsLevel 0 "ControlsLevel_OFF" 1 "ControlsLevel_BASIC" 3 "ControlsLevel_ADVANCED" 2 "ControlsLevel_BASIC_VEL";
 VAL_ 315 VC_HardFaultIndicator_task 0 "unknown" 1 "task_100Hz" ;
 VAL_ 600 BMS_Status_ChargeState 0 "ChargeState_DISCONNECTED" 1 "ChargeState_CONNECTED_CHARGING" 2 "ChargeState_CONNECTED_BALANCING" 3 "ChargeState_CONNECTED_BALANCE_SENSING" 4 "ChargeState_CONNECTED_COMPLETE" 5 "ChargeState_CONNECTED_FAULTED";
 VAL_ 701 BMS_FaultAlert_code 0 "FaultCode_SLAVE_COMM_CELLS" 1 "FaultCode_SLAVE_COMM_TEMPS" 2 "FaultCode_SLAVE_COMM_DRAIN_REQUEST" 3 "FaultCode_CURRENT_SENSOR_COMM" 4 "FaultCode_OVER_CURRENT" 5 "FaultCode_CELL_VOLTAGE_IRRATIONAL" 6 "FaultCode_CELL_VOLTAGE_DIFF" 7 "Faultcode_OUT_OF_JUICE" 8 "FaultCode_TEMPERATURE_IRRATIONAL" 9 "FaultCode_OVER_TEMP" 10 "FaultCode_DRAIN_FAILURE" ;

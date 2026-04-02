@@ -5,6 +5,12 @@ Title="canmatrix-Export"
 
 {SENDRECEIVE}
 
+[PDU_Voltage]
+ID=038h
+Type=Standard
+DLC=8
+Var=PDU_LV_Voltage unsigned 0,16 /u:V /f:0.001 /min:0 /max:0 /d:0.000
+
 [DS_Status]
 ID=502h
 Type=Standard
@@ -1036,13 +1042,19 @@ Var=BMS_DrainStatus_H15 unsigned 14,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H16 unsigned 15,1 /min:0 /max:1 /d:0
 Var=BMS_DrainStatus_H17 unsigned 16,1 /min:0 /max:1 /d:0
 
+[BMS_ChargeState]
+ID=271h
+Type=Standard
+DLC=8
+Var=BMS_Status_ChargeState unsigned 0,3 /min:0 /max:7 /d:0
+
 [CHG_ChargeRequest]
 ID=1806E5F4h
 Type=Extended
 DLC=8
 Var=CHG_ChargeRequest_MaxVoltage unsigned 0,16 -m /u:V /f:0.1 /min:0 /max:6553.5 /d:0.0
 Var=CHG_ChargeRequest_MaxCurrent unsigned 16,16 -m /u:A /f:0.1 /min:0 /max:6553.5 /d:0.0
-Var=CHG_ChargeRequest_Control unsigned 39,8 -m /min:0 /max:1 /d:0
+Var=CHG_ChargeRequest_Control unsigned 39,1 -m /min:0 /max:1 /d:0
 
 [CHG_ChargeStats]
 ID=18FF50E5h

@@ -35,6 +35,9 @@ BS_:
 
 BU_: C70 PIT IRTEMP DS
 
+BO_ 56 PDU_Voltage: 8 PDU
+ SG_ PDU_LV_Voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+
 BO_ 1282 DS_Status: 8 DS
  SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
