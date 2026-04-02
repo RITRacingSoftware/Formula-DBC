@@ -231,6 +231,9 @@ BO_ 602 BMS_FaultVector: 8 BMS
  SG_ BMS_FaultVector_CHARGER : 8|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_FaultVector_OVERTEMP : 9|1@1+ (1,0) [0|1] ""  Vector__XXX
 
+BO_ 603 BMS_ErrorCode: 8 BMS
+ SG_ BMS_ErrorCode : 0|32@1+ (1,0) [0|0] ""  Vector__XXX
+
 BO_ 604 BMS_Current: 8 BMS
  SG_ BMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  DASH
 

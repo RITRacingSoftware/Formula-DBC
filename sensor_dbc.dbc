@@ -676,10 +676,14 @@ BO_ 624 BMS_DrainStatus: 8 BMS
  SG_ BMS_DrainStatus_H16 m2 : 15|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_H17 m2 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
 
+
+BO_ 625 BMS_ChargeState: 8 BMS
+ SG_ BMS_Status_ChargeState : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
  SG_ CHG_ChargeRequest_MaxVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V"  CHG
  SG_ CHG_ChargeRequest_MaxCurrent : 23|16@0+ (0.1,0) [0|6553.5] "A"  CHG
- SG_ CHG_ChargeRequest_Control : 32|8@0+ (1,0) [0|1] ""  CHG
+ SG_ CHG_ChargeRequest_Control : 32|1@0+ (1,0) [0|1] ""  CHG
 
 BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_OutputVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
