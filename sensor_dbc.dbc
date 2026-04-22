@@ -746,14 +746,14 @@ BO_ 701 LVBMS_Voltages: 8 LVBMS
  SG_ LVBMS_Voltages_4 : 36|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
  SG_ LVBMS_Voltages_5 : 45|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
 
-BO_ 702 LVBMS_ChipVoltage_ChargeState_DrainStatus: 8 LVBMS                      
- SG_ LVBMS_Chip_Voltage : 0|13@1+ (0.01,0) [0|30.72] "V" Vector__XXX           
+BO_ 702 LVBMS_PackData: 8 LVBMS                      
+ SG_ LVBMS_Chip_Voltage : 0|13@1+ (0.01,0) [0|81.91] "V" Vector__XXX     
  SG_ LVBMS_ChargeState : 13|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ LVBMS_DrainStatus_0 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LVBMS_DrainStatus_1 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LVBMS_DrainStatus_2 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LVBMS_DrainStatus_3 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LVBMS_DrainStatus_4 : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_4 : 20|1@1+ (1,0) [0|1] "" Vector__XXX 
  SG_ LVBMS_DrainStatus_5 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 703 LVBMS_Temperatures: 8 LVBMS
@@ -764,15 +764,7 @@ BO_ 703 LVBMS_Temperatures: 8 LVBMS
  SG_ LVBMS_Temperatures_4 : 40|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
  SG_ LVBMS_Temperatures_5 : 50|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
 
-BO_ 704 LVBMS_ThermistorVoltages: 8 LVBMS                                    
- SG_ LVBMS_ThermistorVoltages_0 : 3|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
- SG_ LVBMS_ThermistorVoltages_1 : 12|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
- SG_ LVBMS_ThermistorVoltages_2 : 21|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
- SG_ LVBMS_ThermistorVoltages_3 : 30|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
- SG_ LVBMS_ThermistorVoltages_4 : 39|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
- SG_ LVBMS_ThermistorVoltages_5 : 48|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
-
-BO_ 705 LVBMS_FaultVectors_ErrorCodes: 8 LVBMS                                        
+BO_ 704 LVBMS_FaultVectors_ErrorCodes: 8 LVBMS                                        
  SG_ LVBMS_FaultVector_SHUTDOWN : 0|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ LVBMS_FaultVector_M17 : 1|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ LVBMS_FaultVector_ADES : 2|1@1+ (1,0) [0|1] ""  Vector__XXX
@@ -805,7 +797,7 @@ BO_ 705 LVBMS_FaultVectors_ErrorCodes: 8 LVBMS
  SG_ LVBMS_ErrorCode_BALANCING_FAULT : 48|1@1+ (1,0) [0|1] ""  Vector__XXX                       
  SG_ LVBMS_ErrorCode_CHARGING_DISCONNECTED : 49|1@1+ (1,0) [0|1] ""  Vector__XXX                       
 
-BO_ 706 LVBMS_Current: 8 BMS                                                   
+BO_ 705 LVBMS_Current: 8 BMS                                                   
  SG_ BMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
 
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
