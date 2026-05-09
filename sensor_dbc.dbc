@@ -732,6 +732,76 @@ BO_ 625 BMS_ChargeState: 8 BMS
  SG_ BMS_SOC : 3|7@1+ (1,0) [0|100] "%" Vector__XXX
  SG_ BMS_mAh_Used : 10|14@1+ (1,0) [0|11800] "mAh" Vector__XXX
 
+BO_ 700 LVBMS_Overview: 8 LVBMS                                         
+ SG_ LVBMS_CellOverview_VoltMin : 0|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_CellOverview_VoltMax : 9|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_CellOverview_VoltAvg : 18|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_CellOverview_TempMin : 27|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_CellOverview_TempMax : 37|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_CellOverview_TempAvg : 47|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+
+BO_ 701 LVBMS_Voltages: 8 LVBMS
+ SG_ LVBMS_Voltages_0 : 0|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_Voltages_1 : 9|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_Voltages_2 : 18|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ lVBMS_Voltages_3 : 27|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_Voltages_4 : 36|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+ SG_ LVBMS_Voltages_5 : 45|9@1+ (0.01,0) [0|5.12] "V" Vector__XXX
+
+BO_ 702 LVBMS_PackData: 8 LVBMS                      
+ SG_ LVBMS_Chip_Voltage : 0|13@1+ (0.01,0) [0|81.91] "V" Vector__XXX     
+ SG_ LVBMS_ChargeState : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_0 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_1 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_2 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_3 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_DrainStatus_4 : 20|1@1+ (1,0) [0|1] "" Vector__XXX 
+ SG_ LVBMS_DrainStatus_5 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 703 LVBMS_Temperatures: 8 LVBMS
+ SG_ LVBMS_Temperatures_0 : 0|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_Temperatures_1 : 10|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_Temperatures_2 : 20|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_Temperatures_3 : 30|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_Temperatures_4 : 40|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+ SG_ LVBMS_Temperatures_5 : 50|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX
+
+BO_ 704 LVBMS_FaultVectors_ErrorCodes: 8 LVBMS                                        
+ SG_ LVBMS_FaultVector_SHUTDOWN : 0|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_M17 : 1|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_ADES : 2|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_CELL_VOLT_IRR : 3|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_CHIP_VOLT_IRR : 4|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_TEMP_IRR : 5|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_OUT_OF_JUICE : 6|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_VOLTAGE_DIFF : 7|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_CHARGER : 8|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_OVERTEMP : 9|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_BALANCING : 10|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_OVERCURRENT : 11|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_FaultVector_CURRENT_IRR : 12|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ LVBMS_ErrorCode_TX_NOT_RECIEVED : 32|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_TX_LOOPBACK_MISMATCH : 33|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_NUM_CHIPS_MISMATCH : 34|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_LSSM_BYTE : 35|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_LSSM_COMM_ERR : 36|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_ALERT_RX : 37|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_ALERT_RX_OVERFLOW : 38|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_LDQ_READ : 39|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_LDQ_FULL : 40|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_RX_TIMEOUT : 41|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_NO_RX : 42|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_ADES_SCAN_TIMEOUT : 43|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_RX_STATUS : 44|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_TX_NOT_WRITTEN : 45|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_NO_WAKE : 46|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_BALANCING_NO_INIT : 47|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_BALANCING_FAULT : 48|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+ SG_ LVBMS_ErrorCode_CHARGING_DISCONNECTED : 49|1@1+ (1,0) [0|1] ""  Vector__XXX                       
+
+BO_ 705 LVBMS_Current: 8 BMS                                                   
+ SG_ BMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
+
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
  SG_ CHG_ChargeRequest_MaxVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V"  CHG
  SG_ CHG_ChargeRequest_MaxCurrent : 23|16@0+ (0.1,0) [0|6553.5] "A"  CHG
