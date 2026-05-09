@@ -727,9 +727,10 @@ BO_ 624 BMS_DrainStatus: 8 BMS
  SG_ BMS_DrainStatus_H16 m2 : 15|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BMS_DrainStatus_H17 m2 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
 
-
 BO_ 625 BMS_ChargeState: 8 BMS
  SG_ BMS_Status_ChargeState : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ BMS_SOC : 3|7@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ BMS_mAh_Used : 10|14@1+ (1,0) [0|11800] "mAh" Vector__XXX
 
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
  SG_ CHG_ChargeRequest_MaxVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V"  CHG
@@ -775,6 +776,8 @@ BO_ 2566845491 TPMS_TirePressure: 8 TPMS
  SG_ TPMS_T4_MinusTemp m4 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ TPMS_T4_Error m4 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
 
+
+VAL_ 625 BMS_Status_ChargeState 0 "DISCONNECTED" 1 "CONNECTED" 2 "CONNECTED_CHARGING" 3 "CONNECTED_SETTLING" 4 "CONNECTED_BALANCING" 5 "CONNECTED_COMPLETE" 6 "CONNECTED_FAULTED";
 
 CM_ BU_ FDL "Front driverless actuation";
 CM_ BU_ C70 "Bosch C70 Data Logger";
