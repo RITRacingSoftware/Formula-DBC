@@ -38,6 +38,41 @@ BU_: C70 PIT IRTEMP DS
 BO_ 56 PDU_Voltage: 8 PDU
  SG_ PDU_LV_Voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
 
+BO_ 57 PDU_Currents: 8 PDU
+ SG_ PDU_ChannelMux M : 0|4@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ PDU_Channel0 m0 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel1 m0 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel2 m0 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel3 m0 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel4 m0 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel5 m1 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel6 m1 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel7 m1 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel8 m1 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel9 m1 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel10 m2 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel11 m2 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel12 m2 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel13 m2 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel14 m2 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel15 m3 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel16 m3 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel17 m3 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel18 m3 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel19 m3 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel20 m4 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel21 m4 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel22 m4 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel23 m4 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel24 m4 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel25 m5 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel26 m5 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel27 m5 : 28|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel28 m5 : 40|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel29 m5 : 52|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel30 m6 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+ SG_ PDU_Channel31 m6 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
+
 BO_ 1282 DS_Status: 8 DS
  SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
@@ -57,6 +92,10 @@ BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_Pressure7 m2 : 15|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
  SG_ PIT_Pressure8 m2 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
  SG_ PIT_SensorNum m2 : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 300 VC_PDU_Control: 2 VC
+ SG_ VC_Inverter_PWM : 0|5@1+ (1,0) [0|25] "" Vector__XXX
+ SG_ VC_Motor_PWM : 5|5@1+ (1,0) [0|25] "" Vector__XXX
 
 BO_ 304 TireTemp_FL_M1: 8 IRTEMP
  SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
@@ -802,7 +841,7 @@ BO_ 705 LVBMS_ErrorCodes: 8 LVBMS
  SG_ LVBMS_ErrorCodes_CHARGING_DISCONNECTED : 17|1@1+ (1,0) [0|1] ""  Vector__XXX
 
 BO_ 706 LVBMS_Current: 8 BMS                                                   
- SG_ BMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
+ SG_ LVBMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
 
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
  SG_ CHG_ChargeRequest_MaxVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V"  CHG
@@ -817,9 +856,6 @@ BO_ 2566869221 CHG_ChargeStats: 8 CHG
  SG_ CHG_Flag_InputVoltage : 34|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CHG_Flag_StartingState : 35|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CHG_Flag_CommTimeout : 36|1@1+ (1,0) [0|1] "" Vector__XXX
-
-BO_ 600 FDL_Status: 8 FDL
- SG_ FDL_ASMS : 0|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2566845491 TPMS_TirePressure: 8 TPMS
  SG_ TPMS_TireNum M : 7|8@0+ (1,0) [1|4] "" Vector__XXX
