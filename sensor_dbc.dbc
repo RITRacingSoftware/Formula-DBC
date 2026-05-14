@@ -802,7 +802,7 @@ BO_ 705 LVBMS_ErrorCodes: 8 LVBMS
  SG_ LVBMS_ErrorCodes_CHARGING_DISCONNECTED : 17|1@1+ (1,0) [0|1] ""  Vector__XXX
 
 BO_ 706 LVBMS_Current: 8 BMS                                                   
- SG_ BMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
+ SG_ LVBMS_InstCurrentFilt : 0|32@1- (0.001,0) [-100|250] "A"  Vector__XXX
 
 BO_ 2550588916 CHG_ChargeRequest: 8 BMS
  SG_ CHG_ChargeRequest_MaxVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V"  CHG
