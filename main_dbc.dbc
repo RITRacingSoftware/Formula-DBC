@@ -328,6 +328,9 @@ BO_ 1284 DSAC_Status: 8 DS
  SG_ DSAC_EBS_State : 3|5@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_Steering_State : 8|4@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_Pressure_State : 12|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_Relay_State : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_WDO_State : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_Output_State : 20|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1286 DS_RC_Outputs: 8 DS
  SG_ DS_Steer : 0|16@1+ (1,0) [0|0] "" Vector__XXX
