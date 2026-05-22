@@ -128,10 +128,10 @@ BO_ 319 VC_TC_Out: 8 VC
  SG_ VC_FL_TC_Out: 48|16@1+ (0.1,0) [0|0] "% Mn" Vector__XXX
 
 BO_ 320 VC_Der: 8 VC
- SG_ VC_RR_Der: 0|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
- SG_ VC_RL_Der: 16|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
- SG_ VC_FR_Der: 32|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
- SG_ VC_FL_Der: 48|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_RR_Der: 0|16@1- (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_RL_Der: 16|16@1- (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_FR_Der: 32|16@1- (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ VC_FL_Der: 48|16@1- (0.1,0) [0|0] "rpm" Vector__XXX
 
 BO_ 321 VC_InvTimes: 8 VC
  SG_ VC_RR_Time : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
@@ -210,6 +210,10 @@ BO_ 334 VC_TargetWheelSpeeds: 8 VC
  SG_ VC_RL_TargetWheelSpeed : 16|16@1+ (1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FR_TargetWheelSpeed : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FL_TargetWheelSpeed : 48|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+
+BO_ 335 VC_EnduranceInfo: 8 VC
+ SG_ VC_RelativeDistance : 0|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
+ SG_ VC_EstimatedSOC : 16|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
 
 BO_ 350 DS_Status: 8 LOG
  SG_ DS_State : 0|4@1+ (1,0) [0|0] "" Vector__XXX

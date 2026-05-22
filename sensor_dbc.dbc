@@ -36,7 +36,10 @@ BS_:
 BU_: C70 PIT IRTEMP DS
 
 BO_ 56 PDU_Voltage: 8 PDU
- SG_ PDU_LV_Voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ PDU_Bank0_Voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ PDU_Bank1_Voltage : 16|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ PDU_Bank2_Voltage : 32|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ PDU_Bank3_Voltage : 48|16@1+ (0.001,0) [0|0] "V" Vector__XXX
 
 BO_ 57 PDU_Currents: 8 PDU
  SG_ PDU_ChannelMux M : 0|4@1+ (1,0) [0|6] "" Vector__XXX
@@ -96,6 +99,18 @@ BO_ 384 PIT_Pressures: 8 PIT
 BO_ 300 VC_PDU_Control: 2 VC
  SG_ VC_Inverter_PWM : 0|5@1+ (1,0) [0|25] "" Vector__XXX
  SG_ VC_Motor_PWM : 5|5@1+ (1,0) [0|25] "" Vector__XXX
+
+BO_ 336 VC_MotorTemps : 8 VC
+ SG_ VC_RR_MotorTemp : 0|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_RL_MotorTemp : 16|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_FR_MotorTemp : 32|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_FL_MotorTemp : 48|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 337 VC_InverterTemps : 8 VC
+ SG_ VC_RR_InverterTemp : 0|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_RL_InverterTemp : 16|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_FR_InverterTemp : 32|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ VC_FL_InverterTemp : 48|16@1- (0.1,0) [0|0] "degC" Vector__XXX
 
 BO_ 304 TireTemp_FL_M1: 8 IRTEMP
  SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
