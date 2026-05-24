@@ -112,6 +112,14 @@ BO_ 337 VC_InverterTemps : 8 VC
  SG_ VC_FR_InverterTemp : 32|16@1- (0.1,0) [0|0] "degC" Vector__XXX
  SG_ VC_FL_InverterTemp : 48|16@1- (0.1,0) [0|0] "degC" Vector__XXX
 
+BO_ 338 VC_DRS_Status : 8 VC
+ SG_ VC_DRS1_Setting : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS2_Setting : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS_RampSet : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS_RampCount : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS_OverdriveCount : 48|5@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS_State : 53|3@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 304 TireTemp_FL_M1: 8 IRTEMP
  SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
  SG_ TireTemp_FL_2 : 23|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
