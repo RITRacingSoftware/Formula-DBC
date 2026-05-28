@@ -256,10 +256,11 @@ BO_ 603 BMS_ErrorList: 8 BMS
  SG_ BMS_Error_ERR_RX_TIMEOUT :               9|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_NO_RX :                   10|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_ADES_SCAN_TIMEOUT :       11|1@1+ (1,0) [0|1] ""  Vector__XXX
- SG_ BMS_Error_ERR_RX_STATUS :               12|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ BMS_Error_ERR_RX_DATA :                 12|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_TX_NOT_WRITTEN :          13|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_NO_WAKE :                 14|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_CAL_TIMEOUT :             15|1@1+ (1,0) [0|1] ""  Vector__XXX
+ SG_ BMS_Error_ERR_RX_OVRFLW :               16|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_BALANCING_NO_INIT :       20|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_BALANCING_FAULT :         21|1@1+ (1,0) [0|1] ""  Vector__XXX
  SG_ BMS_Error_ERR_CHARGING_DISCONNECTED :   22|1@1+ (1,0) [0|1] ""  Vector__XXX
