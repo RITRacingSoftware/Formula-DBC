@@ -37,9 +37,9 @@ BU_: C70 VC BMS CHG DASH PBX MCAN OA
 
 BO_ 301 VC_Status: 8 VC
  SG_ VC_Status_VehicleState : 0|4@1+ (1,0) [0|15] ""  Vector__XXX
- SG_ VC_ControlsLevel : 4|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ VC_DS_RearEnable : 6|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ VC_DS_FrontEnable : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_ControlsLevel : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DS_RearEnable : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DS_FrontEnable : 9|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 302 VC_ProcessedInputs: 8 VC
  SG_ VC_P_Inputs_BrakesFrontPsi : 0|15@1+ (0.1,0) [0|3000] "psi" Vector__XXX
@@ -382,7 +382,7 @@ BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
 BA_DEF_DEF_  "SystemSignalLongSymbol" "";
 BA_ "SystemSignalLongSymbol" SG_ 469 D1_HV_Input_Current_Sensor_Valid "D1_HV_Input_Current_Sensor_Validity";
 VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_INVERTERS_POWERED" 2 "VehicleState_PRECHARGING" 3 "VehicleState_WAIT" 4 "VehicleState_STANDBY" 5 "VehicleState_RTD" 6 "VehicleState_SHUTDOWN";
-VAL_ 301 VC_Status_ControlsLevel 0 "ControlsLevel_OFF" 1 "ControlsLevel_BASIC" 3 "ControlsLevel_ADVANCED" 2 "ControlsLevel_BASIC_VEL";
+VAL_ 301 VC_Status_ControlsLevel 0 "ControlsLevel_OFF" 1 "ControlsLevel_BASIC" 3 "ControlsLevel_ADVANCED" 2 "ControlsLevel_BASIC_VEL" 4 "ControlsLevel_SKIDPAD";
 VAL_ 315 VC_HardFaultIndicator_task 0 "unknown" 1 "task_100Hz" ;
 VAL_ 600 BMS_Status_ChargeState 0 "DISCONNECTED" 1 "CONNECTED" 2 "CONNECTED_CHARGING" 3 "CONNECTED_SETTLING" 4 "CONNECTED_BALANCING" 5 "CONNECTED_COMPLETE" 6 "CONNECTED_FAULTED";
 VAL_ 701 BMS_FaultAlert_code 0 "FaultCode_SLAVE_COMM_CELLS" 1 "FaultCode_SLAVE_COMM_TEMPS" 2 "FaultCode_SLAVE_COMM_DRAIN_REQUEST" 3 "FaultCode_CURRENT_SENSOR_COMM" 4 "FaultCode_OVER_CURRENT" 5 "FaultCode_CELL_VOLTAGE_IRRATIONAL" 6 "FaultCode_CELL_VOLTAGE_DIFF" 7 "Faultcode_OUT_OF_JUICE" 8 "FaultCode_TEMPERATURE_IRRATIONAL" 9 "FaultCode_OVER_TEMP" 10 "FaultCode_DRAIN_FAILURE" ;

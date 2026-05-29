@@ -119,6 +119,7 @@ BO_ 338 VC_DRS_Status : 8 VC
  SG_ VC_DRS_RampCount : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_DRS_OverdriveCount : 48|5@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_DRS_State : 53|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_DRS_ConditionCount : 56|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 304 TireTemp_FL_M1: 8 IRTEMP
  SG_ TireTemp_FL_1 : 7|16@0+ (0.1,-100) [-20|950] "degC" Vector__XXX
