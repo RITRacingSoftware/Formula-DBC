@@ -436,6 +436,7 @@ BO_ 503 SSDB_temps_rear: 8 SSDB
 
 BO_ 510 DASH_inputs: 1 DASH
  SG_ DASH_Button1 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DASH_Button2 : 1|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 620 BMS_Voltages: 8 BMS
  SG_ BMS_Voltages_mux M : 0|5@1+ (1,0) [0|22] "" Vector__XXX
