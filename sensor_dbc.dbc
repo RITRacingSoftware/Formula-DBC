@@ -96,9 +96,28 @@ BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_Pressure8 m2 : 31|16@0+ (0.01,600) [600|1200] "mbar" Vector__XXX
  SG_ PIT_SensorNum m2 : 47|16@0+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 506 OutboardAccelAvg: 6 OA
+ SG_ OAAvg_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAAvg_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAAvg_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+
+BO_ 507 OutboardAccelMin: 6 OA
+ SG_ OAMin_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMin_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMin_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+
+BO_ 508 OutboardAccelMax: 6 OA
+ SG_ OAMax_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMax_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+ SG_ OAMax_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
+
 BO_ 300 VC_PDU_Control: 2 VC
  SG_ VC_Inverter_PWM : 0|5@1+ (1,0) [0|25] "" Vector__XXX
  SG_ VC_Motor_PWM : 5|5@1+ (1,0) [0|25] "" Vector__XXX
+
+BO_ 335 VC_EnduranceInfo: 8 VC
+ SG_ VC_RelativeDistance : 0|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
+ SG_ VC_EstimatedSOC : 16|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
 
 BO_ 336 VC_MotorTemps : 8 VC
  SG_ VC_RR_MotorTemp : 0|16@1- (0.1,0) [0|0] "degC" Vector__XXX
@@ -816,13 +835,7 @@ BO_ 701 LVBMS_Voltages: 8 LVBMS
 
 BO_ 702 LVBMS_PackData: 8 LVBMS                      
  SG_ LVBMS_Chip_Voltage : 0|13@1+ (0.01,0) [0|81.91] "V" Vector__XXX     
- SG_ LVBMS_ChargeState : 13|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ LVBMS_DrainStatus_0 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LVBMS_DrainStatus_1 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LVBMS_DrainStatus_2 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LVBMS_DrainStatus_3 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LVBMS_DrainStatus_4 : 20|1@1+ (1,0) [0|1] "" Vector__XXX 
- SG_ LVBMS_DrainStatus_5 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBMS_ChargeState : 13|4@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 703 LVBMS_Temperatures: 8 LVBMS
  SG_ LVBMS_Temperatures_0 : 0|10@1+ (0.1,0) [0|102.3] "C" Vector__XXX

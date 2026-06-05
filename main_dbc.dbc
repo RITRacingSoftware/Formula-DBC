@@ -211,10 +211,6 @@ BO_ 334 VC_TargetWheelSpeeds: 8 VC
  SG_ VC_FR_TargetWheelSpeed : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FL_TargetWheelSpeed : 48|16@1+ (1,0) [0|0] "rpm" Vector__XXX
 
-BO_ 335 VC_EnduranceInfo: 8 VC
- SG_ VC_RelativeDistance : 0|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
- SG_ VC_EstimatedSOC : 16|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
-
 BO_ 350 DS_Status: 8 LOG
  SG_ DS_State : 0|4@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DS_RearActive : 4|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -302,21 +298,6 @@ BO_ 520 SSDB_suspension_front: 3 SSDB
 BO_ 521 SSDB_suspension_rear: 3 SSDB
  SG_ SSDB_suspension_RL : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ SSDB_suspension_RR : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
-
-BO_ 506 OutboardAccelAvg: 6 OA
- SG_ OAAvg_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAAvg_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAAvg_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
-
-BO_ 507 OutboardAccelMin: 6 OA
- SG_ OAMin_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAMin_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAMin_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
-
-BO_ 508 OutboardAccelMax: 6 OA
- SG_ OAMax_AccelX : 0|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAMax_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
- SG_ OAMax_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
 
 BO_ 530 VectorNav0: 8 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
