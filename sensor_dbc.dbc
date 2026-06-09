@@ -120,6 +120,7 @@ BO_ 335 VC_EnduranceInfo: 8 VC
  SG_ VC_EstimatedSOC : 16|16@1+ (0.0000152587890625,0) [0|0] "" Vector__XXX
  SG_ VC_PackTemp : 32|8@1+ (0.00390625,0) [0|0] "" Vector__XXX
  SG_ VC_PackTempValid : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_EnduranceMode : 41|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 336 VC_MotorTemps : 8 VC
  SG_ VC_RR_MotorTemp : 0|16@1- (0.1,0) [0|0] "degC" Vector__XXX
