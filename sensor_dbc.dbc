@@ -76,6 +76,22 @@ BO_ 57 PDU_Currents: 8 PDU
  SG_ PDU_Channel30 m6 : 4|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
  SG_ PDU_Channel31 m6 : 16|12@1+ (0.0025,0) [0|0] "A" Vector__XXX
 
+
+BO_ 226 EM_TEMP_VALUES_1: 8 Vector__XXX
+ SG_ Temp_Sensor_1 : 0|16@1- (0.0625,0) [0|255] "C" Vector__XXX
+ SG_ Temp_Sensor_2 : 16|16@1- (0.0625,0) [0|255] "C" Vector__XXX
+ SG_ Temp_Sensor_3 : 32|16@1- (0.0625,0) [0|255] "C" Vector__XXX
+ SG_ Temp_Sensor_4 : 48|16@1- (0.0625,0) [0|255] "C" Vector__XXX
+
+BO_ 225 EM_TEMP_VALUES_2: 2 Vector_XXX
+ SG_ Temp_Sensor_5 : 0|16@1- (0.0625,0) [0|255] "C" Vector__XXX
+
+BO_ 224 EM_OUTPUT_VALUES: 8 EM
+ SG_ CURRENT: 0|16@1- (0.1,0) [0|0] "A" Vector__XXX
+ SG_ VOLTAGE: 16|16@1+ (0.01,0) [0|0] "V" Vector__XXX
+ SG_ POWER: 32|18@1+ (1,0) [0|0] "W" Vector__XXX
+
+
 BO_ 1282 DS_Status: 8 DS
  SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
