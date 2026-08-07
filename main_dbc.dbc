@@ -211,11 +211,6 @@ BO_ 334 VC_TargetWheelSpeeds: 8 VC
  SG_ VC_FR_TargetWheelSpeed : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FL_TargetWheelSpeed : 48|16@1+ (1,0) [0|0] "rpm" Vector__XXX
 
-BO_ 350 DS_Status: 8 LOG
- SG_ DS_State : 0|4@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_RearActive : 4|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_FrontActive : 5|1@1+ (1,0) [0|0] "" Vector__XXX
-
 
 BO_ 600 BMS_Status: 8 BMS
  SG_ BMS_Status_SOC : 0|8@1+ (1,0) [0|100] "%"  Vector__XXX
@@ -333,6 +328,18 @@ BO_ 538 VectorNav8: 8 VectorNav
  SG_ VectorNav_YprR : 32|32@1+ (1,0) [0|0] "deg" Vector__XXX
 
 
+BO_ 1280 EBS_Pressure_Status: 8 DSAC
+ SG_ EBS_pressure_1 : 0|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
+ SG_ EBS_pressure_2 : 16|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
+ SG_ EBS_pressure_3 : 32|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
+ SG_ EBS_pressure_4 : 48|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
+
+BO_ 1282 DS_Status: 8 DS
+ SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_Mission : 5|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_LapCount : 11|4@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 1284 DSAC_Status: 8 DS
  SG_ DSAC_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_EBS_State : 3|5@1+ (1,0) [0|0] "" Vector__XXX
@@ -346,6 +353,21 @@ BO_ 1286 DS_RC_Outputs: 8 DS
  SG_ DS_Steer : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DS_Throttle : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DS_SWA : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1287 DS_Actuation_Control: 8 DS
+ SG_ DS_SteerSetpoint : 0|16@1- (2,0) [0|0] "" Vector__XXX
+ SG_ DS_SteerFF : 16|16@1- (2,0) [0|0] "" Vector__XXX
+ SG_ DS_Running : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_Finished : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_Fault : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_BrakeRear : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_BrakeFront : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1288 DSAC_Actual: 8 DS
+ SG_ DSAC_CurrentD : 0|16@1- (0.001,0) [0|0] "A" Vector__XXX
+ SG_ DSAC_CurrentQ : 16|16@1- (0.001,0) [0|0] "A" Vector__XXX
+ SG_ DSAC_SpeedSetpoint : 32|16@1- (1,0) [0|0] "Hz" Vector__XXX
+ SG_ DSAC_SpeedSMO : 48|16@1- (1,0) [0|0] "Hz" Vector__XXX
 
 
 
@@ -362,7 +384,7 @@ CM_ BO_ 1791 "Brake Pressures, relayed by C70";
 BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
 BA_DEF_DEF_  "SystemSignalLongSymbol" "";
 BA_ "SystemSignalLongSymbol" SG_ 469 D1_HV_Input_Current_Sensor_Valid "D1_HV_Input_Current_Sensor_Validity";
-VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_INVERTERS_POWERED" 2 "VehicleState_PRECHARGING" 3 "VehicleState_WAIT" 4 "VehicleState_STANDBY" 5 "VehicleState_RTD" 6 "VehicleState_SHUTDOWN";
+VAL_ 301 VC_Status_VehicleState 0 "VehicleState_NOT_READY" 1 "VehicleState_INVERTERS_POWERED" 2 "VehicleState_PRECHARGING" 3 "VehicleState_WAIT" 4 "VehicleState_STANDBY" 5 "VehicleState_RTD" 6 "VehicleState_SHUTDOWN" 7 "VehicleState_RTD_DS";
 VAL_ 301 VC_Status_ControlsLevel 0 "ControlsLevel_OFF" 1 "ControlsLevel_BASIC" 3 "ControlsLevel_ADVANCED" 2 "ControlsLevel_BASIC_VEL" 4 "ControlsLevel_SKIDPAD";
 VAL_ 315 VC_HardFaultIndicator_task 0 "unknown" 1 "task_100Hz" ;
 VAL_ 600 BMS_Status_ChargeState 0 "DISCONNECTED" 1 "CONNECTED" 2 "CONNECTED_CHARGING" 3 "CONNECTED_SETTLING" 4 "CONNECTED_BALANCING" 5 "CONNECTED_COMPLETE" 6 "CONNECTED_FAULTED";

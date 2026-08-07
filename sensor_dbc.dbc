@@ -127,6 +127,20 @@ BO_ 508 OutboardAccelMax: 6 OA
  SG_ OAMax_AccelY : 16|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
  SG_ OAMax_AccelZ : 32|16@1- (0.001,0) [-32.768|32.767] "g" Vector_XXX
 
+BO_ 520 StrainAmp_Forces: 8 SA
+ SG_ StrainAmp_Force0 : 0|12@1- (2,0) [0|0] "lbf" Vector__XXX
+ SG_ StrainAmp_Force1 : 12|12@1- (2,0) [0|0] "lbf" Vector__XXX
+ SG_ StrainAmp_Force2 : 24|12@1- (2,0) [0|0] "lbf" Vector__XXX
+ SG_ StrainAmp_Force3 : 36|12@1- (2,0) [0|0] "lbf" Vector__XXX
+ SG_ StrainAmp_Force4 : 48|12@1- (2,0) [0|0] "lbf" Vector__XXX
+
+BO_ 521 StrainAmp_Temps: 8 SA
+ SG_ StrainAmp_Temp0 : 0|12@1- (0.05,0) [0|0] "degC" Vector__XXX
+ SG_ StrainAmp_Temp1 : 12|12@1- (0.05,0) [0|0] "degC" Vector__XXX
+ SG_ StrainAmp_Temp2 : 24|12@1- (0.05,0) [0|0] "degC" Vector__XXX
+ SG_ StrainAmp_Temp3 : 36|12@1- (0.05,0) [0|0] "degC" Vector__XXX
+ SG_ StrainAmp_Temp4 : 48|12@1- (0.05,0) [0|0] "degC" Vector__XXX
+
 BO_ 300 VC_PDU_Control: 2 VC
  SG_ VC_Inverter_PWM : 0|5@1+ (1,0) [0|25] "" Vector__XXX
  SG_ VC_Motor_PWM : 5|5@1+ (1,0) [0|25] "" Vector__XXX
@@ -137,6 +151,7 @@ BO_ 335 VC_EnduranceInfo: 8 VC
  SG_ VC_PackTemp : 32|8@1+ (0.00390625,0) [0|0] "" Vector__XXX
  SG_ VC_PackTempValid : 40|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ VC_EnduranceMode : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VC_VelocityLimit : 44|12@1+ (0.01,0) [0|0] "m/s" Vector__XXX
 
 BO_ 336 VC_MotorTemps : 8 VC
  SG_ VC_RR_MotorTemp : 0|16@1- (0.1,0) [0|0] "degC" Vector__XXX
