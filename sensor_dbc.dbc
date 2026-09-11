@@ -35,6 +35,24 @@ BS_:
 
 BU_: RF_CT3
 
+BO_ 1 Pos1_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos1_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
+BO_ 2 Pos2_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos2_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
+BO_ 3 Pos3_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos3_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
+BO_ 4 Pos4_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos4_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
+BO_ 5 Pos5_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos5_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
+BO_ 6 Pos6_SlipAngle_Signals: 8 Vector__XXX
+ SG_ Pos6_SlipAngle_20Hz : 0|16@1- (0.0013733329264,0) [-45|44.9986] "Degrees" Vector__XXX
+
 BO_ 33 RF_A: 8 RF_CT3
  SG_ RF_X_Force : 0|16@1- (1.220703125,0) [-40000|40000] "N" Vector__XXX
  SG_ RF_Y_Force : 16|16@1- (0.6103515625,0) [-20000|20000] "N" Vector__XXX
