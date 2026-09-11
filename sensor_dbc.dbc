@@ -33,7 +33,24 @@ NS_ :
 
 BS_:
 
-BU_: C70 PIT IRTEMP DS
+BU_: RF_CT3
+
+BO_ 33 RF_A: 8 RF_CT3
+ SG_ RF_X_Force : 0|16@1- (1.220703125,0) [-40000|40000] "N" Vector__XXX
+ SG_ RF_Y_Force : 16|16@1- (0.6103515625,0) [-20000|20000] "N" Vector__XXX
+ SG_ RF_Z_Force : 32|16@1- (1.220703125,0) [-40000|40000] "N" Vector__XXX
+ SG_ RF_MX_Moment : 48|16@1- (0.18310546875,0) [-6000|6000] "Nm" Vector__XXX
+
+BO_ 34 RF_B: 8 RF_CT3
+ SG_ RF_MY_Moment : 0|16@1- (0.18310546875,0) [-6000|6000] "Nm" Vector__XXX
+ SG_ RF_MZ_Moment : 16|16@1- (0.18310546875,0) [-6000|6000] "Nm" Vector__XXX
+ SG_ RF_Velocity : 32|16@1- (0.06103515625,0) [-2000|2000] "rpm" Vector__XXX
+ SG_ RF_Position : 48|16@1- (0.010986328125,0) [0|360] "degrees" Vector__XXX
+
+BO_ 35 RF_C: 8 RF_CT3
+ SG_ RF_X_Acceleration : 0|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+ SG_ RF_Y_Acceleration : 16|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+ SG_ RF_Z_Acceleration : 32|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
 
 BO_ 56 PDU_Voltage: 8 PDU
  SG_ PDU_Bank0_Voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
