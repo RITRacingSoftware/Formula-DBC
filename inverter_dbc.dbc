@@ -32,242 +32,103 @@ NS_ :
 BS_:
 BU_: RR RL FL FR GEN
 
-BO_ 643 RL_AMK_Actual_1: 8 RL
- SG_ RL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
- SG_ RL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
- 
-BO_ 647 RL_AMK_Actual_2: 8 RL
- SG_ RL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ RL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ RL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ RL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- 
-BO_ 657 RL_AMK_RITSet1: 8 RL
- SG_ RL_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ RL_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- 
-BO_ 661 RL_AMK_RITSet2: 8 RL
- SG_ RL_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ RL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ RL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
-
-BO_ 665 RL_AMK_RITSet3: 4 RL
- SG_ RL_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
-
-BO_ 669 RL_AMK_RITSet4: 4 RL
- SG_ RL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
-
-BO_ 673 RL_AMK_RIT_Set5: 4 RL
- SG_ RL_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
-
-BO_ 677 RL_AMK_RIT_Set6: 4 RL
- SG_ RL_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
-
-BO_ 388 RL_AMK_Setpoints: 8 RL
- SG_ RL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
- SG_ RL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
- SG_ RL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
-
-
-BO_ 644 RR_AMK_Actual_1: 8 RR
- SG_ RR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
- SG_ RR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
-
-BO_ 648 RR_AMK_Actual_2: 8 RR
- SG_ RR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ RR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ RR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ RR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- 
-BO_ 658 RR_AMK_RITSet1: 8 RR
- SG_ RR_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ RR_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- 
-BO_ 662 RR_AMK_RITSet2: 8 RR
- SG_ RR_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ RR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ RR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
-
-BO_ 666 RR_AMK_RITSet3: 4 RR
- SG_ RR_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
-
-BO_ 670 RR_AMK_RITSet4: 4 RR
- SG_ RR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
-
-BO_ 674 RR_AMK_RIT_Set5: 4 RR
- SG_ RR_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
-
-BO_ 678 RR_AMK_RIT_Set6: 4 RR
- SG_ RR_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
-
-BO_ 389 RR_AMK_Setpoints: 8 RR
- SG_ RR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
- SG_ RR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
- SG_ RR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
-
-
-BO_ 645 FL_AMK_Actual_1: 8 FL
- SG_ FL_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
- SG_ FL_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
-
-BO_ 649 FL_AMK_Actual_2: 8 FL
- SG_ FL_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ FL_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ FL_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ FL_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- 
-BO_ 659 FL_AMK_RITSet1: 8 FL
- SG_ FL_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FL_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- 
-BO_ 663 FL_AMK_RITSet2: 8 FL
- SG_ FL_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
-
-BO_ 667 FL_AMK_RITSet3: 4 FL
- SG_ FL_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
-
-BO_ 671 FL_AMK_RITSet4: 4 FL
- SG_ FL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
-
-BO_ 675 FL_AMK_RIT_Set5: 4 FL
- SG_ FL_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
-
-BO_ 679 FL_AMK_RIT_Set6: 4 FL
- SG_ FL_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
-
-BO_ 390 FL_AMK_Setpoints: 8 FL
- SG_ FL_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
- SG_ FL_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
- SG_ FL_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
-
- 
-BO_ 646 FR_AMK_Actual_1: 8 FR
- SG_ FR_Status_SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_Status_Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
- SG_ FR_FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
-
-BO_ 656 FR_AMK_Actual_2: 8 FR
- SG_ FR_TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ FR_TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ FR_ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ FR_TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- 
-BO_ 660 FR_AMK_RITSet1: 8 FR
- SG_ FR_ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FR_ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- 
-BO_ 664 FR_AMK_RITSet2: 8 FR
- SG_ FR_ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FR_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ FR_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
-
-BO_ 668 FR_AMK_RITSet3: 4 FR
- SG_ FR_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
-
-BO_ 672 FR_AMK_RITSet4: 4 FR
- SG_ FR_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX
-
-BO_ 676 FR_AMK_RIT_Set5: 4 FR
- SG_ FR_MagnetizingCurrent: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX
-
-BO_ 680 FR_AMK_RIT_Set6: 4 FR
- SG_ FR_TorqueCurrentFeedback: 0|32@1- (0.001,0) [0|0] "A" Vector__XXX 
-
-BO_ 391 FR_AMK_Setpoints: 8 FR
- SG_ FR_AMK_bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_AMK_bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_AMK_bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_AMK_bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_AMK_TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
- SG_ FR_AMK_TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
- SG_ FR_AMK_TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
-
 
 
 CM_ "Dummy messages for use in the C files. These will never be sent over CAN,
     it is only to make the C code more generic";
 
-BO_ 000 Actual_1: 8 GEN
- SG_ SystemReady : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Error : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Warn : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ QuitDcOn : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ DcOn : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ QuitInverterOn : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ InverterOn : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Derating : 15|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ FeedbackVelocity : 16|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
- SG_ FeedbackTorque : 48|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+BO_ 000 ERPM_DUTY_VOLTAGE: 8 GEN
+ SG_ ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 001 Actual_2: 8 GEN
- SG_ TempMotor : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
- SG_ TempInverter : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ ErrorInfo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ TempIGBT : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+BO_ 001 AC_DC_CURRENT: 8 GEN
+ SG_ AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+ SG_ DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  
 BO_ 002 RITSet1: 8 GEN
- SG_ ErrorList1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ErrorList2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- 
+ SG_ Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
+
 BO_ 003 RITSet2: 8 GEN
- SG_ ErrorList3 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
- SG_ DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
+ SG_ Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+ SG_ Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
 BO_ 004 RITSet3: 4 GEN
- SG_ ActivePower : 0|32@1- (1, 0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Drive_enable : 31|8@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ DC_current_limit : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
 
 BO_ 005 Setpoints: 8 GEN
- SG_ bInverterOn : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ bDCOn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ bEnable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ bErrorReset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TorqueSetpoint : 16|16@1- (0.1, 0) [-1000|1000] "% Mn" Vector__XXX
- SG_ TorqueLimitPositive : 32|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
- SG_ TorqueLimitNegative : 48|16@1- (0.1, 0) [-3000|3000] "% Mn" Vector__XXX
+ SG_ DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
 
+BO_ 006 SetAcCurrent: 8 GEN
+ SG_ TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
+
+BO_ 007 SetBrakeCurrent: 8 GEN
+ SG_ TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 008 SetERPM: 4 GEN
+ SG_ TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  Vector__XXX
+
+BO_ 009 SetPosition: 2 GEN
+ SG_ TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  Vector__XXX
+
+BO_ 010 SetRelCurrent: 2 GEN
+ SG_ TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  Vector__XXX
+
+BO_ 011 SetRelBrakeCurrent: 2 GEN
+ SG_ TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  Vector__XXX
+
+BO_ 012 SetMaxAcCurrent: 2 GEN
+ SG_ MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 013 SetMaxAcBrakeCurrent: 2 GEN
+ SG_ MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 014 SetMaxDcCurrent: 2 GEN
+ SG_ MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 015 SetMaxDcBrakeCurrent: 2 GEN
+ SG_ MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 016 SetDigOutput: 8 GEN
+ SG_ SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 017 TargetIq: 8 GEN
+ SG_ ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 018 MinMaxAcCurrent: 8 GEN
+ SG_ MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 019 MinMaxDcCurrent: 8 GEN
+ SG_ MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
