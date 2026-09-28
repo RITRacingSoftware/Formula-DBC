@@ -32,6 +32,392 @@ NS_ :
 BS_:
 BU_: RR RL FL FR GEN
 
+BO_ 1028 RR_ERPM_DUTY_VOLTAGE: 8 RR
+ SG_ RR_ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ RR_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ RR_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
+
+BO_ 1060 RR_AC_AC_CURRENT: 8 RR
+ SG_ RR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+ SG_ RR_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+
+BO_ 1092 RR_TEMP_FAULT: 8 RR
+ SG_ RR_Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ RR_Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ RR_Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
+
+BO_ 1124 RR_FOC : 8 RR
+ SG_ RR_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+ SG_ RR_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+
+BO_ 1156 RR_MISC: 4 RR
+ SG_ RR_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ RR_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ RR_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Drive_enable : 31|8@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_DC_current_limit : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RR_CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
+
+BO_ 388 RR_ENABLE: 8 GEN
+ SG_ RR_DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 36 RR_SetAcCurrent: 8 GEN
+ SG_ RR_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
+
+BO_ 68 SetBrakeCurrent: 8 GEN
+ SG_ RR_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 100 RR_SetERPM: 4 GEN
+ SG_ RR_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  Vector__XXX
+
+BO_ 132 RR_SetPosition: 2 GEN
+ SG_ RR_TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  Vector__XXX
+
+BO_ 164 RR_SetRelCurrent: 2 GEN
+ SG_ RR_TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  Vector__XXX
+
+BO_ 196 RR_SetRelBrakeCurrent: 2 GEN
+ SG_ RR_TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  Vector__XXX
+
+BO_ 260 RR_SetMaxAcCurrent: 2 GEN
+ SG_ RR_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 292 RR_SetMaxAcBrakeCurrent: 2 GEN
+ SG_ RR_MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 324 RR_SetMaxDcCurrent: 2 GEN
+ SG_ RR_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 356 RR_SetMaxDcBrakeCurrent: 2 GEN
+ SG_ RR_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 228 RR_SetDigOutput: 8 GEN
+ SG_ RR_SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RR_SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RR_SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RR_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 996 RR_TargetIq: 8 GEN
+ SG_ RR_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ RR_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ RR_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ RR_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 1188 RR_MinMaxAcCurrent: 8 GEN
+ SG_ RR_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ RR_AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ RR_MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ RR_AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 1220 RR_MinMaxDcCurrent: 8 GEN
+ SG_ RR_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ RR_AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ RR_MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ RR_AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+
+
+BO_ 1028 RL_ERPM_DUTY_VOLTAGE: 8 RL
+ SG_ RL_ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ RL_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ RL_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
+
+BO_ 1060 RL_AC_AC_CURLENT: 8 RL
+ SG_ RL_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+ SG_ RL_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+
+BO_ 1092 RL_TEMP_FAULT: 8 RL
+ SG_ RL_Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ RL_Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ RL_Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
+
+BO_ 1124 RL_FOC : 8 RL
+ SG_ RL_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+ SG_ RL_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+
+BO_ 1156 RL_MISC: 4 RL
+ SG_ RL_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ RL_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ RL_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Drive_enable : 31|8@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_DC_current_limit : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RL_CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
+
+BO_ 388 RL_ENABLE: 8 GEN
+ SG_ RL_DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 36 RL_SetAcCurrent: 8 GEN
+ SG_ RL_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
+
+BO_ 68 SetBrakeCurrent: 8 GEN
+ SG_ RL_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 100 RL_SetERPM: 4 GEN
+ SG_ RL_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  Vector__XXX
+
+BO_ 132 RL_SetPosition: 2 GEN
+ SG_ RL_TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  Vector__XXX
+
+BO_ 164 RL_SetRelCurrent: 2 GEN
+ SG_ RL_TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  Vector__XXX
+
+BO_ 196 RL_SetRelBrakeCurrent: 2 GEN
+ SG_ RL_TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  Vector__XXX
+
+BO_ 260 RL_SetMaxAcCurrent: 2 GEN
+ SG_ RL_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 292 RL_SetMaxAcBrakeCurrent: 2 GEN
+ SG_ RL_MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 324 RL_SetMaxDcCurrent: 2 GEN
+ SG_ RL_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 356 RL_SetMaxDcBrakeCurrent: 2 GEN
+ SG_ RL_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 228 RL_SetDigOutput: 8 GEN
+ SG_ RL_SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RL_SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RL_SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ RL_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 996 RL_TargetIq: 8 GEN
+ SG_ RL_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ RL_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ RL_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ RL_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 1188 RL_MinMaxAcCurrent: 8 GEN
+ SG_ RL_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ RL_AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ RL_MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ RL_AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 1220 RL_MinMaxDcCurrent: 8 GEN
+ SG_ RL_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ RL_AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ RL_MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ RL_AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+
+
+BO_ 1028 FR_ERPM_DUTY_VOLTAGE: 8 FR
+ SG_ FR_ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ FR_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ FR_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
+
+BO_ 1060 FR_AC_AC_CUFRENT: 8 FR
+ SG_ FR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+ SG_ FR_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+
+BO_ 1092 FR_TEMP_FAULT: 8 FR
+ SG_ FR_Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ FR_Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ FR_Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
+
+BO_ 1124 FR_FOC : 8 FR
+ SG_ FR_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+ SG_ FR_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+
+BO_ 1156 FR_MISC: 4 FR
+ SG_ FR_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ FR_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ FR_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Drive_enable : 31|8@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_DC_current_limit : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FR_CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
+
+BO_ 388 FR_ENABLE: 8 GEN
+ SG_ FR_DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 36 FR_SetAcCurrent: 8 GEN
+ SG_ FR_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
+
+BO_ 68 SetBrakeCurrent: 8 GEN
+ SG_ FR_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 100 FR_SetERPM: 4 GEN
+ SG_ FR_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  Vector__XXX
+
+BO_ 132 FR_SetPosition: 2 GEN
+ SG_ FR_TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  Vector__XXX
+
+BO_ 164 FR_SetRelCurrent: 2 GEN
+ SG_ FR_TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  Vector__XXX
+
+BO_ 196 FR_SetRelBrakeCurrent: 2 GEN
+ SG_ FR_TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  Vector__XXX
+
+BO_ 260 FR_SetMaxAcCurrent: 2 GEN
+ SG_ FR_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 292 FR_SetMaxAcBrakeCurrent: 2 GEN
+ SG_ FR_MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 324 FR_SetMaxDcCurrent: 2 GEN
+ SG_ FR_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 356 FR_SetMaxDcBrakeCurrent: 2 GEN
+ SG_ FR_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 228 FR_SetDigOutput: 8 GEN
+ SG_ FR_SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FR_SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FR_SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FR_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 996 FR_TargetIq: 8 GEN
+ SG_ FR_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ FR_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ FR_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ FR_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 1188 FR_MinMaxAcCurrent: 8 GEN
+ SG_ FR_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ FR_AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ FR_MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ FR_AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 1220 FR_MinMaxDcCurrent: 8 GEN
+ SG_ FR_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ FR_AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ FR_MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ FR_AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+
+BO_ 1028 FL_ERPM_DUTY_VOLTAGE: 8 FL
+ SG_ FL_ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ FL_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ FL_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
+
+BO_ 1060 FL_AC_AC_CUFLENT: 8 FL
+ SG_ FL_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+ SG_ FL_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
+
+BO_ 1092 FL_TEMP_FAULT: 8 FL
+ SG_ FL_Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ FL_Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
+ SG_ FL_Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
+
+BO_ 1124 FL_FOC : 8 FL
+ SG_ FL_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+ SG_ FL_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
+
+BO_ 1156 FL_MISC: 4 FL
+ SG_ FL_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ FL_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
+ SG_ FL_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Drive_enable : 31|8@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_DC_current_limit : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FL_CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
+
+BO_ 388 FL_ENABLE: 8 GEN
+ SG_ FL_DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 36 FL_SetAcCurrent: 8 GEN
+ SG_ FL_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
+
+BO_ 68 SetBrakeCurrent: 8 GEN
+ SG_ FL_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 100 FL_SetERPM: 4 GEN
+ SG_ FL_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  Vector__XXX
+
+BO_ 132 FL_SetPosition: 2 GEN
+ SG_ FL_TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  Vector__XXX
+
+BO_ 164 FL_SetRelCurrent: 2 GEN
+ SG_ FL_TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  Vector__XXX
+
+BO_ 196 FL_SetRelBrakeCurrent: 2 GEN
+ SG_ FL_TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  Vector__XXX
+
+BO_ 260 FL_SetMaxAcCurrent: 2 GEN
+ SG_ FL_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 292 FL_SetMaxAcBrakeCurrent: 2 GEN
+ SG_ FL_MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 324 FL_SetMaxDcCurrent: 2 GEN
+ SG_ FL_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
+
+BO_ 356 FL_SetMaxDcBrakeCurrent: 2 GEN
+ SG_ FL_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  Vector__XXX
+
+BO_ 228 FL_SetDigOutput: 8 GEN
+ SG_ FL_SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FL_SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FL_SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ FL_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 996 FL_TargetIq: 8 GEN
+ SG_ FL_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ FL_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ FL_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ FL_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 1188 FL_MinMaxAcCurrent: 8 GEN
+ SG_ FL_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ FL_AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ FL_MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ FL_AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 1220 FL_MinMaxDcCurrent: 8 GEN
+ SG_ FL_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ FL_AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ FL_MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ FL_AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+
 
 
 CM_ "Dummy messages for use in the C files. These will never be sent over CAN,
@@ -46,16 +432,16 @@ BO_ 001 AC_DC_CURRENT: 8 GEN
  SG_ AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  
-BO_ 002 RITSet1: 8 GEN
+BO_ 002 TEMP_FAULT: 8 GEN
  SG_ Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
  SG_ Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  Vector__XXX
  SG_ Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  Vector__XXX 
 
-BO_ 003 RITSet2: 8 GEN
+BO_ 003 FOC: 8 GEN
  SG_ Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
  SG_ Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
-BO_ 004 RITSet3: 4 GEN
+BO_ 004 MISC: 4 GEN
  SG_ Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
@@ -76,7 +462,7 @@ BO_ 004 RITSet3: 4 GEN
  SG_ Power_limit : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
  SG_ CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  Vector__XXX
 
-BO_ 005 Setpoints: 8 GEN
+BO_ 005 ENABLE: 8 GEN
  SG_ DriveEnable : 7|8@0+ (1,0) [0|1] ""  Vector__XXX
 
 BO_ 006 SetAcCurrent: 8 GEN
