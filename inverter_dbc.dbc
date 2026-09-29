@@ -111,7 +111,7 @@ BO_ 228 RR_SetDigOutput: 8 GEN
  SG_ RR_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
 
 BO_ 996 RR_TargetIq: 8 GEN
- SG_ RR_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ RR_ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
  SG_ RR_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
  SG_ RR_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
  SG_ RR_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
@@ -208,7 +208,7 @@ BO_ 228 RL_SetDigOutput: 8 GEN
  SG_ RL_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
 
 BO_ 996 RL_TargetIq: 8 GEN
- SG_ RL_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ RL_ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
  SG_ RL_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
  SG_ RL_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
  SG_ RL_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
@@ -305,7 +305,7 @@ BO_ 228 FR_SetDigOutput: 8 GEN
  SG_ FR_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
 
 BO_ 996 FR_TargetIq: 8 GEN
- SG_ FR_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ FR_ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
  SG_ FR_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
  SG_ FR_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
  SG_ FR_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
@@ -401,7 +401,7 @@ BO_ 228 FL_SetDigOutput: 8 GEN
  SG_ FL_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
 
 BO_ 996 FL_TargetIq: 8 GEN
- SG_ FL_ontrolMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ FL_ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
  SG_ FL_TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
  SG_ FL_MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
  SG_ FL_isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
