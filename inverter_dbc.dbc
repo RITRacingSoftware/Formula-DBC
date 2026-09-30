@@ -37,7 +37,7 @@ BO_ 1028 RR_ERPM_DUTY_VOLTAGE: 8 RR
  SG_ RR_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ RR_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 RR_AC_AC_CURRENT: 8 RR
+BO_ 1060 RR_AC_DC_CURRENT: 8 RR
  SG_ RR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ RR_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
@@ -134,7 +134,7 @@ BO_ 1028 RL_ERPM_DUTY_VOLTAGE: 8 RL
  SG_ RL_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ RL_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 RL_AC_AC_CURLENT: 8 RL
+BO_ 1060 RL_AC_DC_CURLENT: 8 RL
  SG_ RL_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ RL_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
@@ -231,7 +231,7 @@ BO_ 1028 FR_ERPM_DUTY_VOLTAGE: 8 FR
  SG_ FR_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ FR_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 FR_AC_AC_CUFRENT: 8 FR
+BO_ 1060 FR_AC_DC_CUFRENT: 8 FR
  SG_ FR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ FR_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
@@ -327,7 +327,7 @@ BO_ 1028 FL_ERPM_DUTY_VOLTAGE: 8 FL
  SG_ FL_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ FL_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 FL_AC_AC_CUFLENT: 8 FL
+BO_ 1060 FL_AC_DC_CURRENT: 8 FL
  SG_ FL_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ FL_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
