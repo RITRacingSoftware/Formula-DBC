@@ -33,9 +33,9 @@ BS_:
 BU_: RR RL FL FR GEN
 
 BO_ 1028 RR_ERPM_DUTY_VOLTAGE: 8 RR
- SG_ RR_ERPM : 7|32@1- (1,0) [-120000|1200000] "" Vector__XXX
- SG_ RR_Duty : 39|16@1- (0.1,0) [-100|100] "%" Vector__XXX
- SG_ RR_InputVoltage : 55|16@1- (1,0) [0|1000] "V" Vector__XXX
+ SG_ RR_ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ RR_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
+ SG_ RR_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
 BO_ 1060 RR_AC_AC_CURRENT: 8 RR
  SG_ RR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
@@ -50,7 +50,7 @@ BO_ 1124 RR_FOC : 8 RR
  SG_ RR_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
  SG_ RR_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
-BO_ 1156 RR_MISC: 4 RR
+BO_ 1156 RR_MISC: 8 RR
  SG_ RR_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ RR_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ RR_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
@@ -147,7 +147,7 @@ BO_ 1124 RL_FOC : 8 RL
  SG_ RL_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
  SG_ RL_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
-BO_ 1156 RL_MISC: 4 RL
+BO_ 1156 RL_MISC: 8 RL
  SG_ RL_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ RL_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ RL_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
@@ -244,7 +244,7 @@ BO_ 1124 FR_FOC : 8 FR
  SG_ FR_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
  SG_ FR_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
-BO_ 1156 FR_MISC: 4 FR
+BO_ 1156 FR_MISC: 8 FR
  SG_ FR_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ FR_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ FR_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
@@ -340,7 +340,7 @@ BO_ 1124 FL_FOC : 8 FL
  SG_ FL_Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
  SG_ FL_Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  Vector__XXX
 
-BO_ 1156 FL_MISC: 4 FL
+BO_ 1156 FL_MISC: 8 FL
  SG_ FL_Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ FL_Actual_Brake : 15|8@0- (1,0) [0|100] "%"  Vector__XXX
  SG_ FL_Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
