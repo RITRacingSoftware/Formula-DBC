@@ -211,6 +211,9 @@ BO_ 334 VC_TargetWheelSpeeds: 8 VC
  SG_ VC_FR_TargetWheelSpeed : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
  SG_ VC_FL_TargetWheelSpeed : 48|16@1+ (1,0) [0|0] "rpm" Vector__XXX
 
+BO_ 335 VC_VelX_Status: 8 VC
+ SG_ VC_VelX_Estimated : 0|32@1- (1,0) [0|0] "m/s" Vector__XXX
+ SG_ VC_VN_VelX_irr : 32|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 600 BMS_Status: 8 BMS
  SG_ BMS_Status_SOC : 0|8@1+ (1,0) [0|100] "%"  Vector__XXX
@@ -426,3 +429,4 @@ SIG_VALTYPE_ 331 VC_CodegenRR : 1;
 SIG_VALTYPE_ 331 VC_CodegenRL : 1;
 SIG_VALTYPE_ 332 VC_CodegenFR : 1;
 SIG_VALTYPE_ 332 VC_CodegenFL : 1;
+SIG_VALTYPE_ 335 VC_VelX_Estimated : 1;
