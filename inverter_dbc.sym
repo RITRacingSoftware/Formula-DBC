@@ -13,7 +13,7 @@ Var=RR_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
 Var=RR_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=RR_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[RR_AC_AC_CURRENT]
+[RR_AC_DC_CURRENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -39,25 +39,11 @@ Var=RR_Actual_FOC_iq signed 32,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 ID=484h
 Type=Standard
 DLC=8
-Var=RR_Actual_Throttle signed 0,8 -m /u:% /min:0 /max:100 /d:0
-Var=RR_Actual_Brake signed 8,8 -m /u:% /min:0 /max:100 /d:0
 Var=RR_Digital_input_1 unsigned 23,1 -m /min:0 /max:1 /d:0
 Var=RR_Digital_input_2 unsigned 22,1 -m /min:0 /max:1 /d:0
 Var=RR_Digital_input_3 unsigned 21,1 -m /min:0 /max:1 /d:0
 Var=RR_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=RR_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
-Var=RR_Capacitor_temp_limit unsigned 39,1 -m /min:0 /max:1 /d:0
-Var=RR_DC_current_limit unsigned 38,1 -m /min:0 /max:1 /d:0
-Var=RR_Drive_enable_limit unsigned 37,1 -m /min:0 /max:1 /d:0
-Var=RR_IGBT_accel_limit unsigned 36,1 -m /min:0 /max:1 /d:0
-Var=RR_IGBT_temp_limit unsigned 35,1 -m /min:0 /max:1 /d:0
-Var=RR_Input_voltage_limit unsigned 34,1 -m /min:0 /max:1 /d:0
-Var=RR_Motor_accel_limit unsigned 33,1 -m /min:0 /max:1 /d:0
-Var=RR_Motor_temp_limit unsigned 32,1 -m /min:0 /max:1 /d:0
-Var=RR_RPM_min_limit unsigned 47,1 -m /min:0 /max:1 /d:0
-Var=RR_RPM_max_limit unsigned 46,1 -m /min:0 /max:1 /d:0
-Var=RR_Power_limit unsigned 45,1 -m /min:0 /max:1 /d:0
-Var=RR_CAN_map_version unsigned 56,8 -m /u:Version /f:0.1 /min:0 /max:255 /d:0.0
 
 [RR_ENABLE]
 ID=184h
@@ -165,11 +151,11 @@ Var=RR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=RL_ERPM signed 7,32 /min:-120000 /max:1200000 /d:0
-Var=RL_Duty signed 39,16 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
-Var=RL_InputVoltage signed 55,16 /u:V /min:0 /max:1000 /d:0
+Var=RL_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=RL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
+Var=RL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[RL_AC_AC_CURLENT]
+[RL_AC_DC_CURLENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -201,19 +187,7 @@ Var=RL_Digital_input_1 unsigned 23,1 -m /min:0 /max:1 /d:0
 Var=RL_Digital_input_2 unsigned 22,1 -m /min:0 /max:1 /d:0
 Var=RL_Digital_input_3 unsigned 21,1 -m /min:0 /max:1 /d:0
 Var=RL_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
-Var=RL_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
-Var=RL_Capacitor_temp_limit unsigned 39,1 -m /min:0 /max:1 /d:0
-Var=RL_DC_current_limit unsigned 38,1 -m /min:0 /max:1 /d:0
-Var=RL_Drive_enable_limit unsigned 37,1 -m /min:0 /max:1 /d:0
-Var=RL_IGBT_accel_limit unsigned 36,1 -m /min:0 /max:1 /d:0
-Var=RL_IGBT_temp_limit unsigned 35,1 -m /min:0 /max:1 /d:0
-Var=RL_Input_voltage_limit unsigned 34,1 -m /min:0 /max:1 /d:0
-Var=RL_Motor_accel_limit unsigned 33,1 -m /min:0 /max:1 /d:0
-Var=RL_Motor_temp_limit unsigned 32,1 -m /min:0 /max:1 /d:0
-Var=RL_RPM_min_limit unsigned 47,1 -m /min:0 /max:1 /d:0
-Var=RL_RPM_max_limit unsigned 46,1 -m /min:0 /max:1 /d:0
-Var=RL_Power_limit unsigned 45,1 -m /min:0 /max:1 /d:0
-Var=RL_CAN_map_version unsigned 56,8 -m /u:Version /f:0.1 /min:0 /max:255 /d:0.0
+Var=RR_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
 
 [RL_ENABLE]
 ID=184h
@@ -321,11 +295,11 @@ Var=RL_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=FR_ERPM signed 7,32 /min:-120000 /max:1200000 /d:0
-Var=FR_Duty signed 39,16 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
-Var=FR_InputVoltage signed 55,16 /u:V /min:0 /max:1000 /d:0
+Var=FR_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=FR_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
+Var=FR_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[FR_AC_AC_CUFRENT]
+[FR_AC_DC_CUFRENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -358,18 +332,6 @@ Var=FR_Digital_input_2 unsigned 22,1 -m /min:0 /max:1 /d:0
 Var=FR_Digital_input_3 unsigned 21,1 -m /min:0 /max:1 /d:0
 Var=FR_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=FR_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
-Var=FR_Capacitor_temp_limit unsigned 39,1 -m /min:0 /max:1 /d:0
-Var=FR_DC_current_limit unsigned 38,1 -m /min:0 /max:1 /d:0
-Var=FR_Drive_enable_limit unsigned 37,1 -m /min:0 /max:1 /d:0
-Var=FR_IGBT_accel_limit unsigned 36,1 -m /min:0 /max:1 /d:0
-Var=FR_IGBT_temp_limit unsigned 35,1 -m /min:0 /max:1 /d:0
-Var=FR_Input_voltage_limit unsigned 34,1 -m /min:0 /max:1 /d:0
-Var=FR_Motor_accel_limit unsigned 33,1 -m /min:0 /max:1 /d:0
-Var=FR_Motor_temp_limit unsigned 32,1 -m /min:0 /max:1 /d:0
-Var=FR_RPM_min_limit unsigned 47,1 -m /min:0 /max:1 /d:0
-Var=FR_RPM_max_limit unsigned 46,1 -m /min:0 /max:1 /d:0
-Var=FR_Power_limit unsigned 45,1 -m /min:0 /max:1 /d:0
-Var=FR_CAN_map_version unsigned 56,8 -m /u:Version /f:0.1 /min:0 /max:255 /d:0.0
 
 [FR_ENABLE]
 ID=184h
@@ -477,11 +439,11 @@ Var=FR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=FL_ERPM signed 7,32 /min:-120000 /max:1200000 /d:0
-Var=FL_Duty signed 39,16 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
-Var=FL_InputVoltage signed 55,16 /u:V /min:0 /max:1000 /d:0
+Var=FL_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=FL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
+Var=FL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[FL_AC_AC_CUFLENT]
+[FL_AC_DC_CURRENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -514,18 +476,6 @@ Var=FL_Digital_input_2 unsigned 22,1 -m /min:0 /max:1 /d:0
 Var=FL_Digital_input_3 unsigned 21,1 -m /min:0 /max:1 /d:0
 Var=FL_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=FL_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
-Var=FL_Capacitor_temp_limit unsigned 39,1 -m /min:0 /max:1 /d:0
-Var=FL_DC_current_limit unsigned 38,1 -m /min:0 /max:1 /d:0
-Var=FL_Drive_enable_limit unsigned 37,1 -m /min:0 /max:1 /d:0
-Var=FL_IGBT_accel_limit unsigned 36,1 -m /min:0 /max:1 /d:0
-Var=FL_IGBT_temp_limit unsigned 35,1 -m /min:0 /max:1 /d:0
-Var=FL_Input_voltage_limit unsigned 34,1 -m /min:0 /max:1 /d:0
-Var=FL_Motor_accel_limit unsigned 33,1 -m /min:0 /max:1 /d:0
-Var=FL_Motor_temp_limit unsigned 32,1 -m /min:0 /max:1 /d:0
-Var=FL_RPM_min_limit unsigned 47,1 -m /min:0 /max:1 /d:0
-Var=FL_RPM_max_limit unsigned 46,1 -m /min:0 /max:1 /d:0
-Var=FL_Power_limit unsigned 45,1 -m /min:0 /max:1 /d:0
-Var=FL_CAN_map_version unsigned 56,8 -m /u:Version /f:0.1 /min:0 /max:255 /d:0.0
 
 [FL_ENABLE]
 ID=184h
@@ -633,9 +583,9 @@ Var=FL_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=000h
 Type=Standard
 DLC=8
-Var=ERPM signed 7,32 /min:-120000 /max:1200000 /d:0
-Var=Duty signed 39,16 /u:% /f:0.1 /min:-100 /max:100 /d:0.0
-Var=InputVoltage signed 55,16 /u:V /min:0 /max:1000 /d:0
+Var=ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
+Var=InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
 [AC_DC_CURRENT]
 ID=001h
@@ -670,18 +620,6 @@ Var=Digital_input_2 unsigned 22,1 -m /min:0 /max:1 /d:0
 Var=Digital_input_3 unsigned 21,1 -m /min:0 /max:1 /d:0
 Var=Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
-Var=Capacitor_temp_limit unsigned 39,1 -m /min:0 /max:1 /d:0
-Var=DC_current_limit unsigned 38,1 -m /min:0 /max:1 /d:0
-Var=Drive_enable_limit unsigned 37,1 -m /min:0 /max:1 /d:0
-Var=IGBT_accel_limit unsigned 36,1 -m /min:0 /max:1 /d:0
-Var=IGBT_temp_limit unsigned 35,1 -m /min:0 /max:1 /d:0
-Var=Input_voltage_limit unsigned 34,1 -m /min:0 /max:1 /d:0
-Var=Motor_accel_limit unsigned 33,1 -m /min:0 /max:1 /d:0
-Var=Motor_temp_limit unsigned 32,1 -m /min:0 /max:1 /d:0
-Var=RPM_min_limit unsigned 47,1 -m /min:0 /max:1 /d:0
-Var=RPM_max_limit unsigned 46,1 -m /min:0 /max:1 /d:0
-Var=Power_limit unsigned 45,1 -m /min:0 /max:1 /d:0
-Var=CAN_map_version unsigned 56,8 -m /u:Version /f:0.1 /min:0 /max:255 /d:0.0
 
 [ENABLE]
 ID=005h
