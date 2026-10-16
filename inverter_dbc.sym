@@ -9,7 +9,7 @@ Title="canmatrix-Export"
 ID=404h
 Type=Standard
 DLC=8
-Var=RR_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=RR_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
 Var=RR_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=RR_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
@@ -57,7 +57,7 @@ Type=Standard
 DLC=8
 Var=RR_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
-[SetBrakeCurrent]
+[RR_SetBrakeCurrent]
 ID=044h
 Type=Standard
 DLC=8
@@ -151,11 +151,11 @@ Var=RR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=RL_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=RL_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
 Var=RL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=RL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[RL_AC_DC_CURLENT]
+[RL_AC_DC_CURRENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -201,7 +201,7 @@ Type=Standard
 DLC=8
 Var=RL_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
-[SetBrakeCurrent]
+[RL_SetBrakeCurrent]
 ID=044h
 Type=Standard
 DLC=8
@@ -295,11 +295,11 @@ Var=RL_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=FR_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=FR_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
 Var=FR_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=FR_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
-[FR_AC_DC_CUFRENT]
+[FR_AC_DC_CURRENT]
 ID=424h
 Type=Standard
 DLC=8
@@ -345,7 +345,7 @@ Type=Standard
 DLC=8
 Var=FR_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
-[SetBrakeCurrent]
+[FR_SetBrakeCurrent]
 ID=044h
 Type=Standard
 DLC=8
@@ -439,7 +439,7 @@ Var=FR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=404h
 Type=Standard
 DLC=8
-Var=FL_ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=FL_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
 Var=FL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=FL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
@@ -489,7 +489,7 @@ Type=Standard
 DLC=8
 Var=FL_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
-[SetBrakeCurrent]
+[FL_SetBrakeCurrent]
 ID=044h
 Type=Standard
 DLC=8
@@ -583,7 +583,7 @@ Var=FL_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0
 ID=000h
 Type=Standard
 DLC=8
-Var=ERPM signed 0,32 -m /min:-120000 /max:1200000 /d:0
+Var=ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
 Var=Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 

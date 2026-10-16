@@ -34,7 +34,7 @@ BS_:
 BU_: RR RL FL FR GEN
 
 BO_ 1028 RR_ERPM_DUTY_VOLTAGE: 8 RR
- SG_ RR_ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ RR_ERPM : 7|32@0- (1,0) [-120000|120000] "rpm" Vector__XXX
  SG_ RR_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ RR_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
@@ -64,7 +64,7 @@ BO_ 388 RR_ENABLE: 8 GEN
 BO_ 36 RR_SetAcCurrent: 8 GEN
  SG_ RR_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
 
-BO_ 68 SetBrakeCurrent: 8 GEN
+BO_ 68 RR_SetBrakeCurrent: 8 GEN
  SG_ RR_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
 
 BO_ 100 RR_SetERPM: 4 GEN
@@ -117,11 +117,11 @@ BO_ 1220 RR_MinMaxDcCurrent: 8 GEN
 
 
 BO_ 1028 RL_ERPM_DUTY_VOLTAGE: 8 RL
- SG_ RL_ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ RL_ERPM : 7|32@0- (1,0) [-120000|120000] "rpm" Vector__XXX
  SG_ RL_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ RL_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 RL_AC_DC_CURLENT: 8 RL
+BO_ 1060 RL_AC_DC_CURRENT: 8 RL
  SG_ RL_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ RL_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
@@ -149,7 +149,7 @@ BO_ 388 RL_ENABLE: 8 GEN
 BO_ 36 RL_SetAcCurrent: 8 GEN
  SG_ RL_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
 
-BO_ 68 SetBrakeCurrent: 8 GEN
+BO_ 68 RL_SetBrakeCurrent: 8 GEN
  SG_ RL_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
 
 BO_ 100 RL_SetERPM: 4 GEN
@@ -202,11 +202,11 @@ BO_ 1220 RL_MinMaxDcCurrent: 8 GEN
 
 
 BO_ 1028 FR_ERPM_DUTY_VOLTAGE: 8 FR
- SG_ FR_ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ FR_ERPM : 7|32@0- (1,0) [-120000|120000] "rpm" Vector__XXX
  SG_ FR_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ FR_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
-BO_ 1060 FR_AC_DC_CUFRENT: 8 FR
+BO_ 1060 FR_AC_DC_CURRENT: 8 FR
  SG_ FR_AC_Current : 7|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
  SG_ FR_DC_Current : 23|16@0- (0.1,0) [-850|850] "A"  Vector_XXX
 
@@ -234,7 +234,7 @@ BO_ 388 FR_ENABLE: 8 GEN
 BO_ 36 FR_SetAcCurrent: 8 GEN
  SG_ FR_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
 
-BO_ 68 SetBrakeCurrent: 8 GEN
+BO_ 68 FR_SetBrakeCurrent: 8 GEN
  SG_ FR_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
 
 BO_ 100 FR_SetERPM: 4 GEN
@@ -286,7 +286,7 @@ BO_ 1220 FR_MinMaxDcCurrent: 8 GEN
  SG_ FR_AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
 
 BO_ 1028 FL_ERPM_DUTY_VOLTAGE: 8 FL
- SG_ FL_ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ FL_ERPM : 7|32@0- (1,0) [-120000|120000] "rpm" Vector__XXX
  SG_ FL_Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ FL_InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
@@ -318,7 +318,7 @@ BO_ 388 FL_ENABLE: 8 GEN
 BO_ 36 FL_SetAcCurrent: 8 GEN
  SG_ FL_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  Vector__XXX
 
-BO_ 68 SetBrakeCurrent: 8 GEN
+BO_ 68 FL_SetBrakeCurrent: 8 GEN
  SG_ FL_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  Vector__XXX
 
 BO_ 100 FL_SetERPM: 4 GEN
@@ -375,7 +375,7 @@ CM_ "Dummy messages for use in the C files. These will never be sent over CAN,
     it is only to make the C code more generic";
 
 BO_ 000 ERPM_DUTY_VOLTAGE: 8 GEN
- SG_ ERPM : 7|32@0- (1,0) [-120000|1200000] "" Vector__XXX
+ SG_ ERPM : 7|32@0- (1,0) [-120000|120000] "rpm" Vector__XXX
  SG_ Duty : 39|16@0- (0.1,0) [-100|100] "%" Vector__XXX
  SG_ InputVoltage : 55|16@0- (1,0) [0|1000] "V" Vector__XXX
 
