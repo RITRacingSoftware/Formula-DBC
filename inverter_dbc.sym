@@ -148,7 +148,7 @@ Var=RR_MinDcCurrent signed 32,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 Var=RR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 
 [RL_ERPM_DUTY_VOLTAGE]
-ID=404h
+ID=405h
 Type=Standard
 DLC=8
 Var=RL_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
@@ -156,14 +156,14 @@ Var=RL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=RL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
 [RL_AC_DC_CURRENT]
-ID=424h
+ID=425h
 Type=Standard
 DLC=8
 Var=RL_AC_Current signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 Var=RL_DC_Current signed 16,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [RL_TEMP_FAULT]
-ID=444h
+ID=445h
 Type=Standard
 DLC=8
 Var=RL_Actual_TempController signed 0,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
@@ -171,14 +171,14 @@ Var=RL_Actual_TempMotor signed 16,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
 Var=RL_Actual_FaultCode unsigned 32,8 -m /min:0 /max:255 /d:0
 
 [RL_FOC]
-ID=464h
+ID=465h
 Type=Standard
 DLC=8
 Var=RL_Actual_FOC_id signed 0,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 Var=RL_Actual_FOC_iq signed 32,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 
 [RL_MISC]
-ID=484h
+ID=485h
 Type=Standard
 DLC=8
 Var=RL_Actual_Throttle signed 0,8 -m /u:% /min:0 /max:100 /d:0
@@ -190,73 +190,73 @@ Var=RL_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=RR_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
 
 [RL_ENABLE]
-ID=184h
+ID=185h
 Type=Standard
 DLC=8
 Var=RL_DriveEnable unsigned 0,8 -m /min:0 /max:1 /d:0
 
 [RL_SetAcCurrent]
-ID=024h
+ID=025h
 Type=Standard
 DLC=8
 Var=RL_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [RL_SetBrakeCurrent]
-ID=044h
+ID=045h
 Type=Standard
 DLC=8
 Var=RL_TargetBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [RL_SetERPM]
-ID=064h
+ID=065h
 Type=Standard
 DLC=4
 Var=RL_TargetSpeed signed 0,32 -m /u:ERPM /min:-100000 /max:100000 /d:0
 
 [RL_SetPosition]
-ID=084h
+ID=085h
 Type=Standard
 DLC=2
 Var=RL_TargetPosition signed 0,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 
 [RL_SetRelCurrent]
-ID=0A4h
+ID=0A5h
 Type=Standard
 DLC=2
 Var=RL_TargetRelativeCurrent signed 0,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 
 [RL_SetRelBrakeCurrent]
-ID=0C4h
+ID=0C5h
 Type=Standard
 DLC=2
 Var=RL_TargeRelativeBrakeCurrent signed 0,16 -m /u:% /f:0.1 /min:0 /max:100 /d:0.0
 
 [RL_SetMaxAcCurrent]
-ID=104h
+ID=105h
 Type=Standard
 DLC=2
 Var=RL_MaxAcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [RL_SetMaxAcBrakeCurrent]
-ID=124h
+ID=125h
 Type=Standard
 DLC=2
 Var=RL_MaxAcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [RL_SetMaxDcCurrent]
-ID=144h
+ID=145h
 Type=Standard
 DLC=2
 Var=RL_MaxDcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [RL_SetMaxDcBrakeCurrent]
-ID=164h
+ID=165h
 Type=Standard
 DLC=2
 Var=RL_MaxDcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [RL_SetDigOutput]
-ID=0E4h
+ID=0E5h
 Type=Standard
 DLC=8
 Var=RL_SetDigOutput1 unsigned 7,1 -m /u:# /min:0 /max:1 /d:0
@@ -265,7 +265,7 @@ Var=RL_SetDigOutput3 unsigned 5,1 -m /u:# /min:0 /max:1 /d:0
 Var=RL_SetDigOutput4 unsigned 4,1 -m /u:# /min:0 /max:1 /d:0
 
 [RL_TargetIq]
-ID=3E4h
+ID=3E5h
 Type=Standard
 DLC=8
 Var=RL_ControlMode unsigned 0,8 -m /u:# /min:0 /max:7 /d:0
@@ -274,7 +274,7 @@ Var=RL_MotorPosition unsigned 24,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 Var=RL_isMotorStill unsigned 40,8 -m /u:# /min:0 /max:1 /d:0
 
 [RL_MinMaxAcCurrent]
-ID=4A4h
+ID=4A5h
 Type=Standard
 DLC=8
 Var=RL_MaxAcCurrent signed 0,16 -m /u:Apk /f:0.1 /min:0 /max:850 /d:0.0
@@ -283,7 +283,7 @@ Var=RL_MinAcCurrent signed 32,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 Var=RL_AvailableMinAcCurrent signed 48,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 
 [RL_MinMaxDcCurrent]
-ID=4C4h
+ID=4C5h
 Type=Standard
 DLC=8
 Var=RL_MaxDcCurrent signed 0,16 -m /u:Adc /f:0.1 /min:0 /max:850 /d:0.0
@@ -292,7 +292,7 @@ Var=RL_MinDcCurrent signed 32,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 Var=RL_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FR_ERPM_DUTY_VOLTAGE]
-ID=404h
+ID=406h
 Type=Standard
 DLC=8
 Var=FR_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
@@ -300,14 +300,14 @@ Var=FR_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=FR_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
 [FR_AC_DC_CURRENT]
-ID=424h
+ID=426h
 Type=Standard
 DLC=8
 Var=FR_AC_Current signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 Var=FR_DC_Current signed 16,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [FR_TEMP_FAULT]
-ID=444h
+ID=446h
 Type=Standard
 DLC=8
 Var=FR_Actual_TempController signed 0,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
@@ -315,14 +315,14 @@ Var=FR_Actual_TempMotor signed 16,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
 Var=FR_Actual_FaultCode unsigned 32,8 -m /min:0 /max:255 /d:0
 
 [FR_FOC]
-ID=464h
+ID=466h
 Type=Standard
 DLC=8
 Var=FR_Actual_FOC_id signed 0,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 Var=FR_Actual_FOC_iq signed 32,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 
 [FR_MISC]
-ID=484h
+ID=486h
 Type=Standard
 DLC=8
 Var=FR_Actual_Throttle signed 0,8 -m /u:% /min:0 /max:100 /d:0
@@ -334,73 +334,73 @@ Var=FR_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=FR_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
 
 [FR_ENABLE]
-ID=184h
+ID=186h
 Type=Standard
 DLC=8
 Var=FR_DriveEnable unsigned 0,8 -m /min:0 /max:1 /d:0
 
 [FR_SetAcCurrent]
-ID=024h
+ID=026h
 Type=Standard
 DLC=8
 Var=FR_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [FR_SetBrakeCurrent]
-ID=044h
+ID=046h
 Type=Standard
 DLC=8
 Var=FR_TargetBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FR_SetERPM]
-ID=064h
+ID=066h
 Type=Standard
 DLC=4
 Var=FR_TargetSpeed signed 0,32 -m /u:ERPM /min:-100000 /max:100000 /d:0
 
 [FR_SetPosition]
-ID=084h
+ID=086h
 Type=Standard
 DLC=2
 Var=FR_TargetPosition signed 0,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 
 [FR_SetRelCurrent]
-ID=0A4h
+ID=0A6h
 Type=Standard
 DLC=2
 Var=FR_TargetRelativeCurrent signed 0,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 
 [FR_SetRelBrakeCurrent]
-ID=0C4h
+ID=0C6h
 Type=Standard
 DLC=2
 Var=FR_TargeRelativeBrakeCurrent signed 0,16 -m /u:% /f:0.1 /min:0 /max:100 /d:0.0
 
 [FR_SetMaxAcCurrent]
-ID=104h
+ID=106h
 Type=Standard
 DLC=2
 Var=FR_MaxAcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FR_SetMaxAcBrakeCurrent]
-ID=124h
+ID=126h
 Type=Standard
 DLC=2
 Var=FR_MaxAcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FR_SetMaxDcCurrent]
-ID=144h
+ID=146h
 Type=Standard
 DLC=2
 Var=FR_MaxDcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FR_SetMaxDcBrakeCurrent]
-ID=164h
+ID=166h
 Type=Standard
 DLC=2
 Var=FR_MaxDcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FR_SetDigOutput]
-ID=0E4h
+ID=0E6h
 Type=Standard
 DLC=8
 Var=FR_SetDigOutput1 unsigned 7,1 -m /u:# /min:0 /max:1 /d:0
@@ -409,7 +409,7 @@ Var=FR_SetDigOutput3 unsigned 5,1 -m /u:# /min:0 /max:1 /d:0
 Var=FR_SetDigOutput4 unsigned 4,1 -m /u:# /min:0 /max:1 /d:0
 
 [FR_TargetIq]
-ID=3E4h
+ID=3E6h
 Type=Standard
 DLC=8
 Var=FR_ControlMode unsigned 0,8 -m /u:# /min:0 /max:7 /d:0
@@ -418,7 +418,7 @@ Var=FR_MotorPosition unsigned 24,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 Var=FR_isMotorStill unsigned 40,8 -m /u:# /min:0 /max:1 /d:0
 
 [FR_MinMaxAcCurrent]
-ID=4A4h
+ID=4A6h
 Type=Standard
 DLC=8
 Var=FR_MaxAcCurrent signed 0,16 -m /u:Apk /f:0.1 /min:0 /max:850 /d:0.0
@@ -427,7 +427,7 @@ Var=FR_MinAcCurrent signed 32,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 Var=FR_AvailableMinAcCurrent signed 48,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FR_MinMaxDcCurrent]
-ID=4C4h
+ID=4C6h
 Type=Standard
 DLC=8
 Var=FR_MaxDcCurrent signed 0,16 -m /u:Adc /f:0.1 /min:0 /max:850 /d:0.0
@@ -436,7 +436,7 @@ Var=FR_MinDcCurrent signed 32,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 Var=FR_AvailableMinDcCurrent signed 48,16 -m /u:Adc /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FL_ERPM_DUTY_VOLTAGE]
-ID=404h
+ID=407h
 Type=Standard
 DLC=8
 Var=FL_ERPM signed 0,32 -m /u:rpm /min:-120000 /max:120000 /d:0
@@ -444,14 +444,14 @@ Var=FL_Duty signed 32,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 Var=FL_InputVoltage signed 48,16 -m /u:V /min:0 /max:1000 /d:0
 
 [FL_AC_DC_CURRENT]
-ID=424h
+ID=427h
 Type=Standard
 DLC=8
 Var=FL_AC_Current signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 Var=FL_DC_Current signed 16,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [FL_TEMP_FAULT]
-ID=444h
+ID=447h
 Type=Standard
 DLC=8
 Var=FL_Actual_TempController signed 0,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
@@ -459,14 +459,14 @@ Var=FL_Actual_TempMotor signed 16,16 -m /u:C /f:0.1 /min:-55 /max:200 /d:0.0
 Var=FL_Actual_FaultCode unsigned 32,8 -m /min:0 /max:255 /d:0
 
 [FL_FOC]
-ID=464h
+ID=467h
 Type=Standard
 DLC=8
 Var=FL_Actual_FOC_id signed 0,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 Var=FL_Actual_FOC_iq signed 32,32 -m /u:Apk /f:0.01 /min:-850 /max:850 /d:0.00
 
 [FL_MISC]
-ID=484h
+ID=487h
 Type=Standard
 DLC=8
 Var=FL_Actual_Throttle signed 0,8 -m /u:% /min:0 /max:100 /d:0
@@ -478,73 +478,73 @@ Var=FL_Digital_input_4 unsigned 20,1 -m /min:0 /max:1 /d:0
 Var=FL_Drive_enable unsigned 24,8 -m /min:0 /max:1 /d:0
 
 [FL_ENABLE]
-ID=184h
+ID=187h
 Type=Standard
 DLC=8
 Var=FL_DriveEnable unsigned 0,8 -m /min:0 /max:1 /d:0
 
 [FL_SetAcCurrent]
-ID=024h
+ID=027h
 Type=Standard
 DLC=8
 Var=FL_TargetAcCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:850 /d:0.0
 
 [FL_SetBrakeCurrent]
-ID=044h
+ID=047h
 Type=Standard
 DLC=8
 Var=FL_TargetBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FL_SetERPM]
-ID=064h
+ID=067h
 Type=Standard
 DLC=4
 Var=FL_TargetSpeed signed 0,32 -m /u:ERPM /min:-100000 /max:100000 /d:0
 
 [FL_SetPosition]
-ID=084h
+ID=087h
 Type=Standard
 DLC=2
 Var=FL_TargetPosition signed 0,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 
 [FL_SetRelCurrent]
-ID=0A4h
+ID=0A7h
 Type=Standard
 DLC=2
 Var=FL_TargetRelativeCurrent signed 0,16 -m /u:% /f:0.1 /min:-100 /max:100 /d:0.0
 
 [FL_SetRelBrakeCurrent]
-ID=0C4h
+ID=0C7h
 Type=Standard
 DLC=2
 Var=FL_TargeRelativeBrakeCurrent signed 0,16 -m /u:% /f:0.1 /min:0 /max:100 /d:0.0
 
 [FL_SetMaxAcCurrent]
-ID=104h
+ID=107h
 Type=Standard
 DLC=2
 Var=FL_MaxAcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FL_SetMaxAcBrakeCurrent]
-ID=124h
+ID=127h
 Type=Standard
 DLC=2
 Var=FL_MaxAcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FL_SetMaxDcCurrent]
-ID=144h
+ID=147h
 Type=Standard
 DLC=2
 Var=FL_MaxDcCurrent signed 0,16 -m /u:A /f:0.1 /min:0 /max:850 /d:0.0
 
 [FL_SetMaxDcBrakeCurrent]
-ID=164h
+ID=167h
 Type=Standard
 DLC=2
 Var=FL_MaxDcBrakeCurrent signed 0,16 -m /u:A /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FL_SetDigOutput]
-ID=0E4h
+ID=0E7h
 Type=Standard
 DLC=8
 Var=FL_SetDigOutput1 unsigned 7,1 -m /u:# /min:0 /max:1 /d:0
@@ -553,7 +553,7 @@ Var=FL_SetDigOutput3 unsigned 5,1 -m /u:# /min:0 /max:1 /d:0
 Var=FL_SetDigOutput4 unsigned 4,1 -m /u:# /min:0 /max:1 /d:0
 
 [FL_TargetIq]
-ID=3E4h
+ID=3E7h
 Type=Standard
 DLC=8
 Var=FL_ControlMode unsigned 0,8 -m /u:# /min:0 /max:7 /d:0
@@ -562,7 +562,7 @@ Var=FL_MotorPosition unsigned 24,16 -m /u:degree /f:0.1 /min:0 /max:359 /d:0.0
 Var=FL_isMotorStill unsigned 40,8 -m /u:# /min:0 /max:1 /d:0
 
 [FL_MinMaxAcCurrent]
-ID=4A4h
+ID=4A7h
 Type=Standard
 DLC=8
 Var=FL_MaxAcCurrent signed 0,16 -m /u:Apk /f:0.1 /min:0 /max:850 /d:0.0
@@ -571,7 +571,7 @@ Var=FL_MinAcCurrent signed 32,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 Var=FL_AvailableMinAcCurrent signed 48,16 -m /u:Apk /f:0.1 /min:-850 /max:0 /d:0.0
 
 [FL_MinMaxDcCurrent]
-ID=4C4h
+ID=4C7h
 Type=Standard
 DLC=8
 Var=FL_MaxDcCurrent signed 0,16 -m /u:Adc /f:0.1 /min:0 /max:850 /d:0.0
