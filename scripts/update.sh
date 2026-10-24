@@ -12,22 +12,22 @@ DBC_FILENAME=$(basename $1 .dbc)
 
 
 # Create virtualenv if doesn't exist
-# if [ ! -d "$VIRTUALENV_DIR" ];
-# then
-	# echo "Creating virtualenv"
-	# python3 -m venv $VIRTUALENV_DIR
-# fi
-# source $VIRTUALENV_DIR/bin/activate
+if [ ! -d "$VIRTUALENV_DIR" ];
+then
+	echo "Creating virtualenv"
+	python3 -m venv $VIRTUALENV_DIR
+fi
+source $VIRTUALENV_DIR/bin/activate
 
-# echo "Updating Requirements"
-# pip3 install -U pip wheel cantools canmatrix > /dev/null
+#echo "Updating Requirements"
+#pip3 install -U pip wheel cantools canmatrix > /dev/null
 
 echo "Building $DBC_FILENAME"
-../cantools/venv/bin/cantools generate_c_source $DBC_FILENAME.dbc --use-float --full-decode --raw --access-size 32 --arch-size 32
+cantools generate_c_source $DBC_FILENAME.dbc --raw --full-decode --access-size 32 --arch-size 32 --use-float
 mv $DBC_FILENAME.c c_files/$DBC_FILENAME.c
 mv $DBC_FILENAME.h c_files/$DBC_FILENAME.h
 
-echo "Building sym"
-grep -v "SystemSignalLongSymbol" $DBC_FILENAME.dbc > $DBC_FILENAME.tmp.dbc
-canconvert $DBC_FILENAME.tmp.dbc $DBC_FILENAME.sym
-rm $DBC_FILENAME.tmp.dbc
+#echo "Building sym"
+#grep -v "SystemSignalLongSymbol" $DBC_FILENAME.dbc > $DBC_FILENAME.tmp.dbc
+#canconvert $DBC_FILENAME.tmp.dbc $DBC_FILENAME.sym
+#rm $DBC_FILENAME.tmp.dbc

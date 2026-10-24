@@ -334,11 +334,8 @@ BO_ 1280 EBS_Pressure_Status: 8 DSAC
  SG_ EBS_pressure_3 : 32|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
  SG_ EBS_pressure_4 : 48|16@1+ (0.0625,0) [0|0] "bar" Vector__XXX
 
-BO_ 1282 DS_Status: 8 DS
- SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
- SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_Mission : 5|3@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_LapCount : 11|4@1+ (1,0) [0|0] "" Vector__XXX
+BO_ 1283 DS_Status: 4 DS
+ SG_ DS_MP_State : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1284 DSAC_Status: 8 DS
  SG_ DSAC_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
@@ -357,11 +354,7 @@ BO_ 1286 DS_RC_Outputs: 8 DS
 BO_ 1287 DS_Actuation_Control: 8 DS
  SG_ DS_SteerSetpoint : 0|16@1- (2,0) [0|0] "" Vector__XXX
  SG_ DS_SteerFF : 16|16@1- (2,0) [0|0] "" Vector__XXX
- SG_ DS_Running : 32|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_Finished : 33|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_Fault : 34|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_BrakeRear : 35|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DS_BrakeFront : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_MP_State : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1288 DSAC_Actual: 8 DS
  SG_ DSAC_CurrentD : 0|16@1- (0.001,0) [0|0] "A" Vector__XXX

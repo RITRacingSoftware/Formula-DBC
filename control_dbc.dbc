@@ -42,7 +42,7 @@ BO_ 2 DataloggerStatus: 8 LOG
  SG_ PI_CPUTemp : 32|20@1+ (0.001,0) [0|1048.575] "degC" Vector__XXX
  SG_ PI_CPULoad : 52|12@1+ (1,0) [0|4095] "%" Vector__XXX
 
-BO_ 8 VectorNav0: 88 VectorNav
+BO_ 8 VectorNav0: 92 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
  SG_ VectorNav_AccelY : 32|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
  SG_ VectorNav_AccelZ : 64|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
@@ -74,6 +74,18 @@ BO_ 8 VectorNav0: 88 VectorNav
  SG_ VectorNav_InsStatus_GnssHeadingIns : 647|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VectorNav_InsStatus_GnssCompass : 648|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VectorNav_PPS_Timestamp : 656|48@1+ (1,0) [0|0] "us" Vector__XXX
+ SG_ VectorNav_Packet_Timestamp : 704|32@1+ (1,0) [0|0] "us" Vector__XXX
+
+BO_ 10 DS_InverterInfo: 28 LOG
+ SG_ InvRR_FeedbackVelocity : 0|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ InvRR_FeedbackTorque : 32|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ InvRL_FeedbackVelocity : 48|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ InvRL_FeedbackTorque : 80|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ InvFR_FeedbackVelocity : 96|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ InvFR_FeedbackTorque : 128|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ InvFL_FeedbackVelocity : 144|32@1- (0.0001,0) [-100000.0|100000.0] "rpm" Vector__XXX
+ SG_ InvFL_FeedbackTorque : 176|16@1- (0.1,0) [-3000.0|3000.0] "% Mn" Vector__XXX
+ SG_ DS_ControlWord : 192|32@1+ (1,0) [0|0] "" Vector__XXX
 
 CM_ BU_ LOG "Datalogger";
 VAL_ 2 STM_PowerState 0 "OFF" 1 "SELFTEST" 2 "BOOTING" 3 "RUNNING" 4 "BACKUP" 5 "SHUTDOWN" 6 "POWEROFF";

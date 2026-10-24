@@ -157,8 +157,10 @@ BO_ 663 FL_AMK_RITSet2: 8 FL
  SG_ FL_DCBusVoltage : 32|16@1+ (1,0) [0|4096] "V" Vector__XXX
  SG_ FL_DCBusVoltageMonitoring : 48|16@1+ (0.1,0) [0|4096] "V" Vector__XXX
 
-BO_ 667 FL_AMK_RITSet3: 4 FL
+BO_ 667 FL_AMK_RITSet3: 8 FL
  SG_ FL_ActivePower : 0|32@1- (1,0) [-2147483648|2147483647] "W" Vector__XXX
+ SG_ FL_CurrentD : 32|16@1- (0.006543,0) [0|0] "A" Vector__XXX
+ SG_ FL_CurrentQ : 48|16@1- (0.006543,0) [0|0] "A" Vector__XXX
 
 BO_ 671 FL_AMK_RITSet4: 4 FL
  SG_ FL_ActualPowerBipolar : 0|32@1- (1,0) [0|0] "W" Vector__XXX

@@ -127,11 +127,16 @@ BO_ 224 EM_OUTPUT_VALUES: 8 EM
  SG_ POWER: 32|18@1+ (1,0) [0|0] "W" Vector__XXX
 
 
-BO_ 1282 DS_Status: 8 DS
+BO_ 1282 DV_System_Status: 8 DS
  SG_ DS_State : 0|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EBS_State : 3|2@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DS_Mission : 5|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DS_LapCount : 11|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1283 DS_Debug1: 8 DS
+ SG_ DS_MP_State : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DS_CTE : 32|12@1+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ DS_etheta : 44|12@1+ (0.002,0) [0|0] "" Vector__XXX
 
 BO_ 384 PIT_Pressures: 8 PIT
  SG_ PIT_PressureMux M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
