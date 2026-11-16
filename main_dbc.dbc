@@ -348,6 +348,9 @@ BO_ 1284 DSAC_Status: 8 DS
  SG_ DSAC_Relay_State : 18|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_WDO_State : 19|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_Output_State : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_TSMS_State : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_ASMS_State : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DSAC_TSMS_Raw : 23|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_FaultVector : 32|24@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DSAC_FaultPressure : 56|8@1+ (1,0) [0|0] "" Vector__XXX
 
