@@ -39,8 +39,9 @@ BO_ 2 DataloggerStatus: 8 LOG
  SG_ STM_PowerState : 0|4@1+ (1,0) [0|6] "" Vector__XXX
  SG_ STM_BatteryState : 4|4@1+ (1,0) [0|2] "" Vector__XXX
  SG_ STM_LastBatteryVoltage : 8|14@1+ (0.001,0) [0|16.383] "V" Vector__XXX
- SG_ PI_CPUTemp : 32|20@1+ (0.001,0) [0|1048.575] "degC" Vector__XXX
- SG_ PI_CPULoad : 52|12@1+ (1,0) [0|4095] "%" Vector__XXX
+ SG_ PI_CPUTemp : 32|12@1+ (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ PI_CPULoad : 44|9@1+ (1,0) [0|511] "%" Vector__XXX
+ SG_ PI_DiskUsage : 53|7@1+ (1,0) [0|127] "%" Vector__XXX
 
 BO_ 8 VectorNav0: 92 VectorNav
  SG_ VectorNav_AccelX : 0|32@1+ (1,0) [0|0] "m/s^2" Vector__XXX
